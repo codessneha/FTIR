@@ -1,0 +1,16 @@
+{
+  "n_samples": 6,
+  "node_feat_dim": 10,
+  "edge_feat_dim": 6,
+  "spectrum_bins": 500,
+  "freq_min": 0.0,
+  "freq_max": 2996.0,
+  "names": [
+    "CO",
+    "NH3",
+    "Pt_ZnO_NT",
+    "Pt_ZnO_NT_CO",
+    "ZnO_NT",
+    "ZnO_NT_CO"
+  ]
+}
