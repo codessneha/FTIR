@@ -1,8 +1,8 @@
 mkdir logs
 # copy your .log files into logs\
 
-python parse_logs.py --log_dir ./logs --output data/raw_dataset.json --ext .txt
-python build_dataset.py --input data/raw_dataset.json --output_dir data/graphs
+python parse_data.py --log_dir data/logs --output data/dataset.json --log_ext .txt
+python build_graphs.py --input data/dataset.json --output_dir data/graphs
 python model.py
 python train.py --graph_dir data/graphs --out_dir checkpoints --epochs 500
-python predict.py --checkpoint checkpoints/fold1_best.pt --dataset_json data/raw_dataset.json --output_dir results/
+python predict.py --checkpoint checkpoints/fold1_best.pt --dataset data/dataset.json --output_dir results/

@@ -22,8 +22,12 @@ from pathlib import Path
 
 def build_graph(entry):
     x          = torch.tensor(entry['node_features'], dtype=torch.float)
-    edge_index = torch.tensor(entry['edge_index'],    dtype=torch.long).t().contiguous()
-    edge_attr  = torch.tensor(entry['edge_features'], dtype=torch.float)
+    if not entry['edge_index']:
+        edge_index = torch.empty((2, 0), dtype=torch.long)
+        edge_attr  = torch.empty((0, 6), dtype=torch.float)
+    else:
+        edge_index = torch.tensor(entry['edge_index'],    dtype=torch.long).t().contiguous()
+        edge_attr  = torch.tensor(entry['edge_features'], dtype=torch.float)
 
     # Target = real FTIR spectrum from Excel
     y = torch.tensor(entry['ftir_spectrum'], dtype=torch.float).unsqueeze(0)  # [1, N_BINS]

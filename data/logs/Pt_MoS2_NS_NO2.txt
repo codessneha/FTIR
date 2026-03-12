@@ -1,0 +1,2905 @@
+ Entering Link 1 = C:\G09W\l1.exe PID=     16040.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2013,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 09 program.  It is based on
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 09, Revision D.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, 
+ G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, 
+ A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, 
+ M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, 
+ Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr., 
+ J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, 
+ K. N. Kudin, V. N. Staroverov, T. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, 
+ M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, 
+ V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, 
+ O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, 
+ R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, 
+ P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, 
+ O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski, 
+ and D. J. Fox, Gaussian, Inc., Wallingford CT, 2013.
+ 
+ ******************************************
+ Gaussian 09:  IA32W-G09RevD.01 24-Apr-2013
+                05-Jan-2025 
+ ******************************************
+ %nprocshared=2
+ Will use up to    2 processors via shared memory.
+ %mem=1GB
+ %chk=G:\My Drive\Boro Kaaz\Pt doped MoS2\NO2\Pt doped MoS2+NO2_AMAN_freq.chk
+ ------------------------------------------------
+ # freq pm6 guess=huckel scf=qc geom=connectivity
+ ------------------------------------------------
+ 1/10=4,30=1,38=1,57=2/1,3;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=2,16=1,25=1,41=3900000,71=2,140=1/1,2,3;
+ 4/11=4,35=1/1;
+ 5/5=2,8=3,35=1,38=5,98=1/8;
+ 8/6=4,10=90,11=11/1;
+ 11/6=1,8=1,9=11,15=111,16=1/1,2,10;
+ 10/6=1/2;
+ 6/7=2,8=2,9=2,10=2,18=1,28=1/1;
+ 7/8=1,10=1,25=1/1,2,3,16;
+ 1/10=4,30=1/3;
+ 99//99;
+ -------------------
+ Title Card Required
+ -------------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 2
+ Mo                   -1   -1.83107   0.12645  -0.11034 
+ S                    -1   -3.16161   1.17601   1.61292 
+ S                    -1   -3.8168    0.62034  -1.39663 
+ Mo                   -1    1.2652    0.38932  -0.83294 
+ Mo                   -1    4.36147   0.65218  -1.55554 
+ Mo                   -1    7.45773   0.91504  -2.27814 
+ S                    -1   -0.06534   1.43887   0.89033 
+ S                    -1    3.03092   1.70173   0.16773 
+ S                    -1    6.12719   1.9646   -0.55487 
+ S                    -1   -0.72053   0.8832   -2.11923 
+ S                    -1    2.37574   1.14606  -2.84183 
+ S                    -1    5.47201   1.40892  -3.56442 
+ Mo                   -1   -3.70921   2.70448  -0.17747 
+ Mo                   -1   -5.58735   5.2825   -0.24459 
+ Mo                   -1   -7.46549   7.86052  -0.31171 
+ S                    -1   -5.03975   3.75403   1.5458 
+ S                    -1   -6.91789   6.33206   1.47868 
+ S                    -1   -8.79603   8.91008   1.41156 
+ S                    -1   -5.69494   3.19836  -1.46375 
+ S                    -1   -7.57308   5.77638  -1.53087 
+ S                    -1   -9.45122   8.35441  -1.59799 
+ Mo                   -1   -0.61294   2.96734  -0.90006 
+ Mo                   -1   -2.49108   5.54536  -0.96718 
+ Mo                   -1   -4.36922   8.12338  -1.0343 
+ Mo                   -1    2.48333   3.2302   -1.62266 
+ Mo                   -1   -1.27295   8.38625  -1.7569 
+ Mo                   -1    5.57959   3.49306  -2.34526 
+ Mo                   -1    3.70145   6.07109  -2.41238 
+ Mo                   -1    1.82332   8.64911  -2.4795 
+ S                    -1   -1.94348   4.0169    0.82321 
+ S                    -1   -3.82162   6.59492   0.75609 
+ S                    -1   -5.69976   9.17294   0.68896 
+ S                    -1    1.15279   4.27976   0.10061 
+ S                    -1   -0.72535   6.85778   0.03349 
+ S                    -1   -2.60349   9.4358   -0.03363 
+ S                    -1    4.24905   4.54262  -0.62199 
+ S                    -1    2.37091   7.12064  -0.68911 
+ S                    -1    0.49277   9.69866  -0.75623 
+ S                    -1   -2.59867   3.46122  -2.18635 
+ S                    -1   -4.47681   6.03925  -2.25347 
+ S                    -1   -6.35495   8.61727  -2.32059 
+ S                    -1    0.4976    3.72409  -2.90895 
+ S                    -1   -1.38054   6.30211  -2.97607 
+ S                    -1   -3.25868   8.88013  -3.04319 
+ S                    -1    3.59387   3.98695  -3.63154 
+ S                    -1    1.71573   6.56497  -3.69866 
+ S                    -1   -0.16241   9.14299  -3.76578 
+ Pt                   -1    0.60519   5.80822  -1.68978 
+ N                    0    -0.32534   3.64115   2.49389 
+ O                    0     0.62287   4.0307    1.97879 
+ O                    0    -1.22654   3.03312   2.14917 
+ 
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ Trust Radius=3.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07
+ Number of steps in this run=      2 maximum allowed number of steps=      2.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Stoichiometry    Mo15NO2PtS32(2)
+ Framework group  C1[X(Mo15NO2PtS32)]
+ Deg. of freedom   147
+ Full point group                 C1      NOp   1
+ Largest Abelian subgroup         C1      NOp   1
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         42           0       -0.754281    4.799577   -0.153735
+      2         16           0        1.085382    4.826305    1.413586
+      3         16           0        1.089903    4.764743   -1.715574
+      4         42           0       -3.520721    3.210811   -0.126475
+      5         42           0       -6.287162    1.622045   -0.099216
+      6         42           0       -9.053603    0.033279   -0.071956
+      7         16           0       -1.681059    3.237539    1.440846
+      8         16           0       -4.447500    1.648773    1.468105
+      9         16           0       -7.213940    0.060007    1.495365
+     10         16           0       -1.676538    3.175977   -1.688314
+     11         16           0       -4.442978    1.587211   -1.661055
+     12         16           0       -7.209419   -0.001555   -1.633795
+     13         42           0        2.005048    3.198652   -0.118252
+     14         42           0        4.764377    1.597727   -0.082769
+     15         42           0        7.523705   -0.003198   -0.047285
+     16         16           0        3.844710    3.225380    1.449070
+     17         16           0        6.604039    1.624455    1.484553
+     18         16           0        9.363368    0.023530    1.520036
+     19         16           0        3.849232    3.163818   -1.680090
+     20         16           0        6.608561    1.562893   -1.644607
+     21         16           0        9.367889   -0.038032   -1.609124
+     22         42           0       -0.761393    1.609886   -0.090992
+     23         42           0        1.997936    0.008961   -0.055509
+     24         42           0        4.757265   -1.591964   -0.020026
+     25         42           0       -3.527833    0.021120   -0.063733
+     26         42           0        1.990824   -3.180729    0.007234
+     27         42           0       -6.294274   -1.567646   -0.036473
+     28         42           0       -3.534945   -3.168570   -0.000990
+     29         42           0       -0.775617   -4.769495    0.034493
+     30         16           0        1.078270    1.636614    1.476329
+     31         16           0        3.837598    0.035689    1.511812
+     32         16           0        6.596927   -1.565235    1.547295
+     33         16           0       -1.688171    0.047848    1.503588
+     34         16           0        1.071158   -1.553077    1.539072
+     35         16           0        3.830486   -3.154001    1.574555
+     36         16           0       -4.454612   -1.540918    1.530848
+     37         16           0       -1.695283   -3.141842    1.566331
+     38         16           0        1.064046   -4.742767    1.601814
+     39         16           0        1.082791    1.575052   -1.652831
+     40         16           0        3.842120   -0.025873   -1.617348
+     41         16           0        6.601449   -1.626798   -1.581865
+     42         16           0       -1.683650   -0.013714   -1.625571
+     43         16           0        1.075679   -1.614639   -1.590088
+     44         16           0        3.835008   -3.215563   -1.554605
+     45         16           0       -4.450090   -1.602480   -1.598312
+     46         16           0       -1.690762   -3.203404   -1.562829
+     47         16           0        1.068567   -4.804329   -1.527346
+     48         78           0       -0.768505   -1.579805   -0.028250
+     49          7           0       -0.340074    1.806964    3.349841
+     50          8           0       -1.093090    0.967865    3.137558
+     51          8           0        0.178253    2.593512    2.706905
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0254854      0.0092663      0.0073814
+ Standard basis: VSTO-6G (5D, 7F)
+ There are   492 symmetry adapted cartesian basis functions of A   symmetry.
+ There are   444 symmetry adapted basis functions of A   symmetry.
+   444 basis functions,  2952 primitive gaussians,   492 cartesian basis functions
+   155 alpha electrons      154 beta electrons
+       nuclear repulsion energy      4619.0274509523 Hartrees.
+ Integral buffers will be    262144 words long.
+ Regular integral format.
+ Two-electron integral symmetry is turned off.
+ Do NDO integrals.
+ One-electron integrals computed using PRISM.
+ NBasis=   444 RedAO= F EigKep=  0.00D+00  NBF=   444
+ NBsUse=   444 1.00D-04 EigRej=  0.00D+00 NBFU=   444
+ Projected New-EHT guess.
+ Enter ItEHT:  IZDO=4 IZDPar=0 Conv= 1.00D-06 N=  284
+ It=   1                  EEH= -32.9052636020     EQH= 0.000000000000E+00 EH= -32.9052636020    
+ Initial guess <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>= 0.7500 S= 0.5000
+ Keep J ints in memory in canonical form, NReq=6469518.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Accept linear search using points  9 and 10.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Minimum is close to point  3 DX= -1.47D-02 DF= -1.01D-01 DXR=  3.81D-02 DFR=  1.00D-03 which will be used.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Minimum is close to point  4 DX=  5.85D-02 DF= -3.85D-01 DXR=  8.89D-02 DFR=  7.13D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  5 DX=  2.20D-02 DF= -1.63D-02 DXR=  5.22D-02 DFR=  2.58D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  4 and  5.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -1.40D-02 DF= -7.96D-03 DXR=  7.53D-02 DFR=  5.71D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -5.77D-03 DF= -2.40D-05 DXR=  1.46D-02 DFR=  2.15D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.64D-02 DF= -2.41D-04 DXR=  6.20D-02 DFR=  3.86D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+     Minimum is close to point  4 DX= -1.27D-01 DF= -2.14D-04 DXR=  3.76D-02 DFR=  2.38D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  3.39D-03 DF= -3.77D-06 DXR=  8.40D-03 DFR=  7.05D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  4.68D-03 DF= -5.11D-06 DXR=  1.16D-02 DFR=  1.34D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.82D-03 DF= -1.39D-06 DXR=  7.00D-03 DFR=  4.90D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  4.08D-03 DF= -2.22D-06 DXR=  1.01D-02 DFR=  1.02D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  3.42D-03 DF= -1.28D-06 DXR=  8.47D-03 DFR=  7.18D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  9.65D-03 DF= -7.40D-06 DXR=  2.36D-02 DFR=  5.55D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.56D-02 DF= -3.61D-05 DXR=  6.01D-02 DFR=  3.63D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -1.12D-02 DF= -3.56D-06 DXR=  2.29D-02 DFR=  5.23D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.65D-02 DF= -2.00D-05 DXR=  6.22D-02 DFR=  3.88D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  4 and  5.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+     Minimum is close to point  2 DX= -9.02D-02 DF= -1.75D-05 DXR=  6.88D-02 DFR=  7.64D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -3.85D-02 DF= -1.01D-06 DXR=  2.19D-02 DFR=  3.93D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  6.22D-02 DF= -2.91D-06 DXR=  3.34D-02 DFR=  1.12D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -8.39D-02 DF= -5.36D-06 DXR=  4.62D-02 DFR=  2.14D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.10D-01 DF= -7.66D-06 DXR=  5.47D-02 DFR=  3.01D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -3.46D-02 DF= -1.27D-05 DXR=  7.44D-02 DFR=  5.56D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+     Minimum is close to point  4 DX= -1.05D-01 DF= -6.19D-06 DXR=  3.77D-02 DFR=  2.05D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.94D-02 DF= -7.03D-06 DXR=  4.62D-02 DFR=  2.13D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX=  1.46D-01 DF= -2.37D-06 DXR=  2.14D-02 DFR=  4.67D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX= -3.93D-01 DF= -1.47D-05 DXR=  6.34D-02 DFR=  4.11D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  3.80D-02 DF= -1.37D-05 DXR=  8.67D-02 DFR=  7.58D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.32D-01 DF= -9.22D-06 DXR=  7.90D-02 DFR=  6.30D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -3.13D-02 DF= -3.57D-06 DXR=  6.69D-02 DFR=  4.49D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+     Minimum is close to point  4 DX= -1.55D-02 DF= -5.85D-08 DXR=  5.18D-03 DFR=  5.11D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.40D-02 DF= -3.66D-06 DXR=  5.65D-02 DFR=  3.20D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  5 DX=  3.56D-01 DF= -4.69D-06 DXR=  3.81D-02 DFR=  1.48D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX= -1.04D-02 DF= -1.93D-06 DXR=  2.68D-02 DFR=  7.17D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -2.92D-01 DF= -7.89D-06 DXR=  8.33D-02 DFR=  6.99D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.01D-02 DF= -7.84D-07 DXR=  2.47D-02 DFR=  6.09D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  4 and  5.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX=  5.99D-01 DF= -1.30D-05 DXR=  7.78D-02 DFR=  6.13D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -1.05D-02 DF= -3.23D-07 DXR=  2.15D-02 DFR=  4.61D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  4.52D-02 DF= -6.73D-07 DXR=  3.95D-02 DFR=  1.56D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -4.47D-02 DF= -5.85D-06 DXR=  9.81D-02 DFR=  9.72D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  8.85D-02 DF= -2.60D-06 DXR=  8.13D-02 DFR=  6.65D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.73D-02 DF= -6.20D-08 DXR=  1.14D-02 DFR=  1.30D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.19D-01 DF= -2.09D-06 DXR=  7.55D-02 DFR=  4.21D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.84D-01 DF= -5.25D-06 DXR=  9.75D-02 DFR=  9.61D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -5.79D-02 DF= -4.84D-07 DXR=  3.33D-02 DFR=  9.22D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.41D-01 DF= -2.98D-06 DXR=  7.24D-02 DFR=  5.28D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -1.74D-02 DF= -6.66D-07 DXR=  3.61D-02 DFR=  1.31D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -3.99D-02 DF= -4.47D-06 DXR=  8.67D-02 DFR=  7.58D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+     Minimum is close to point  4 DX= -1.81D-01 DF= -4.13D-06 DXR=  6.43D-02 DFR=  5.55D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.13D-02 DF= -2.36D-06 DXR=  5.06D-02 DFR=  2.56D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX= -1.04D-02 DF= -1.70D-06 DXR=  2.67D-02 DFR=  7.14D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -3.33D-01 DF= -8.28D-06 DXR=  9.34D-02 DFR=  8.85D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.01D-02 DF= -6.60D-07 DXR=  2.47D-02 DFR=  6.09D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  4 and  5.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX= -4.31D-01 DF= -5.97D-06 DXR=  6.46D-02 DFR=  4.26D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.76D-01 DF= -3.15D-06 DXR=  9.90D-02 DFR=  9.90D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.56D-04 Max=1.34D-02 NDo=     1
+ AX will form     1 AO Fock derivatives at one time.
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.26D-04 Max=3.91D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.57D-05 Max=3.19D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.42D-05 Max=1.53D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.07D-05 Max=1.56D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.53D-05 Max=1.06D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.27D-05 Max=9.78D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.00D-05 Max=9.09D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.03D-05 Max=7.64D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.51D-05 Max=6.97D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.14D-05 Max=4.45D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=9.78D-06 Max=2.84D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=7.53D-06 Max=1.91D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=6.73D-06 Max=2.20D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=5.14D-06 Max=1.59D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=5.17D-06 Max=1.42D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=3.82D-06 Max=1.01D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=2.68D-06 Max=7.47D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=2.32D-06 Max=6.27D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.07D-06 Max=5.59D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.87D-06 Max=4.50D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.26D-06 Max=3.83D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=9.50D-07 Max=2.74D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=5.47D-07 Max=1.60D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=3.93D-07 Max=1.14D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.73D-07 Max=7.02D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.88D-07 Max=5.13D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.35D-07 Max=2.35D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=8.85D-08 Max=1.69D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.18D-08 Max=1.41D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.74D-08 Max=8.68D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.21D-08 Max=5.48D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.30D-08 Max=2.35D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    32 iterations.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.85D-01 DF= -7.00D-06 DXR=  9.80D-02 DFR=  9.70D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.55D-02 DF= -5.71D-07 DXR=  3.73D-02 DFR=  1.39D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.19D-04 Max=1.02D-02 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.68D-04 Max=7.95D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.58D-05 Max=1.97D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.24D-05 Max=2.54D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.33D-05 Max=2.06D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.51D-05 Max=1.15D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.00D-05 Max=1.11D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.19D-05 Max=1.44D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.19D-05 Max=8.70D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.15D-05 Max=7.15D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.94D-05 Max=7.40D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.62D-05 Max=4.53D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.26D-05 Max=6.19D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.13D-05 Max=3.57D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=9.80D-06 Max=4.77D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=9.05D-06 Max=2.99D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.76D-06 Max=1.36D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=6.08D-06 Max=2.22D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.70D-06 Max=1.59D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.72D-06 Max=1.74D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.40D-06 Max=1.26D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.49D-06 Max=6.29D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.09D-06 Max=5.74D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=6.98D-07 Max=3.35D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=4.72D-07 Max=1.46D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.02D-07 Max=9.12D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.69D-07 Max=3.92D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.20D-07 Max=3.75D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=7.38D-08 Max=1.97D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=4.43D-08 Max=9.86D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=2.67D-08 Max=5.43D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.94D-08 Max=3.44D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.14D-08 Max=2.34D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    32 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.25D-04 Max=1.10D-02 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.72D-04 Max=8.50D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.50D-05 Max=2.12D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.15D-05 Max=2.70D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.92D-05 Max=2.46D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.20D-05 Max=1.37D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.67D-05 Max=1.39D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.61D-05 Max=1.42D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.87D-05 Max=1.00D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.67D-05 Max=8.75D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.36D-05 Max=7.75D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.28D-05 Max=6.58D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.58D-05 Max=7.56D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.27D-05 Max=4.13D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.15D-05 Max=6.35D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.04D-05 Max=2.75D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=7.90D-06 Max=2.34D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=7.11D-06 Max=2.95D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.93D-06 Max=1.70D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.59D-06 Max=1.46D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.11D-06 Max=1.36D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.23D-06 Max=9.69D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.44D-06 Max=6.01D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=9.70D-07 Max=3.75D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=7.21D-07 Max=1.78D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=4.16D-07 Max=7.73D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.68D-07 Max=3.90D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.83D-07 Max=3.98D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.01D-07 Max=1.85D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.12D-08 Max=2.02D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=4.03D-08 Max=9.91D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.81D-08 Max=6.65D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.40D-08 Max=4.29D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=8.05D-09 Max=1.73D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.17D-04 Max=9.12D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.41D-04 Max=7.37D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.07D-05 Max=2.97D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.83D-05 Max=3.20D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=7.47D-05 Max=3.18D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.30D-05 Max=2.61D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.55D-05 Max=2.44D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=5.07D-05 Max=1.50D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=4.25D-05 Max=1.27D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.91D-05 Max=1.15D-03 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.47D-05 Max=7.90D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=3.19D-05 Max=6.85D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.33D-05 Max=7.61D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.89D-05 Max=6.23D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.48D-05 Max=7.44D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.18D-05 Max=4.65D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=9.01D-06 Max=4.61D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=6.78D-06 Max=2.16D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.32D-06 Max=1.74D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.05D-06 Max=1.19D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=4.17D-06 Max=1.87D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=3.70D-06 Max=9.86D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=2.39D-06 Max=7.16D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.70D-06 Max=3.29D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.08D-06 Max=3.20D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=7.44D-07 Max=2.19D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=5.05D-07 Max=1.78D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=2.95D-07 Max=9.33D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.73D-07 Max=4.37D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=9.83D-08 Max=2.50D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=6.85D-08 Max=2.18D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=4.03D-08 Max=1.36D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=2.16D-08 Max=5.59D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=1.56D-08 Max=4.38D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     0 RMS=8.29D-09 Max=1.74D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    34 iterations.
+     Minimum is close to point  3 DX= -2.85D-02 DF= -7.33D-06 DXR=  6.06D-02 DFR=  3.68D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.72D-05 Max=2.30D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.63D-05 Max=4.59D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.22D-05 Max=1.68D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.51D-05 Max=2.55D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.51D-05 Max=1.05D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.70D-05 Max=1.89D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.19D-05 Max=1.58D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.82D-05 Max=1.17D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.61D-05 Max=1.09D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.27D-05 Max=8.92D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.76D-05 Max=6.35D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.58D-05 Max=7.94D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.07D-05 Max=6.01D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.72D-05 Max=5.10D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.53D-05 Max=4.88D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.45D-05 Max=3.82D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.12D-05 Max=2.19D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=9.52D-06 Max=3.42D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=6.78D-06 Max=1.82D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=5.14D-06 Max=1.08D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.85D-06 Max=9.76D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.82D-06 Max=8.61D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.53D-06 Max=7.22D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.12D-06 Max=4.37D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=6.86D-07 Max=3.90D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=4.64D-07 Max=2.00D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=3.18D-07 Max=1.31D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.74D-07 Max=5.93D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.11D-07 Max=3.32D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.96D-08 Max=1.87D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.67D-08 Max=1.08D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.02D-08 Max=4.24D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.23D-08 Max=3.08D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=7.22D-09 Max=2.69D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.65D-05 Max=2.26D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.50D-05 Max=4.47D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.14D-05 Max=1.60D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.43D-05 Max=2.44D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.47D-05 Max=1.07D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.63D-05 Max=1.76D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.12D-05 Max=1.56D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.74D-05 Max=1.08D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.57D-05 Max=1.06D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.22D-05 Max=8.81D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.73D-05 Max=6.19D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.54D-05 Max=8.13D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.05D-05 Max=5.86D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.70D-05 Max=4.95D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.51D-05 Max=4.89D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.43D-05 Max=3.77D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.10D-05 Max=1.98D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=9.29D-06 Max=3.41D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=6.56D-06 Max=1.90D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=5.09D-06 Max=1.09D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.74D-06 Max=9.03D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.81D-06 Max=6.96D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.46D-06 Max=5.37D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.06D-06 Max=3.82D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=6.63D-07 Max=3.61D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=4.42D-07 Max=1.76D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=3.06D-07 Max=1.32D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.71D-07 Max=5.64D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.13D-07 Max=4.15D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.75D-08 Max=2.24D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.84D-08 Max=1.38D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.11D-08 Max=6.41D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.28D-08 Max=4.04D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=7.71D-09 Max=2.89D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=5.92D-05 Max=1.59D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.25D-05 Max=3.46D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.03D-05 Max=1.23D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.02D-05 Max=1.77D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.91D-05 Max=8.77D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.90D-05 Max=1.36D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.53D-05 Max=1.13D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.18D-05 Max=9.24D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.03D-05 Max=8.25D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.62D-05 Max=6.09D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.28D-05 Max=5.92D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.09D-05 Max=5.96D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.75D-05 Max=3.61D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.40D-05 Max=3.34D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.35D-05 Max=4.00D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.16D-05 Max=3.19D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.01D-05 Max=2.57D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=7.69D-06 Max=2.29D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=6.45D-06 Max=2.15D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.93D-06 Max=7.38D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.20D-06 Max=8.82D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.14D-06 Max=6.89D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.33D-06 Max=5.82D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.01D-06 Max=4.97D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=5.39D-07 Max=2.40D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=4.22D-07 Max=1.40D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.68D-07 Max=8.99D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.49D-07 Max=4.50D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=9.59D-08 Max=2.63D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.33D-08 Max=1.77D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.22D-08 Max=9.62D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.03D-08 Max=8.36D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=9.15D-09 Max=3.61D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=5.74D-09 Max=1.68D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.84D-05 Max=1.21D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.15D-05 Max=2.95D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.61D-05 Max=1.24D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.58D-05 Max=1.90D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.76D-05 Max=9.09D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.94D-05 Max=8.79D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.17D-05 Max=8.43D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.81D-05 Max=8.91D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.57D-05 Max=7.04D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.14D-05 Max=6.44D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.65D-05 Max=4.77D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.63D-05 Max=6.37D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.23D-05 Max=5.13D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.09D-05 Max=2.84D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.06D-05 Max=2.94D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=8.47D-06 Max=2.20D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=7.40D-06 Max=2.10D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.84D-06 Max=1.46D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.72D-06 Max=1.27D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.04D-06 Max=5.20D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.30D-06 Max=4.20D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.64D-06 Max=4.11D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.02D-06 Max=2.77D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=7.14D-07 Max=2.30D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=4.88D-07 Max=1.62D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.48D-07 Max=1.01D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.14D-07 Max=6.35D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.34D-07 Max=3.11D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=7.46D-08 Max=1.76D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=5.16D-08 Max=1.66D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.28D-08 Max=8.28D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.97D-08 Max=4.36D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=9.88D-09 Max=2.14D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    32 iterations.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.14D-05 Max=9.51D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.96D-05 Max=1.35D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.31D-05 Max=7.59D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.91D-05 Max=8.30D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.67D-05 Max=7.73D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.75D-05 Max=7.24D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.22D-05 Max=4.93D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.94D-05 Max=3.93D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.70D-05 Max=3.48D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.46D-05 Max=3.54D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.10D-05 Max=2.32D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.04D-05 Max=1.94D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=8.56D-06 Max=2.00D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=7.56D-06 Max=1.71D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=7.21D-06 Max=1.77D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=5.81D-06 Max=1.54D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=4.71D-06 Max=1.21D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=4.18D-06 Max=1.02D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=2.86D-06 Max=6.27D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.04D-06 Max=4.72D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.49D-06 Max=3.19D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.25D-06 Max=4.05D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=6.38D-07 Max=1.61D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=4.61D-07 Max=1.30D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.91D-07 Max=7.61D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.11D-07 Max=7.42D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.36D-07 Max=3.73D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=8.79D-08 Max=2.19D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=4.70D-08 Max=1.59D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.65D-08 Max=6.78D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.76D-08 Max=5.30D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.10D-08 Max=3.24D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=5.73D-09 Max=1.37D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    32 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=4.43D-05 Max=1.37D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.55D-05 Max=1.92D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.67D-05 Max=1.11D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.08D-05 Max=1.31D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.74D-05 Max=1.03D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.86D-05 Max=9.85D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.08D-05 Max=6.59D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.67D-05 Max=6.03D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.36D-05 Max=5.17D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.05D-05 Max=5.40D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.51D-05 Max=3.28D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.44D-05 Max=3.20D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.21D-05 Max=3.13D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.06D-05 Max=2.37D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.02D-05 Max=2.56D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=8.20D-06 Max=2.25D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.58D-06 Max=1.70D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.68D-06 Max=1.48D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.10D-06 Max=1.00D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.88D-06 Max=7.24D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.14D-06 Max=5.66D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.82D-06 Max=4.79D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=9.95D-07 Max=3.51D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=7.45D-07 Max=1.90D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=4.27D-07 Max=9.23D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.16D-07 Max=9.86D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.03D-07 Max=4.91D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.32D-07 Max=3.11D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=7.47D-08 Max=2.14D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=4.54D-08 Max=1.07D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.11D-08 Max=9.44D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.79D-08 Max=5.73D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.07D-08 Max=3.35D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=6.98D-09 Max=2.68D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=5.84D-05 Max=1.73D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.27D-05 Max=2.54D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.10D-05 Max=1.78D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.36D-05 Max=1.86D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.87D-05 Max=1.16D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.07D-05 Max=1.36D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.01D-05 Max=9.44D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.45D-05 Max=9.07D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.08D-05 Max=7.28D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.68D-05 Max=6.45D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.95D-05 Max=4.31D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.87D-05 Max=4.76D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.61D-05 Max=4.44D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.40D-05 Max=3.16D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.33D-05 Max=3.33D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.07D-05 Max=2.89D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=8.54D-06 Max=1.86D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=7.23D-06 Max=1.67D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.99D-06 Max=1.19D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.83D-06 Max=9.80D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.60D-06 Max=7.49D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.40D-06 Max=6.93D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.28D-06 Max=5.18D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=9.13D-07 Max=2.43D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=5.25D-07 Max=1.33D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.47D-07 Max=8.98D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.42D-07 Max=6.70D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.64D-07 Max=3.87D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=9.25D-08 Max=2.26D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.08D-08 Max=1.42D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.80D-08 Max=1.35D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.39D-08 Max=9.18D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.29D-08 Max=4.90D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=9.02D-09 Max=3.76D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     0 RMS=4.45D-09 Max=1.28D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    34 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=5.91D-05 Max=2.50D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.17D-05 Max=3.27D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.50D-05 Max=1.75D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.25D-05 Max=2.66D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.63D-05 Max=1.91D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.07D-05 Max=1.01D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.09D-05 Max=1.37D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.90D-05 Max=8.98D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.73D-05 Max=7.60D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.17D-05 Max=8.79D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.75D-05 Max=6.68D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.48D-05 Max=5.07D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.29D-05 Max=5.21D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=8.37D-06 Max=2.45D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=7.13D-06 Max=1.75D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=6.79D-06 Max=1.92D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.02D-06 Max=1.52D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=4.67D-06 Max=1.56D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=3.42D-06 Max=9.43D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.46D-06 Max=6.34D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.43D-06 Max=4.35D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.07D-06 Max=3.35D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=7.40D-07 Max=1.87D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=4.89D-07 Max=1.52D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=3.94D-07 Max=1.24D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.14D-07 Max=6.59D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.57D-07 Max=6.12D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.47D-07 Max=4.21D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=8.51D-08 Max=2.57D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.08D-08 Max=1.78D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.51D-08 Max=8.37D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.09D-08 Max=6.03D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.34D-08 Max=3.68D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=7.69D-09 Max=1.52D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.84D-05 Max=3.27D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.02D-04 Max=5.12D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.02D-05 Max=2.75D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.06D-05 Max=4.01D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=7.10D-05 Max=2.91D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.69D-05 Max=1.63D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.21D-05 Max=1.88D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.12D-05 Max=1.22D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=4.03D-05 Max=1.11D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.34D-05 Max=1.28D-03 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.56D-05 Max=9.49D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.97D-05 Max=6.51D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.69D-05 Max=6.58D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.17D-05 Max=2.90D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=9.04D-06 Max=2.71D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=6.88D-06 Max=1.68D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.27D-06 Max=1.48D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.77D-06 Max=1.72D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.30D-06 Max=1.77D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.66D-06 Max=1.14D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.28D-06 Max=1.03D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.87D-06 Max=8.04D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.93D-06 Max=4.59D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.35D-06 Max=3.78D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=9.47D-07 Max=2.61D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=6.33D-07 Max=1.21D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=4.01D-07 Max=9.15D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=2.39D-07 Max=5.21D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.50D-07 Max=3.24D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=8.94D-08 Max=2.38D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=5.90D-08 Max=1.69D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=3.42D-08 Max=1.52D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.97D-08 Max=8.82D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=1.23D-08 Max=4.20D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     0 RMS=8.66D-09 Max=2.44D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    34 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.85D-05 Max=4.56D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.03D-04 Max=4.66D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.75D-05 Max=2.21D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.32D-05 Max=1.12D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.80D-05 Max=1.50D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.90D-05 Max=7.81D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.43D-05 Max=9.64D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.15D-05 Max=6.38D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.74D-05 Max=6.26D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.14D-05 Max=3.19D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.12D-05 Max=3.26D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=7.38D-06 Max=1.82D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=6.13D-06 Max=1.50D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=4.37D-06 Max=1.22D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=4.33D-06 Max=1.27D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=3.84D-06 Max=1.18D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=3.52D-06 Max=1.28D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=3.23D-06 Max=7.27D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=2.08D-06 Max=7.15D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.77D-06 Max=5.65D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.21D-06 Max=2.85D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=8.79D-07 Max=2.36D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=5.74D-07 Max=1.39D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=3.59D-07 Max=7.55D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.42D-07 Max=5.62D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.47D-07 Max=3.46D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.01D-07 Max=2.15D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=6.45D-08 Max=1.69D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=4.30D-08 Max=8.77D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.39D-08 Max=5.60D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.40D-08 Max=3.00D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     0 RMS=9.42D-09 Max=1.61D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    31 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -3.60D-02 DF= -3.55D-06 DXR=  9.89D-02 DFR=  9.88D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.00D-04 Max=4.40D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.54D-04 Max=7.01D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.77D-05 Max=1.39D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.47D-05 Max=1.31D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.50D-05 Max=8.88D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.21D-05 Max=6.95D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.40D-05 Max=9.11D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.42D-05 Max=4.72D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.18D-05 Max=4.88D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.04D-05 Max=3.80D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=9.41D-06 Max=3.90D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=5.85D-06 Max=1.72D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=5.73D-06 Max=1.78D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=5.44D-06 Max=1.76D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=4.82D-06 Max=1.85D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=3.33D-06 Max=1.06D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.68D-06 Max=1.07D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.74D-06 Max=5.00D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.17D-06 Max=3.15D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=8.85D-07 Max=2.12D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=7.09D-07 Max=2.69D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=4.98D-07 Max=1.24D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=3.87D-07 Max=1.48D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=2.09D-07 Max=4.64D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.53D-07 Max=2.99D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=9.23D-08 Max=1.94D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=4.94D-08 Max=1.12D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.81D-08 Max=8.70D-07 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=2.43D-08 Max=7.11D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.50D-08 Max=3.45D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     0 RMS=1.00D-08 Max=2.06D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    30 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.01D-04 Max=4.21D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.40D-04 Max=6.77D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=8.12D-05 Max=1.91D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=7.01D-05 Max=1.84D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=7.59D-05 Max=2.32D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.47D-05 Max=1.09D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.77D-05 Max=1.79D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.39D-05 Max=1.54D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.70D-05 Max=1.59D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.20D-05 Max=1.09D-03 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.51D-05 Max=1.06D-03 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.16D-05 Max=8.07D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.94D-05 Max=8.10D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.56D-05 Max=5.31D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.42D-05 Max=4.49D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.36D-05 Max=3.85D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.08D-05 Max=2.47D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=8.24D-06 Max=2.46D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=7.39D-06 Max=2.65D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=5.20D-06 Max=1.36D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.62D-06 Max=1.14D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.73D-06 Max=6.35D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.82D-06 Max=5.54D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.42D-06 Max=3.26D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=8.39D-07 Max=2.42D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=5.38D-07 Max=2.00D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=3.65D-07 Max=1.17D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=2.03D-07 Max=4.09D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.16D-07 Max=3.51D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=7.83D-08 Max=1.68D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.69D-08 Max=9.33D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.80D-08 Max=7.02D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.65D-08 Max=3.24D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=7.82D-09 Max=1.87D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    33 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=6.00D-05 Max=1.63D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=6.13D-05 Max=2.60D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.73D-05 Max=1.15D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.69D-05 Max=1.34D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.47D-05 Max=1.31D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.65D-05 Max=6.99D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.42D-05 Max=1.21D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.17D-05 Max=1.07D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.27D-05 Max=1.09D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.86D-05 Max=6.32D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.57D-05 Max=6.21D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.35D-05 Max=4.69D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.19D-05 Max=4.33D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=8.68D-06 Max=3.12D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=8.43D-06 Max=3.15D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=7.62D-06 Max=2.47D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.05D-06 Max=1.55D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.43D-06 Max=1.24D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.81D-06 Max=1.23D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.51D-06 Max=8.10D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.36D-06 Max=5.00D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.85D-06 Max=3.42D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.11D-06 Max=1.90D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=8.46D-07 Max=1.50D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=5.40D-07 Max=1.37D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.28D-07 Max=8.09D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.17D-07 Max=7.42D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.31D-07 Max=4.92D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=8.33D-08 Max=2.99D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=5.10D-08 Max=2.21D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=2.64D-08 Max=9.63D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.68D-08 Max=6.29D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.08D-08 Max=2.89D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    32 iterations.
+     Minimum is close to point  2 DX=  4.85D-02 DF= -1.63D-06 DXR=  4.62D-02 DFR=  2.14D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.38D-05 Max=8.28D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.49D-05 Max=6.70D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.36D-05 Max=5.80D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.32D-05 Max=4.33D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.83D-05 Max=6.07D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.81D-05 Max=5.11D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.54D-05 Max=4.60D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.01D-05 Max=2.98D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.03D-05 Max=4.19D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.93D-06 Max=2.13D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=5.41D-06 Max=1.61D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.37D-06 Max=1.18D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=4.50D-06 Max=1.14D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=3.03D-06 Max=1.04D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.61D-06 Max=7.46D-05 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.51D-06 Max=8.06D-05 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.34D-06 Max=8.54D-05 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.67D-06 Max=6.07D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.25D-06 Max=5.10D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.06D-06 Max=3.44D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=7.27D-07 Max=2.24D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=5.17D-07 Max=1.07D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.03D-07 Max=1.03D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=2.81D-07 Max=7.43D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.16D-07 Max=6.10D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.16D-07 Max=3.65D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=8.06D-08 Max=2.07D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=5.19D-08 Max=1.38D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=2.56D-08 Max=7.20D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.92D-08 Max=4.21D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     0 RMS=1.20D-08 Max=2.77D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    30 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.67D-05 Max=1.02D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.78D-05 Max=8.41D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.59D-05 Max=6.06D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.49D-05 Max=5.66D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.03D-05 Max=6.55D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.91D-05 Max=5.16D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.55D-05 Max=3.87D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.07D-05 Max=3.46D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.08D-05 Max=4.08D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=8.28D-06 Max=2.27D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=5.65D-06 Max=1.59D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.80D-06 Max=1.32D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=4.62D-06 Max=1.29D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=3.13D-06 Max=8.81D-05 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.82D-06 Max=7.26D-05 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.45D-06 Max=7.69D-05 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.25D-06 Max=7.95D-05 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=2.11D-06 Max=7.56D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.84D-06 Max=8.19D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.42D-06 Max=6.34D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=8.71D-07 Max=3.42D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=6.54D-07 Max=2.11D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.69D-07 Max=1.10D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=3.18D-07 Max=8.84D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.34D-07 Max=6.64D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.31D-07 Max=4.64D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.01D-07 Max=2.77D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=6.31D-08 Max=2.03D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=3.72D-08 Max=1.07D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.36D-08 Max=7.20D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.39D-08 Max=3.60D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     0 RMS=8.97D-09 Max=2.43D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    31 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.62D-05 Max=1.42D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.85D-05 Max=9.01D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.45D-05 Max=6.41D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.52D-05 Max=6.29D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.03D-05 Max=5.61D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.87D-05 Max=4.12D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.44D-05 Max=4.29D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.04D-05 Max=3.33D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.03D-05 Max=3.13D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.75D-06 Max=2.34D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=5.41D-06 Max=1.42D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.88D-06 Max=1.37D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=4.20D-06 Max=1.30D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=3.19D-06 Max=7.59D-05 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.95D-06 Max=9.04D-05 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.25D-06 Max=6.35D-05 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.84D-06 Max=6.33D-05 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.35D-06 Max=5.24D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.01D-06 Max=4.22D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.13D-06 Max=5.96D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=9.17D-07 Max=3.66D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=7.46D-07 Max=3.70D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=5.00D-07 Max=1.70D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=3.37D-07 Max=9.19D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.49D-07 Max=6.80D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.56D-07 Max=3.77D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.09D-07 Max=3.50D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=5.96D-08 Max=1.92D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=3.87D-08 Max=1.46D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.55D-08 Max=7.75D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.26D-08 Max=3.47D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     0 RMS=8.48D-09 Max=1.90D-07 NDo=     1
+ Linear equations converged to 2.991D-08 2.991D-07 after    31 iterations.
+     Minimum is close to point  2 DX= -1.18D-02 DF= -3.11D-08 DXR=  1.19D-02 DFR=  1.42D-04 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.34D-05 Max=4.06D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.14D-06 Max=2.09D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=7.27D-06 Max=1.84D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.29D-06 Max=2.20D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=6.30D-06 Max=1.65D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.43D-06 Max=1.60D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.90D-06 Max=1.57D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.14D-06 Max=1.12D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.65D-06 Max=1.16D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.20D-06 Max=9.18D-05 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.48D-06 Max=7.13D-05 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.46D-06 Max=6.95D-05 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.08D-06 Max=5.71D-05 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.73D-06 Max=3.65D-05 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.45D-06 Max=4.45D-05 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.14D-06 Max=2.75D-05 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=8.70D-07 Max=2.16D-05 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=6.77D-07 Max=1.80D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.35D-07 Max=1.41D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.36D-07 Max=1.23D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=4.39D-07 Max=1.11D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=3.41D-07 Max=7.39D-06 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=2.52D-07 Max=6.56D-06 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.68D-07 Max=4.79D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.04D-07 Max=3.19D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=6.78D-08 Max=1.93D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=4.25D-08 Max=1.30D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.01D-08 Max=8.99D-07 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.69D-08 Max=4.38D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.04D-08 Max=2.56D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=7.31D-09 Max=1.66D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     0 RMS=3.70D-09 Max=9.04D-08 NDo=     1
+ Linear equations converged to 1.323D-08 1.323D-07 after    31 iterations.
+     Minimum is close to point  2 DX=  8.58D-02 DF= -1.27D-07 DXR=  7.90D-02 DFR=  6.29D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.07D-06 Max=8.00D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.66D-06 Max=5.20D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.11D-06 Max=4.34D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.71D-07 Max=3.11D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=9.13D-07 Max=3.52D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=7.62D-07 Max=2.31D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=6.67D-07 Max=1.85D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=6.45D-07 Max=1.16D-05 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=6.00D-07 Max=1.32D-05 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.90D-07 Max=1.24D-05 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=4.47D-07 Max=1.30D-05 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=3.41D-07 Max=9.04D-06 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.86D-07 Max=7.41D-06 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=2.40D-07 Max=8.18D-06 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.53D-07 Max=8.33D-06 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.87D-07 Max=6.35D-06 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.72D-07 Max=5.92D-06 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.46D-07 Max=4.35D-06 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.16D-07 Max=3.27D-06 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=9.05D-08 Max=2.04D-06 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=7.93D-08 Max=1.58D-06 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=6.24D-08 Max=1.32D-06 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.56D-08 Max=1.20D-06 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=3.21D-08 Max=7.19D-07 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.10D-08 Max=5.04D-07 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.42D-08 Max=2.53D-07 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.13D-08 Max=2.41D-07 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=7.04D-09 Max=1.65D-07 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=4.75D-09 Max=1.01D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.75D-09 Max=7.55D-08 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.54D-09 Max=3.55D-08 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.12D-09 Max=3.34D-08 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=5.28D-10 Max=1.15D-08 NDo=     1
+ Linear equations converged to 2.668D-09 2.668D-08 after    32 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=7.62D-07 Max=1.75D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=5.26D-07 Max=1.46D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.58D-07 Max=1.16D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=4.43D-07 Max=1.52D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.89D-07 Max=9.13D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.88D-07 Max=8.01D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.30D-07 Max=8.13D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.76D-07 Max=5.83D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.10D-07 Max=4.54D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.89D-07 Max=3.88D-06 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.74D-07 Max=4.45D-06 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.38D-07 Max=3.65D-06 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.24D-07 Max=2.92D-06 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=9.84D-08 Max=2.49D-06 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=9.33D-08 Max=2.15D-06 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=8.33D-08 Max=1.36D-06 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.90D-08 Max=1.38D-06 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.49D-08 Max=1.43D-06 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=3.96D-08 Max=1.16D-06 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.01D-08 Max=1.02D-06 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.33D-08 Max=7.41D-07 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.62D-08 Max=5.53D-07 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.35D-08 Max=3.95D-07 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.09D-08 Max=3.38D-07 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=8.82D-09 Max=2.21D-07 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=6.01D-09 Max=1.50D-07 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=3.96D-09 Max=8.83D-08 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=2.69D-09 Max=5.84D-08 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.58D-09 Max=4.00D-08 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=8.69D-10 Max=1.67D-08 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=5.61D-10 Max=1.41D-08 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=3.67D-10 Max=1.12D-08 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=2.37D-10 Max=7.32D-09 NDo=     1
+ Linear equations converged to 9.775D-10 9.775D-09 after    32 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.90D-07 Max=1.20D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=3.18D-07 Max=1.24D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=2.06D-07 Max=7.63D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.38D-07 Max=3.11D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.26D-07 Max=3.18D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.24D-07 Max=2.79D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.08D-07 Max=2.61D-06 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=9.71D-08 Max=1.86D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.58D-08 Max=2.78D-06 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.96D-08 Max=2.19D-06 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=7.63D-08 Max=2.24D-06 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=6.28D-08 Max=1.94D-06 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=5.01D-08 Max=1.23D-06 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=4.75D-08 Max=1.53D-06 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=4.68D-08 Max=1.09D-06 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=3.46D-08 Max=1.00D-06 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.62D-08 Max=7.44D-07 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=2.52D-08 Max=7.98D-07 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.84D-08 Max=4.73D-07 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.51D-08 Max=3.06D-07 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.18D-08 Max=2.92D-07 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.10D-08 Max=2.81D-07 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=7.92D-09 Max=1.49D-07 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=6.55D-09 Max=1.30D-07 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=4.46D-09 Max=9.91D-08 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.75D-09 Max=4.64D-08 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.13D-09 Max=3.95D-08 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.34D-09 Max=3.01D-08 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=9.20D-10 Max=2.26D-08 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=5.25D-10 Max=1.28D-08 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.22D-10 Max=6.71D-09 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.15D-10 Max=5.44D-09 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.44D-10 Max=3.06D-09 NDo=     1
+ Linear equations converged to 5.138D-10 5.138D-09 after    32 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.51D-07 Max=3.21D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.11D-07 Max=2.55D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=7.38D-08 Max=1.64D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.06D-08 Max=1.54D-06 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.70D-08 Max=7.82D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.48D-08 Max=1.07D-06 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.94D-08 Max=7.28D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.67D-08 Max=1.08D-06 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.70D-08 Max=8.99D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.36D-08 Max=4.89D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.75D-08 Max=3.59D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.30D-08 Max=3.19D-07 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.25D-08 Max=2.76D-07 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.07D-08 Max=2.01D-07 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=9.65D-09 Max=2.40D-07 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=8.15D-09 Max=1.58D-07 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.68D-09 Max=1.67D-07 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.29D-09 Max=1.45D-07 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.25D-09 Max=1.21D-07 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.50D-09 Max=1.51D-07 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.46D-09 Max=1.01D-07 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.46D-09 Max=8.33D-08 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.91D-09 Max=4.94D-08 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.65D-09 Max=4.63D-08 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.29D-09 Max=3.35D-08 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=9.37D-10 Max=3.16D-08 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=6.78D-10 Max=1.65D-08 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=5.31D-10 Max=1.57D-08 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=3.25D-10 Max=8.14D-09 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.92D-10 Max=4.97D-09 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.28D-10 Max=3.99D-09 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=7.53D-11 Max=3.27D-09 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=5.55D-11 Max=1.72D-09 NDo=     1
+ Linear equations converged to 2.000D-10 2.000D-09 after    32 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=9.06D-08 Max=2.80D-06 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=7.80D-08 Max=3.49D-06 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.80D-08 Max=1.90D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.55D-08 Max=7.98D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.63D-08 Max=1.06D-06 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.42D-08 Max=8.71D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.84D-08 Max=8.80D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.72D-08 Max=6.37D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.48D-08 Max=7.79D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.07D-08 Max=6.24D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.81D-08 Max=5.24D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.39D-08 Max=4.07D-07 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.12D-08 Max=2.82D-07 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=9.59D-09 Max=3.07D-07 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.01D-08 Max=2.26D-07 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=7.92D-09 Max=2.26D-07 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.65D-09 Max=1.88D-07 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.59D-09 Max=1.60D-07 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.28D-09 Max=9.15D-08 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.75D-09 Max=6.55D-08 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.94D-09 Max=6.86D-08 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=2.47D-09 Max=7.02D-08 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.90D-09 Max=3.92D-08 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.76D-09 Max=3.65D-08 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.12D-09 Max=2.52D-08 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=7.45D-10 Max=1.17D-08 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=5.14D-10 Max=9.48D-09 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.34D-10 Max=6.56D-09 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=2.25D-10 Max=5.21D-09 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.24D-10 Max=2.75D-09 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=8.29D-11 Max=1.72D-09 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=5.31D-11 Max=1.24D-09 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=3.59D-11 Max=6.85D-10 NDo=     1
+ Linear equations converged to 1.189D-10 1.189D-09 after    32 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=3.60D-08 Max=6.87D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.86D-08 Max=6.25D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.90D-08 Max=4.18D-07 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.35D-08 Max=3.34D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.31D-08 Max=2.17D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.35D-08 Max=3.12D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.02D-08 Max=1.92D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=9.43D-09 Max=2.44D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.09D-09 Max=1.86D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=5.95D-09 Max=1.29D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=4.67D-09 Max=1.30D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.28D-09 Max=1.00D-07 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=4.13D-09 Max=7.27D-08 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=3.21D-09 Max=6.95D-08 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.54D-09 Max=3.88D-08 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.21D-09 Max=5.35D-08 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.11D-09 Max=5.22D-08 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.53D-09 Max=3.19D-08 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.34D-09 Max=3.47D-08 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.13D-09 Max=3.22D-08 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=9.06D-10 Max=2.70D-08 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=5.74D-10 Max=1.76D-08 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.62D-10 Max=1.18D-08 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=3.46D-10 Max=9.00D-09 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.51D-10 Max=6.42D-09 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.92D-10 Max=7.25D-09 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.38D-10 Max=3.72D-09 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.18D-10 Max=4.24D-09 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=6.95D-11 Max=1.94D-09 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=4.48D-11 Max=1.33D-09 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.14D-11 Max=9.57D-10 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.82D-11 Max=8.66D-10 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.46D-11 Max=4.45D-10 NDo=     1
+ Linear equations converged to 4.863D-11 4.863D-10 after    32 iterations.
+ SCF Done:  E(UPM6) =  -1.46341844368     a.u. after  180 cycles
+            Convg  =    0.2940D-05                  1369 Fock formations.
+              S**2 = 13.5255                  -V/T =  0.9920
+ <Sx>= 0.0000 <Sy>= 0.0000 <Sz>= 0.5000 <S**2>=13.5255 S= 3.2115
+ <L.S>= 0.000000000000E+00
+ Annihilation of the first spin contaminant:
+ S**2 before annihilation    13.5255,   after    43.8671
+ Range of M.O.s used for correlation:     1   444
+ NBasis=   444 NAE=   155 NBE=   154 NFC=     0 NFV=     0
+ NROrb=    444 NOA=   155 NOB=   154 NVA=   289 NVB=   290
+ Symmetrizing basis deriv contribution to polar:
+ IMax=3 JMax=2 DiffMx= 0.00D+00
+ G2DrvN: will do    52 centers at a time, making    1 passes.
+ Calling FoFCou, ICntrl=  3107 FMM=F I1Cent=   0 AccDes= 0.00D+00.
+ End of G2Drv F.D. properties file   721 does not exist.
+ End of G2Drv F.D. properties file   722 does not exist.
+ End of G2Drv F.D. properties file   788 does not exist.
+          IDoAtm=00000000000000000000000000000000000000000000000011
+          IDoAtm=1
+          Differentiating once with respect to electric field.
+                with respect to dipole field.
+          Differentiating once with respect to nuclear coordinates.
+          Electric field/nuclear overlap derivatives assumed to be zero.
+ Keep J ints in memory in canonical form, NReq=4314799.
+          There are    12 degrees of freedom in the 1st order CPHF.  IDoFFX=5 NUNeed=    12.
+ LinEq1:  Iter=  0 NonCon=    12 RMS=2.70D-01 Max=1.11D+01 NDo=    12
+ AX will form    12 AO Fock derivatives at one time.
+ LinEq1:  Iter=  1 NonCon=    12 RMS=2.45D-01 Max=3.07D+00 NDo=    12
+ LinEq1:  Iter=  2 NonCon=    12 RMS=1.90D-01 Max=6.02D+00 NDo=    12
+ LinEq1:  Iter=  3 NonCon=    12 RMS=1.44D-01 Max=2.79D+00 NDo=    12
+ LinEq1:  Iter=  4 NonCon=    12 RMS=1.28D-01 Max=3.27D+00 NDo=    12
+ LinEq1:  Iter=  5 NonCon=    12 RMS=1.26D-01 Max=3.55D+00 NDo=    12
+ LinEq1:  Iter=  6 NonCon=    12 RMS=1.04D-01 Max=3.54D+00 NDo=    12
+ LinEq1:  Iter=  7 NonCon=    12 RMS=1.04D-01 Max=2.69D+00 NDo=    12
+ LinEq1:  Iter=  8 NonCon=    12 RMS=7.48D-02 Max=2.52D+00 NDo=    12
+ LinEq1:  Iter=  9 NonCon=    12 RMS=6.34D-02 Max=1.86D+00 NDo=    12
+ LinEq1:  Iter= 10 NonCon=    12 RMS=5.71D-02 Max=1.91D+00 NDo=    12
+ LinEq1:  Iter= 11 NonCon=    12 RMS=4.67D-02 Max=2.05D+00 NDo=    12
+ LinEq1:  Iter= 12 NonCon=    12 RMS=4.11D-02 Max=1.65D+00 NDo=    12
+ LinEq1:  Iter= 13 NonCon=    12 RMS=3.40D-02 Max=1.67D+00 NDo=    12
+ LinEq1:  Iter= 14 NonCon=    12 RMS=2.82D-02 Max=9.30D-01 NDo=    12
+ LinEq1:  Iter= 15 NonCon=    12 RMS=2.55D-02 Max=8.74D-01 NDo=    12
+ LinEq1:  Iter= 16 NonCon=    12 RMS=2.39D-02 Max=8.46D-01 NDo=    12
+ LinEq1:  Iter= 17 NonCon=    12 RMS=1.99D-02 Max=5.80D-01 NDo=    12
+ LinEq1:  Iter= 18 NonCon=    12 RMS=1.70D-02 Max=5.51D-01 NDo=    12
+ LinEq1:  Iter= 19 NonCon=    12 RMS=1.29D-02 Max=3.27D-01 NDo=    12
+ LinEq1:  Iter= 20 NonCon=    12 RMS=9.16D-03 Max=2.41D-01 NDo=    12
+ LinEq1:  Iter= 21 NonCon=    12 RMS=7.53D-03 Max=1.92D-01 NDo=    12
+ LinEq1:  Iter= 22 NonCon=    12 RMS=4.48D-03 Max=9.74D-02 NDo=    12
+ LinEq1:  Iter= 23 NonCon=    12 RMS=3.71D-03 Max=8.82D-02 NDo=    12
+ LinEq1:  Iter= 24 NonCon=    12 RMS=2.28D-03 Max=5.18D-02 NDo=    12
+ LinEq1:  Iter= 25 NonCon=    12 RMS=1.54D-03 Max=3.69D-02 NDo=    12
+ LinEq1:  Iter= 26 NonCon=    12 RMS=8.93D-04 Max=2.04D-02 NDo=    12
+ LinEq1:  Iter= 27 NonCon=    12 RMS=5.17D-04 Max=1.26D-02 NDo=    12
+ LinEq1:  Iter= 28 NonCon=    12 RMS=3.60D-04 Max=9.33D-03 NDo=    12
+ LinEq1:  Iter= 29 NonCon=    12 RMS=2.17D-04 Max=7.75D-03 NDo=    12
+ LinEq1:  Iter= 30 NonCon=    12 RMS=1.39D-04 Max=4.13D-03 NDo=    12
+ LinEq1:  Iter= 31 NonCon=    12 RMS=8.37D-05 Max=2.71D-03 NDo=    12
+ LinEq1:  Iter= 32 NonCon=    12 RMS=4.45D-05 Max=1.15D-03 NDo=    12
+ LinEq1:  Iter= 33 NonCon=    12 RMS=3.02D-05 Max=8.06D-04 NDo=    12
+ LinEq1:  Iter= 34 NonCon=    12 RMS=1.71D-05 Max=3.38D-04 NDo=    12
+ LinEq1:  Iter= 35 NonCon=    12 RMS=1.10D-05 Max=2.78D-04 NDo=    12
+ LinEq1:  Iter= 36 NonCon=    12 RMS=6.43D-06 Max=1.66D-04 NDo=    12
+ LinEq1:  Iter= 37 NonCon=    12 RMS=3.33D-06 Max=9.30D-05 NDo=    12
+ LinEq1:  Iter= 38 NonCon=    11 RMS=1.43D-06 Max=2.96D-05 NDo=    12
+ LinEq1:  Iter= 39 NonCon=     8 RMS=1.14D-06 Max=2.40D-05 NDo=    12
+ LinEq1:  Iter= 40 NonCon=     5 RMS=5.79D-07 Max=1.61D-05 NDo=    12
+ LinEq1:  Iter= 41 NonCon=     3 RMS=2.81D-07 Max=6.74D-06 NDo=    12
+ LinEq1:  Iter= 42 NonCon=     3 RMS=2.03D-07 Max=4.32D-06 NDo=    12
+ LinEq1:  Iter= 43 NonCon=     3 RMS=1.30D-07 Max=3.01D-06 NDo=    12
+ LinEq1:  Iter= 44 NonCon=     3 RMS=5.70D-08 Max=1.19D-06 NDo=    12
+ LinEq1:  Iter= 45 NonCon=     2 RMS=3.82D-08 Max=7.19D-07 NDo=    12
+ LinEq1:  Iter= 46 NonCon=     2 RMS=2.12D-08 Max=4.17D-07 NDo=    12
+ LinEq1:  Iter= 47 NonCon=     2 RMS=8.98D-09 Max=2.12D-07 NDo=    12
+ LinEq1:  Iter= 48 NonCon=     0 RMS=3.58D-09 Max=9.43D-08 NDo=    12
+ Linear equations converged to 1.000D-08 1.000D-07 after    48 iterations.
+ Isotropic polarizability for W=    0.000000     3122.12 Bohr**3.
+ End of Minotr F.D. properties file   721 does not exist.
+ End of Minotr F.D. properties file   722 does not exist.
+ End of Minotr F.D. properties file   788 does not exist.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+ Alpha Orbitals:
+       Occupied  (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+       Virtual   (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A)
+ Beta  Orbitals:
+       Occupied  (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+       Virtual   (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A)
+ The electronic state is 2-A.
+ Alpha  occ. eigenvalues --   -1.37533  -1.27978  -1.14504  -1.08856  -1.06045
+ Alpha  occ. eigenvalues --   -1.04308  -1.04074  -1.02444  -1.02210  -1.01719
+ Alpha  occ. eigenvalues --   -1.00388  -1.00336  -0.99855  -0.99764  -0.99521
+ Alpha  occ. eigenvalues --   -0.98722  -0.98535  -0.98141  -0.97772  -0.97414
+ Alpha  occ. eigenvalues --   -0.97047  -0.96161  -0.95862  -0.95638  -0.95509
+ Alpha  occ. eigenvalues --   -0.94969  -0.94797  -0.94310  -0.93497  -0.91904
+ Alpha  occ. eigenvalues --   -0.90747  -0.90472  -0.89655  -0.89129  -0.84898
+ Alpha  occ. eigenvalues --   -0.69392  -0.68903  -0.66900  -0.51516  -0.50479
+ Alpha  occ. eigenvalues --   -0.49915  -0.48715  -0.48356  -0.47903  -0.47349
+ Alpha  occ. eigenvalues --   -0.47197  -0.47081  -0.46507  -0.46131  -0.46089
+ Alpha  occ. eigenvalues --   -0.45914  -0.45899  -0.44973  -0.44686  -0.44305
+ Alpha  occ. eigenvalues --   -0.44178  -0.43675  -0.43337  -0.43300  -0.42693
+ Alpha  occ. eigenvalues --   -0.42553  -0.42434  -0.42162  -0.41848  -0.41571
+ Alpha  occ. eigenvalues --   -0.41126  -0.40417  -0.40286  -0.39746  -0.39670
+ Alpha  occ. eigenvalues --   -0.39144  -0.39072  -0.38729  -0.38292  -0.38113
+ Alpha  occ. eigenvalues --   -0.37679  -0.37525  -0.37408  -0.37026  -0.36423
+ Alpha  occ. eigenvalues --   -0.36205  -0.36022  -0.35922  -0.35800  -0.35548
+ Alpha  occ. eigenvalues --   -0.35381  -0.35121  -0.34813  -0.34586  -0.34486
+ Alpha  occ. eigenvalues --   -0.34406  -0.34166  -0.34121  -0.33922  -0.33855
+ Alpha  occ. eigenvalues --   -0.33701  -0.33588  -0.33316  -0.33003  -0.32700
+ Alpha  occ. eigenvalues --   -0.32599  -0.32462  -0.32246  -0.32126  -0.31829
+ Alpha  occ. eigenvalues --   -0.31456  -0.31313  -0.31020  -0.30867  -0.30775
+ Alpha  occ. eigenvalues --   -0.30715  -0.30493  -0.30372  -0.30052  -0.29894
+ Alpha  occ. eigenvalues --   -0.29646  -0.29558  -0.29490  -0.29458  -0.29054
+ Alpha  occ. eigenvalues --   -0.28830  -0.28796  -0.28681  -0.28295  -0.28138
+ Alpha  occ. eigenvalues --   -0.28034  -0.27969  -0.27772  -0.27658  -0.27389
+ Alpha  occ. eigenvalues --   -0.27247  -0.27102  -0.26998  -0.26760  -0.26642
+ Alpha  occ. eigenvalues --   -0.26466  -0.26351  -0.26268  -0.25996  -0.25870
+ Alpha  occ. eigenvalues --   -0.25569  -0.25348  -0.25282  -0.25190  -0.25111
+ Alpha  occ. eigenvalues --   -0.24888  -0.24642  -0.24267  -0.23939  -0.23758
+ Alpha  occ. eigenvalues --   -0.23525  -0.23129  -0.22859  -0.22481  -0.21604
+ Alpha virt. eigenvalues --   -0.07176  -0.06718  -0.06101  -0.05129  -0.04827
+ Alpha virt. eigenvalues --   -0.04667  -0.04397  -0.04017  -0.03901  -0.03754
+ Alpha virt. eigenvalues --   -0.03630  -0.03185  -0.03105  -0.02992  -0.02793
+ Alpha virt. eigenvalues --   -0.02719  -0.02373  -0.02286  -0.01709  -0.01447
+ Alpha virt. eigenvalues --   -0.01389  -0.01117  -0.00875  -0.00309  -0.00013
+ Alpha virt. eigenvalues --    0.00022   0.00527   0.00676   0.00834   0.01162
+ Alpha virt. eigenvalues --    0.01561   0.01674   0.02005   0.02340   0.02471
+ Alpha virt. eigenvalues --    0.02727   0.02742   0.02955   0.03058   0.03219
+ Alpha virt. eigenvalues --    0.03271   0.03768   0.03828   0.04139   0.04393
+ Alpha virt. eigenvalues --    0.04594   0.04674   0.04700   0.04965   0.04995
+ Alpha virt. eigenvalues --    0.05216   0.05301   0.05390   0.05518   0.05615
+ Alpha virt. eigenvalues --    0.05874   0.06231   0.06268   0.06458   0.06529
+ Alpha virt. eigenvalues --    0.06576   0.06768   0.06789   0.06847   0.06991
+ Alpha virt. eigenvalues --    0.07101   0.07178   0.07387   0.07418   0.07453
+ Alpha virt. eigenvalues --    0.07488   0.07726   0.07755   0.07827   0.07907
+ Alpha virt. eigenvalues --    0.07974   0.08091   0.08190   0.08250   0.08297
+ Alpha virt. eigenvalues --    0.08359   0.08440   0.08495   0.08540   0.08550
+ Alpha virt. eigenvalues --    0.08583   0.08601   0.08688   0.08702   0.08751
+ Alpha virt. eigenvalues --    0.08777   0.08866   0.08902   0.08932   0.08986
+ Alpha virt. eigenvalues --    0.09012   0.09064   0.09169   0.09224   0.09283
+ Alpha virt. eigenvalues --    0.09309   0.09321   0.09357   0.09373   0.09386
+ Alpha virt. eigenvalues --    0.09415   0.09463   0.09509   0.09527   0.09614
+ Alpha virt. eigenvalues --    0.09646   0.09766   0.09806   0.09833   0.09869
+ Alpha virt. eigenvalues --    0.09914   0.09987   0.10007   0.10064   0.10091
+ Alpha virt. eigenvalues --    0.10112   0.10152   0.10166   0.10203   0.10293
+ Alpha virt. eigenvalues --    0.10300   0.10317   0.10385   0.10439   0.10501
+ Alpha virt. eigenvalues --    0.10519   0.10567   0.10631   0.10633   0.10696
+ Alpha virt. eigenvalues --    0.10743   0.10832   0.10873   0.10960   0.11011
+ Alpha virt. eigenvalues --    0.11049   0.11107   0.11194   0.11243   0.11350
+ Alpha virt. eigenvalues --    0.11412   0.11439   0.11461   0.11475   0.11507
+ Alpha virt. eigenvalues --    0.11660   0.11687   0.11732   0.11758   0.11773
+ Alpha virt. eigenvalues --    0.11828   0.11866   0.11912   0.11944   0.11993
+ Alpha virt. eigenvalues --    0.12036   0.12068   0.12109   0.12126   0.12213
+ Alpha virt. eigenvalues --    0.12255   0.12289   0.12318   0.12376   0.12400
+ Alpha virt. eigenvalues --    0.12454   0.12463   0.12478   0.12540   0.12566
+ Alpha virt. eigenvalues --    0.12568   0.12618   0.12641   0.12726   0.12766
+ Alpha virt. eigenvalues --    0.12786   0.12817   0.12892   0.12904   0.12950
+ Alpha virt. eigenvalues --    0.12974   0.12995   0.13047   0.13116   0.13184
+ Alpha virt. eigenvalues --    0.13245   0.13265   0.13337   0.13381   0.13461
+ Alpha virt. eigenvalues --    0.13511   0.13573   0.13611   0.13631   0.13771
+ Alpha virt. eigenvalues --    0.13792   0.13848   0.13879   0.13934   0.14024
+ Alpha virt. eigenvalues --    0.14101   0.14227   0.14256   0.14344   0.14477
+ Alpha virt. eigenvalues --    0.14489   0.14565   0.14605   0.14711   0.14797
+ Alpha virt. eigenvalues --    0.14867   0.14904   0.15031   0.15113   0.15187
+ Alpha virt. eigenvalues --    0.15364   0.15378   0.15450   0.15588   0.15643
+ Alpha virt. eigenvalues --    0.15677   0.15774   0.15926   0.16029   0.16085
+ Alpha virt. eigenvalues --    0.16297   0.16318   0.16391   0.16492   0.16626
+ Alpha virt. eigenvalues --    0.16697   0.16816   0.16855   0.16909   0.16986
+ Alpha virt. eigenvalues --    0.17053   0.17160   0.17409   0.17610   0.17640
+ Alpha virt. eigenvalues --    0.17681   0.17830   0.17956   0.18052   0.18121
+ Alpha virt. eigenvalues --    0.18242   0.18421   0.18515   0.18593   0.18824
+ Alpha virt. eigenvalues --    0.18977   0.19053   0.19280   0.19309   0.19466
+ Alpha virt. eigenvalues --    0.19630   0.19789   0.19866   0.20052   0.20710
+ Alpha virt. eigenvalues --    0.21038   0.21563   0.21675   0.21814   0.22335
+ Alpha virt. eigenvalues --    0.22408   0.22577   0.25818   0.26135   0.27168
+ Alpha virt. eigenvalues --    0.30759   0.31003   0.34286   0.37631   0.37914
+ Alpha virt. eigenvalues --    0.39471   0.40929   0.41592   0.43228   0.46354
+ Alpha virt. eigenvalues --    0.48019   0.48900   0.49085   0.49645
+  Beta  occ. eigenvalues --   -1.36927  -1.26962  -1.14264  -1.08630  -1.04787
+  Beta  occ. eigenvalues --   -1.02357  -1.01815  -1.01090  -1.00390  -1.00201
+  Beta  occ. eigenvalues --   -0.99794  -0.99222  -0.99051  -0.98753  -0.98389
+  Beta  occ. eigenvalues --   -0.97960  -0.97568  -0.97325  -0.96804  -0.96574
+  Beta  occ. eigenvalues --   -0.96396  -0.96021  -0.95730  -0.94780  -0.93513
+  Beta  occ. eigenvalues --   -0.93208  -0.92936  -0.92120  -0.90563  -0.90271
+  Beta  occ. eigenvalues --   -0.89518  -0.89100  -0.86721  -0.85287  -0.84077
+  Beta  occ. eigenvalues --   -0.70023  -0.67372  -0.65253  -0.52007  -0.50639
+  Beta  occ. eigenvalues --   -0.49642  -0.48895  -0.48330  -0.48066  -0.47744
+  Beta  occ. eigenvalues --   -0.46958  -0.46920  -0.46652  -0.46311  -0.45828
+  Beta  occ. eigenvalues --   -0.45511  -0.45282  -0.44957  -0.44544  -0.44441
+  Beta  occ. eigenvalues --   -0.44204  -0.43862  -0.43446  -0.43188  -0.42804
+  Beta  occ. eigenvalues --   -0.42472  -0.42083  -0.41898  -0.41561  -0.41358
+  Beta  occ. eigenvalues --   -0.41050  -0.40551  -0.40139  -0.39875  -0.39607
+  Beta  occ. eigenvalues --   -0.39210  -0.39060  -0.38958  -0.38219  -0.37998
+  Beta  occ. eigenvalues --   -0.37900  -0.37860  -0.37330  -0.36851  -0.36468
+  Beta  occ. eigenvalues --   -0.36233  -0.35953  -0.35886  -0.35644  -0.35567
+  Beta  occ. eigenvalues --   -0.35332  -0.35290  -0.35227  -0.34585  -0.34493
+  Beta  occ. eigenvalues --   -0.34361  -0.34304  -0.33984  -0.33759  -0.33635
+  Beta  occ. eigenvalues --   -0.33500  -0.33356  -0.33145  -0.33027  -0.32568
+  Beta  occ. eigenvalues --   -0.32452  -0.32280  -0.32045  -0.31904  -0.31743
+  Beta  occ. eigenvalues --   -0.31385  -0.31305  -0.30905  -0.30683  -0.30344
+  Beta  occ. eigenvalues --   -0.30243  -0.30169  -0.30029  -0.29922  -0.29583
+  Beta  occ. eigenvalues --   -0.29273  -0.28966  -0.28854  -0.28776  -0.28562
+  Beta  occ. eigenvalues --   -0.28510  -0.28398  -0.28338  -0.28158  -0.27789
+  Beta  occ. eigenvalues --   -0.27787  -0.27564  -0.27378  -0.27256  -0.27173
+  Beta  occ. eigenvalues --   -0.26948  -0.26795  -0.26662  -0.26590  -0.26476
+  Beta  occ. eigenvalues --   -0.26388  -0.26161  -0.25990  -0.25704  -0.25626
+  Beta  occ. eigenvalues --   -0.25302  -0.25268  -0.25044  -0.24678  -0.24442
+  Beta  occ. eigenvalues --   -0.24250  -0.24209  -0.24065  -0.23610  -0.23493
+  Beta  occ. eigenvalues --   -0.23316  -0.23164  -0.23143  -0.22614
+  Beta virt. eigenvalues --   -0.07260  -0.07079  -0.06311  -0.05668  -0.05456
+  Beta virt. eigenvalues --   -0.05332  -0.05201  -0.04804  -0.04687  -0.04210
+  Beta virt. eigenvalues --   -0.03710  -0.03486  -0.03141  -0.02867  -0.02792
+  Beta virt. eigenvalues --   -0.02558  -0.02280  -0.02187  -0.01982  -0.01727
+  Beta virt. eigenvalues --   -0.01274  -0.00888  -0.00574  -0.00431  -0.00345
+  Beta virt. eigenvalues --   -0.00285  -0.00070   0.00114   0.00464   0.01045
+  Beta virt. eigenvalues --    0.01437   0.01569   0.01794   0.02050   0.02200
+  Beta virt. eigenvalues --    0.02418   0.02456   0.02690   0.02806   0.02934
+  Beta virt. eigenvalues --    0.03209   0.03307   0.03461   0.03604   0.03734
+  Beta virt. eigenvalues --    0.03847   0.04193   0.04443   0.04595   0.04649
+  Beta virt. eigenvalues --    0.04916   0.05142   0.05369   0.05437   0.05449
+  Beta virt. eigenvalues --    0.05669   0.05871   0.06106   0.06294   0.06419
+  Beta virt. eigenvalues --    0.06488   0.06619   0.06671   0.06789   0.06866
+  Beta virt. eigenvalues --    0.07017   0.07171   0.07215   0.07256   0.07401
+  Beta virt. eigenvalues --    0.07478   0.07512   0.07620   0.07726   0.07759
+  Beta virt. eigenvalues --    0.07831   0.07955   0.08027   0.08050   0.08168
+  Beta virt. eigenvalues --    0.08218   0.08221   0.08322   0.08348   0.08419
+  Beta virt. eigenvalues --    0.08479   0.08533   0.08606   0.08640   0.08690
+  Beta virt. eigenvalues --    0.08704   0.08727   0.08764   0.08855   0.08865
+  Beta virt. eigenvalues --    0.08907   0.08948   0.08992   0.09017   0.09070
+  Beta virt. eigenvalues --    0.09095   0.09147   0.09164   0.09179   0.09249
+  Beta virt. eigenvalues --    0.09331   0.09406   0.09429   0.09458   0.09548
+  Beta virt. eigenvalues --    0.09579   0.09667   0.09698   0.09724   0.09780
+  Beta virt. eigenvalues --    0.09834   0.09871   0.09886   0.09958   0.09983
+  Beta virt. eigenvalues --    0.10067   0.10133   0.10144   0.10165   0.10251
+  Beta virt. eigenvalues --    0.10283   0.10337   0.10355   0.10421   0.10460
+  Beta virt. eigenvalues --    0.10534   0.10545   0.10576   0.10601   0.10615
+  Beta virt. eigenvalues --    0.10630   0.10649   0.10817   0.10853   0.10927
+  Beta virt. eigenvalues --    0.10977   0.11004   0.11052   0.11113   0.11204
+  Beta virt. eigenvalues --    0.11295   0.11314   0.11327   0.11444   0.11448
+  Beta virt. eigenvalues --    0.11549   0.11566   0.11587   0.11692   0.11772
+  Beta virt. eigenvalues --    0.11788   0.11803   0.11816   0.11863   0.11893
+  Beta virt. eigenvalues --    0.11997   0.12048   0.12095   0.12128   0.12135
+  Beta virt. eigenvalues --    0.12188   0.12209   0.12267   0.12299   0.12400
+  Beta virt. eigenvalues --    0.12427   0.12435   0.12471   0.12480   0.12492
+  Beta virt. eigenvalues --    0.12533   0.12569   0.12626   0.12671   0.12718
+  Beta virt. eigenvalues --    0.12761   0.12813   0.12835   0.12842   0.12873
+  Beta virt. eigenvalues --    0.12892   0.12949   0.12984   0.13064   0.13177
+  Beta virt. eigenvalues --    0.13182   0.13232   0.13252   0.13345   0.13364
+  Beta virt. eigenvalues --    0.13454   0.13502   0.13545   0.13608   0.13639
+  Beta virt. eigenvalues --    0.13699   0.13788   0.13890   0.13910   0.13964
+  Beta virt. eigenvalues --    0.13978   0.14080   0.14148   0.14170   0.14306
+  Beta virt. eigenvalues --    0.14317   0.14418   0.14467   0.14590   0.14620
+  Beta virt. eigenvalues --    0.14655   0.14722   0.14753   0.14902   0.15032
+  Beta virt. eigenvalues --    0.15113   0.15157   0.15205   0.15275   0.15361
+  Beta virt. eigenvalues --    0.15469   0.15611   0.15669   0.15783   0.15910
+  Beta virt. eigenvalues --    0.16061   0.16122   0.16142   0.16284   0.16346
+  Beta virt. eigenvalues --    0.16378   0.16517   0.16615   0.16719   0.16779
+  Beta virt. eigenvalues --    0.16956   0.17056   0.17248   0.17375   0.17468
+  Beta virt. eigenvalues --    0.17566   0.17609   0.17658   0.17783   0.17961
+  Beta virt. eigenvalues --    0.18101   0.18182   0.18379   0.18584   0.18609
+  Beta virt. eigenvalues --    0.18722   0.18766   0.19012   0.19581   0.19675
+  Beta virt. eigenvalues --    0.19931   0.20098   0.20160   0.20436   0.20470
+  Beta virt. eigenvalues --    0.21451   0.21574   0.21659   0.21714   0.22261
+  Beta virt. eigenvalues --    0.22371   0.22617   0.23725   0.25543   0.25914
+  Beta virt. eigenvalues --    0.26443   0.30380   0.31137   0.33509   0.37131
+  Beta virt. eigenvalues --    0.37658   0.39047   0.39458   0.41354   0.43126
+  Beta virt. eigenvalues --    0.46194   0.48662   0.48799   0.48937   0.49992
+          Condensed to atoms (all electrons):
+          Atomic-Atomic Spin Densities.
+ Mulliken charges and spin densities:
+               1          2
+     1  Mo   0.323076   0.085598
+     2  S   -0.510084   0.076241
+     3  S   -0.526834   0.023123
+     4  Mo  -0.002290   0.462915
+     5  Mo   0.022944  -0.371820
+     6  Mo   0.181914  -0.404400
+     7  S   -0.044114  -0.086236
+     8  S   -0.090177  -0.045025
+     9  S    0.000185   0.018107
+    10  S   -0.010012  -0.076923
+    11  S   -0.098694  -0.067528
+    12  S    0.063721   0.068237
+    13  Mo   0.104837   0.914791
+    14  Mo   0.301907   0.592864
+    15  Mo   0.863394  -0.729646
+    16  S   -0.145944  -0.726807
+    17  S   -0.367725  -0.005741
+    18  S   -0.464196   0.958042
+    19  S   -0.176826  -0.723199
+    20  S   -0.375389   0.004493
+    21  S   -0.464340   0.957498
+    22  Mo  -0.119834   0.009269
+    23  Mo  -0.293439   0.754878
+    24  Mo   0.242588  -1.417384
+    25  Mo  -0.248334   0.059656
+    26  Mo   0.145648  -0.804043
+    27  Mo   0.040932  -0.474304
+    28  Mo   0.063454   0.040822
+    29  Mo   0.176412   0.248072
+    30  S    0.395771  -0.562114
+    31  S    0.105462  -0.050653
+    32  S   -0.061869  -0.562093
+    33  S    0.426974   0.115015
+    34  S    0.165113   0.534853
+    35  S   -0.203163   0.765020
+    36  S   -0.050469   0.015416
+    37  S   -0.027097  -0.015845
+    38  S   -0.136147   0.683093
+    39  S    0.133571  -0.197536
+    40  S    0.085853  -0.087420
+    41  S   -0.068473  -0.567668
+    42  S    0.172096   0.156114
+    43  S    0.123325   0.470834
+    44  S   -0.219459   0.756497
+    45  S   -0.054457  -0.004847
+    46  S   -0.011684   0.011250
+    47  S   -0.151046   0.673031
+    48  Pt   0.713565  -0.812339
+    49  N    0.394872   0.147175
+    50  O   -0.195460   0.118912
+    51  O   -0.130057   0.071753
+ Sum of Mulliken charges =   0.00000   1.00000
+ Mulliken charges and spin densities with hydrogens summed into heavy atoms:
+               1          2
+     1  Mo   0.323076   0.085598
+     2  S   -0.510084   0.076241
+     3  S   -0.526834   0.023123
+     4  Mo  -0.002290   0.462915
+     5  Mo   0.022944  -0.371820
+     6  Mo   0.181914  -0.404400
+     7  S   -0.044114  -0.086236
+     8  S   -0.090177  -0.045025
+     9  S    0.000185   0.018107
+    10  S   -0.010012  -0.076923
+    11  S   -0.098694  -0.067528
+    12  S    0.063721   0.068237
+    13  Mo   0.104837   0.914791
+    14  Mo   0.301907   0.592864
+    15  Mo   0.863394  -0.729646
+    16  S   -0.145944  -0.726807
+    17  S   -0.367725  -0.005741
+    18  S   -0.464196   0.958042
+    19  S   -0.176826  -0.723199
+    20  S   -0.375389   0.004493
+    21  S   -0.464340   0.957498
+    22  Mo  -0.119834   0.009269
+    23  Mo  -0.293439   0.754878
+    24  Mo   0.242588  -1.417384
+    25  Mo  -0.248334   0.059656
+    26  Mo   0.145648  -0.804043
+    27  Mo   0.040932  -0.474304
+    28  Mo   0.063454   0.040822
+    29  Mo   0.176412   0.248072
+    30  S    0.395771  -0.562114
+    31  S    0.105462  -0.050653
+    32  S   -0.061869  -0.562093
+    33  S    0.426974   0.115015
+    34  S    0.165113   0.534853
+    35  S   -0.203163   0.765020
+    36  S   -0.050469   0.015416
+    37  S   -0.027097  -0.015845
+    38  S   -0.136147   0.683093
+    39  S    0.133571  -0.197536
+    40  S    0.085853  -0.087420
+    41  S   -0.068473  -0.567668
+    42  S    0.172096   0.156114
+    43  S    0.123325   0.470834
+    44  S   -0.219459   0.756497
+    45  S   -0.054457  -0.004847
+    46  S   -0.011684   0.011250
+    47  S   -0.151046   0.673031
+    48  Pt   0.713565  -0.812339
+    49  N    0.394872   0.147175
+    50  O   -0.195460   0.118912
+    51  O   -0.130057   0.071753
+ Charge=              0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=            -45.7404    Y=            -11.8076    Z=              0.3937  Tot=             47.2415
+ N-N= 4.619027450952D+03 E-N=-8.903684051366D+03  KE=-1.836350245474D+02
+  Exact polarizability:3899.291-284.2964400.636  -1.551   2.9931066.446
+ Approx polarizability:3599.039 -44.8922910.340   4.698   9.9392435.565
+ Calling FoFJK, ICntrl=    100127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 1 NMat=1 NMatS=1 NMatT=0.
+   48 atoms frozen in the vibrational analysis.
+ ******    4 imaginary frequencies (negative Signs) ****** 
+ Diagonal vibrational polarizability:
+       38.9851905     368.1637285      96.7870613
+ Harmonic frequencies (cm**-1), IR intensities (KM/Mole), Raman scattering
+ activities (A**4/AMU), depolarization ratios for plane and unpolarized
+ incident light, reduced masses (AMU), force constants (mDyne/A),
+ and normal coordinates:
+                      1                      2                      3
+                      A                      A                      A
+ Frequencies --   -736.7184              -288.8520              -215.6085
+ Red. masses --     14.6977                15.9921                15.5281
+ Frc consts  --      4.7001                 0.7862                 0.4253
+ IR Inten    --     97.9586                20.2916                15.7505
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7     0.62  -0.51  -0.05     0.02   0.02   0.02     0.08   0.45   0.16
+    50   8    -0.18   0.23   0.08     0.59  -0.56  -0.01     0.09   0.39   0.63
+    51   8    -0.39   0.32   0.00    -0.49   0.13  -0.28    -0.04   0.08  -0.45
+                      4                      5                      6
+                      A                      A                      A
+ Frequencies --    -42.9304               142.6533               341.2806
+ Red. masses --     15.5529                15.2317                15.7175
+ Frc consts  --      0.0169                 0.1826                 1.0786
+ IR Inten    --     28.0490                15.5770               161.1601
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7     0.22   0.33  -0.25     0.44  -0.24   0.37    -0.34   0.05  -0.13
+    50   8     0.42   0.22  -0.29     0.38  -0.16   0.33    -0.08  -0.17   0.54
+    51   8     0.31   0.58   0.19     0.42  -0.26   0.29    -0.19   0.34   0.61
+                      7                      8                      9
+                      A                      A                      A
+ Frequencies --    475.0218              1457.1100              1970.7526
+ Red. masses --     14.6210                15.6724                14.5739
+ Frc consts  --      1.9438                19.6052                33.3496
+ IR Inten    --     72.6265               504.7128               138.5544
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7    -0.06   0.22   0.80    -0.13  -0.10  -0.37     0.54   0.61  -0.21
+    50   8     0.03   0.22  -0.27     0.44   0.51   0.00    -0.23  -0.22  -0.04
+    51   8    -0.32   0.06   0.28    -0.33  -0.47   0.24    -0.20  -0.30   0.23
+
+ -------------------
+ - Thermochemistry -
+ -------------------
+ Temperature   298.150 Kelvin.  Pressure   1.00000 Atm.
+ Atom     1 has atomic number 42 and mass  97.90550
+ Atom     2 has atomic number 16 and mass  31.97207
+ Atom     3 has atomic number 16 and mass  31.97207
+ Atom     4 has atomic number 42 and mass  97.90550
+ Atom     5 has atomic number 42 and mass  97.90550
+ Atom     6 has atomic number 42 and mass  97.90550
+ Atom     7 has atomic number 16 and mass  31.97207
+ Atom     8 has atomic number 16 and mass  31.97207
+ Atom     9 has atomic number 16 and mass  31.97207
+ Atom    10 has atomic number 16 and mass  31.97207
+ Atom    11 has atomic number 16 and mass  31.97207
+ Atom    12 has atomic number 16 and mass  31.97207
+ Atom    13 has atomic number 42 and mass  97.90550
+ Atom    14 has atomic number 42 and mass  97.90550
+ Atom    15 has atomic number 42 and mass  97.90550
+ Atom    16 has atomic number 16 and mass  31.97207
+ Atom    17 has atomic number 16 and mass  31.97207
+ Atom    18 has atomic number 16 and mass  31.97207
+ Atom    19 has atomic number 16 and mass  31.97207
+ Atom    20 has atomic number 16 and mass  31.97207
+ Atom    21 has atomic number 16 and mass  31.97207
+ Atom    22 has atomic number 42 and mass  97.90550
+ Atom    23 has atomic number 42 and mass  97.90550
+ Atom    24 has atomic number 42 and mass  97.90550
+ Atom    25 has atomic number 42 and mass  97.90550
+ Atom    26 has atomic number 42 and mass  97.90550
+ Atom    27 has atomic number 42 and mass  97.90550
+ Atom    28 has atomic number 42 and mass  97.90550
+ Atom    29 has atomic number 42 and mass  97.90550
+ Atom    30 has atomic number 16 and mass  31.97207
+ Atom    31 has atomic number 16 and mass  31.97207
+ Atom    32 has atomic number 16 and mass  31.97207
+ Atom    33 has atomic number 16 and mass  31.97207
+ Atom    34 has atomic number 16 and mass  31.97207
+ Atom    35 has atomic number 16 and mass  31.97207
+ Atom    36 has atomic number 16 and mass  31.97207
+ Atom    37 has atomic number 16 and mass  31.97207
+ Atom    38 has atomic number 16 and mass  31.97207
+ Atom    39 has atomic number 16 and mass  31.97207
+ Atom    40 has atomic number 16 and mass  31.97207
+ Atom    41 has atomic number 16 and mass  31.97207
+ Atom    42 has atomic number 16 and mass  31.97207
+ Atom    43 has atomic number 16 and mass  31.97207
+ Atom    44 has atomic number 16 and mass  31.97207
+ Atom    45 has atomic number 16 and mass  31.97207
+ Atom    46 has atomic number 16 and mass  31.97207
+ Atom    47 has atomic number 16 and mass  31.97207
+ Atom    48 has atomic number 78 and mass 194.96480
+ Atom    49 has atomic number  7 and mass  14.00307
+ Atom    50 has atomic number  8 and mass  15.99491
+ Atom    51 has atomic number  8 and mass  15.99491
+ Molecular mass:  2732.64650 amu.
+ Principal axes and moments of inertia in atomic units:
+                           1         2         3
+     Eigenvalues --  ******************************
+           X            1.00000  -0.00055  -0.00033
+           Y            0.00055   1.00000   0.00194
+           Z            0.00033  -0.00194   1.00000
+ This molecule is an asymmetric top.
+ Rotational symmetry number  1.
+ Warning -- assumption of classical behavior for rotation
+           may cause significant error
+ Rotational temperatures (Kelvin)      0.00122     0.00044     0.00035
+ Rotational constants (GHZ):           0.02549     0.00927     0.00738
+    4 imaginary frequencies ignored.
+ Zero-point vibrational energy      26239.0 (Joules/Mol)
+                                    6.27127 (Kcal/Mol)
+ Warning -- explicit consideration of   3 degrees of freedom as
+           vibrations may cause significant error
+ Vibrational temperatures:    205.25   491.03   683.45  2096.45  2835.47
+          (Kelvin)
+ 
+ Zero-point correction=                           0.009994 (Hartree/Particle)
+ Thermal correction to Energy=                    0.014103
+ Thermal correction to Enthalpy=                  0.015048
+ Thermal correction to Gibbs Free Energy=        -0.031989
+ Sum of electronic and zero-point Energies=             -1.453425
+ Sum of electronic and thermal Energies=                -1.449315
+ Sum of electronic and thermal Enthalpies=              -1.448371
+ Sum of electronic and thermal Free Energies=           -1.495408
+ 
+                     E (Thermal)             CV                S
+                      KCal/Mol        Cal/Mol-Kelvin    Cal/Mol-Kelvin
+ Total                    8.850             10.871             98.998
+ Electronic               0.000              0.000              1.377
+ Translational            0.889              2.981             49.578
+ Rotational               0.889              2.981             43.329
+ Vibrational              7.073              4.909              4.713
+ Vibration     1          0.616              1.911              2.768
+ Vibration     2          0.721              1.593              1.206
+ Vibration     3          0.832              1.305              0.724
+                       Q            Log10(Q)             Ln(Q)
+ Total Bot       0.517611D+15         14.714003         33.880245
+ Total V=0       0.204584D+20         19.310872         44.464926
+ Vib (Bot)       0.701199D-04         -4.154159         -9.565303
+ Vib (Bot)    1  0.142436D+01          0.153618          0.353720
+ Vib (Bot)    2  0.543642D+00         -0.264687         -0.609464
+ Vib (Bot)    3  0.353582D+00         -0.451510         -1.039641
+ Vib (V=0)       0.277147D+01          0.442710          1.019377
+ Vib (V=0)    1  0.200957D+01          0.303102          0.697919
+ Vib (V=0)    2  0.123861D+01          0.092935          0.213991
+ Vib (V=0)    3  0.111239D+01          0.046257          0.106510
+ Electronic      0.200000D+01          0.301030          0.693147
+ Translational   0.561475D+10          9.749330         22.448663
+ Rotational      0.657357D+09          8.817802         20.303738
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1       42           0.000000000    0.000000000    0.000000000
+      2       16           0.000000000    0.000000000    0.000000000
+      3       16           0.000000000    0.000000000    0.000000000
+      4       42           0.000000000    0.000000000    0.000000000
+      5       42           0.000000000    0.000000000    0.000000000
+      6       42           0.000000000    0.000000000    0.000000000
+      7       16           0.000000000    0.000000000    0.000000000
+      8       16           0.000000000    0.000000000    0.000000000
+      9       16           0.000000000    0.000000000    0.000000000
+     10       16           0.000000000    0.000000000    0.000000000
+     11       16           0.000000000    0.000000000    0.000000000
+     12       16           0.000000000    0.000000000    0.000000000
+     13       42           0.000000000    0.000000000    0.000000000
+     14       42           0.000000000    0.000000000    0.000000000
+     15       42           0.000000000    0.000000000    0.000000000
+     16       16           0.000000000    0.000000000    0.000000000
+     17       16           0.000000000    0.000000000    0.000000000
+     18       16           0.000000000    0.000000000    0.000000000
+     19       16           0.000000000    0.000000000    0.000000000
+     20       16           0.000000000    0.000000000    0.000000000
+     21       16           0.000000000    0.000000000    0.000000000
+     22       42           0.000000000    0.000000000    0.000000000
+     23       42           0.000000000    0.000000000    0.000000000
+     24       42           0.000000000    0.000000000    0.000000000
+     25       42           0.000000000    0.000000000    0.000000000
+     26       42           0.000000000    0.000000000    0.000000000
+     27       42           0.000000000    0.000000000    0.000000000
+     28       42           0.000000000    0.000000000    0.000000000
+     29       42           0.000000000    0.000000000    0.000000000
+     30       16           0.000000000    0.000000000    0.000000000
+     31       16           0.000000000    0.000000000    0.000000000
+     32       16           0.000000000    0.000000000    0.000000000
+     33       16           0.000000000    0.000000000    0.000000000
+     34       16           0.000000000    0.000000000    0.000000000
+     35       16           0.000000000    0.000000000    0.000000000
+     36       16           0.000000000    0.000000000    0.000000000
+     37       16           0.000000000    0.000000000    0.000000000
+     38       16           0.000000000    0.000000000    0.000000000
+     39       16           0.000000000    0.000000000    0.000000000
+     40       16           0.000000000    0.000000000    0.000000000
+     41       16           0.000000000    0.000000000    0.000000000
+     42       16           0.000000000    0.000000000    0.000000000
+     43       16           0.000000000    0.000000000    0.000000000
+     44       16           0.000000000    0.000000000    0.000000000
+     45       16           0.000000000    0.000000000    0.000000000
+     46       16           0.000000000    0.000000000    0.000000000
+     47       16           0.000000000    0.000000000    0.000000000
+     48       78           0.000000000    0.000000000    0.000000000
+     49        7           0.072143848    0.011764012    0.131320429
+     50        8           0.098320656    0.065370017   -0.042580225
+     51        8          -0.135084515   -0.079813748    0.010463092
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.135084515 RMS     0.020303093
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of    2
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Second derivative matrix not updated -- analytic derivatives used.
+ ITU=  0
+     Eigenvalues ---   -0.30303  -0.05050  -0.02733  -0.00108   0.01173
+     Eigenvalues ---    0.06934   0.12509   1.26210   2.15034
+ Eigenvalue     1 is  -3.03D-01 should be greater than     0.000000 Eigenvector:
+                          Y49       Y51       X49       Y50       X51
+   1                    0.66785  -0.48356  -0.36870  -0.28403   0.25069
+                          Z50       Z49       X50       Z51       Z24
+   1                    0.12439  -0.11194   0.10602   0.03799   0.00000
+ Eigenvalue     2 is  -5.05D-02 should be greater than     0.000000 Eigenvector:
+                          Y50       Y51       X51       X50       Z51
+   1                    0.74161  -0.37204   0.33238  -0.32370  -0.29517
+                          Z50       Z49       X49       Y49       Z24
+   1                   -0.08947   0.02651  -0.02243  -0.00184   0.00000
+ Eigenvalue     3 is  -2.73D-02 should be greater than     0.000000 Eigenvector:
+                          Z50       Z51       Y49       Z49       X49
+   1                    0.71791  -0.42606  -0.32784   0.28261  -0.20337
+                          Y50       Y51       X51       X50       Z24
+   1                   -0.18047  -0.16779  -0.08572  -0.07944   0.00000
+ Eigenvalue     4 is  -1.08D-03 should be greater than     0.000000 Eigenvector:
+                          X50       X51       X49       Z51       Y51
+   1                    0.52547   0.46067   0.37968  -0.36985   0.34624
+                          Y49       Z50       Z49       Y50       Z24
+   1                    0.24826   0.16483   0.12699   0.07683   0.00000
+ Quadratic step=3.166D+00 exceeds max=3.000D-01 adjusted using Lamda=-1.874D-01.
+ Angle between NR and scaled steps=  67.80 degrees.
+ Angle between quadratic step and forces=  40.47 degrees.
+ Linear search not attempted -- first point.
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1       -3.46022   0.00000   0.00000   0.00000   0.00000  -3.46022
+    Y1        0.23896   0.00000   0.00000   0.00000   0.00000   0.23896
+    Z1       -0.20852   0.00000   0.00000   0.00000   0.00000  -0.20852
+    X2       -5.97458   0.00000   0.00000   0.00000   0.00000  -5.97458
+    Y2        2.22234   0.00000   0.00000   0.00000   0.00000   2.22234
+    Z2        3.04799   0.00000   0.00000   0.00000   0.00000   3.04799
+    X3       -7.21270   0.00000   0.00000   0.00000   0.00000  -7.21270
+    Y3        1.17227   0.00000   0.00000   0.00000   0.00000   1.17227
+    Z3       -2.63925   0.00000   0.00000   0.00000   0.00000  -2.63925
+    X4        2.39088   0.00000   0.00000   0.00000   0.00000   2.39088
+    Y4        0.73570   0.00000   0.00000   0.00000   0.00000   0.73570
+    Z4       -1.57403   0.00000   0.00000   0.00000   0.00000  -1.57403
+    X5        8.24198   0.00000   0.00000   0.00000   0.00000   8.24198
+    Y5        1.23244   0.00000   0.00000   0.00000   0.00000   1.23244
+    Z5       -2.93955   0.00000   0.00000   0.00000   0.00000  -2.93955
+    X6       14.09308   0.00000   0.00000   0.00000   0.00000  14.09308
+    Y6        1.72918   0.00000   0.00000   0.00000   0.00000   1.72918
+    Z6       -4.30506   0.00000   0.00000   0.00000   0.00000  -4.30506
+    X7       -0.12348   0.00000   0.00000   0.00000   0.00000  -0.12348
+    Y7        2.71907   0.00000   0.00000   0.00000   0.00000   2.71907
+    Z7        1.68247   0.00000   0.00000   0.00000   0.00000   1.68247
+    X8        5.72762   0.00000   0.00000   0.00000   0.00000   5.72762
+    Y8        3.21581   0.00000   0.00000   0.00000   0.00000   3.21581
+    Z8        0.31696   0.00000   0.00000   0.00000   0.00000   0.31696
+    X9       11.57871   0.00000   0.00000   0.00000   0.00000  11.57871
+    Y9        3.71255   0.00000   0.00000   0.00000   0.00000   3.71255
+    Z9       -1.04855   0.00000   0.00000   0.00000   0.00000  -1.04855
+   X10       -1.36160   0.00000   0.00000   0.00000   0.00000  -1.36160
+   Y10        1.66901   0.00000   0.00000   0.00000   0.00000   1.66901
+   Z10       -4.00476   0.00000   0.00000   0.00000   0.00000  -4.00476
+   X11        4.48949   0.00000   0.00000   0.00000   0.00000   4.48949
+   Y11        2.16574   0.00000   0.00000   0.00000   0.00000   2.16574
+   Z11       -5.37027   0.00000   0.00000   0.00000   0.00000  -5.37027
+   X12       10.34059   0.00000   0.00000   0.00000   0.00000  10.34059
+   Y12        2.66248   0.00000   0.00000   0.00000   0.00000   2.66248
+   Z12       -6.73578   0.00000   0.00000   0.00000   0.00000  -6.73578
+   X13       -7.00939   0.00000   0.00000   0.00000   0.00000  -7.00939
+   Y13        5.11072   0.00000   0.00000   0.00000   0.00000   5.11072
+   Z13       -0.33536   0.00000   0.00000   0.00000   0.00000  -0.33536
+   X14      -10.55855   0.00000   0.00000   0.00000   0.00000 -10.55855
+   Y14        9.98248   0.00000   0.00000   0.00000   0.00000   9.98248
+   Z14       -0.46220   0.00000   0.00000   0.00000   0.00000  -0.46220
+   X15      -14.10772   0.00000   0.00000   0.00000   0.00000 -14.10772
+   Y15       14.85423   0.00000   0.00000   0.00000   0.00000  14.85423
+   Z15       -0.58904   0.00000   0.00000   0.00000   0.00000  -0.58904
+   X16       -9.52375   0.00000   0.00000   0.00000   0.00000  -9.52375
+   Y16        7.09409   0.00000   0.00000   0.00000   0.00000   7.09409
+   Z16        2.92115   0.00000   0.00000   0.00000   0.00000   2.92115
+   X17      -13.07292   0.00000   0.00000   0.00000   0.00000 -13.07292
+   Y17       11.96585   0.00000   0.00000   0.00000   0.00000  11.96585
+   Z17        2.79431   0.00000   0.00000   0.00000   0.00000   2.79431
+   X18      -16.62208   0.00000   0.00000   0.00000   0.00000 -16.62208
+   Y18       16.83761   0.00000   0.00000   0.00000   0.00000  16.83761
+   Z18        2.66747   0.00000   0.00000   0.00000   0.00000   2.66747
+   X19      -10.76187   0.00000   0.00000   0.00000   0.00000 -10.76187
+   Y19        6.04403   0.00000   0.00000   0.00000   0.00000   6.04403
+   Z19       -2.76609   0.00000   0.00000   0.00000   0.00000  -2.76609
+   X20      -14.31104   0.00000   0.00000   0.00000   0.00000 -14.31104
+   Y20       10.91578   0.00000   0.00000   0.00000   0.00000  10.91578
+   Z20       -2.89292   0.00000   0.00000   0.00000   0.00000  -2.89292
+   X21      -17.86021   0.00000   0.00000   0.00000   0.00000 -17.86021
+   Y21       15.78754   0.00000   0.00000   0.00000   0.00000  15.78754
+   Z21       -3.01976   0.00000   0.00000   0.00000   0.00000  -3.01976
+   X22       -1.15829   0.00000   0.00000   0.00000   0.00000  -1.15829
+   Y22        5.60746   0.00000   0.00000   0.00000   0.00000   5.60746
+   Z22       -1.70087   0.00000   0.00000   0.00000   0.00000  -1.70087
+   X23       -4.70746   0.00000   0.00000   0.00000   0.00000  -4.70746
+   Y23       10.47921   0.00000   0.00000   0.00000   0.00000  10.47921
+   Z23       -1.82771   0.00000   0.00000   0.00000   0.00000  -1.82771
+   X24       -8.25663   0.00000   0.00000   0.00000   0.00000  -8.25663
+   Y24       15.35097   0.00000   0.00000   0.00000   0.00000  15.35097
+   Z24       -1.95455   0.00000   0.00000   0.00000   0.00000  -1.95455
+   X25        4.69281   0.00000   0.00000   0.00000   0.00000   4.69281
+   Y25        6.10419   0.00000   0.00000   0.00000   0.00000   6.10419
+   Z25       -3.06639   0.00000   0.00000   0.00000   0.00000  -3.06639
+   X26       -2.40553   0.00000   0.00000   0.00000   0.00000  -2.40553
+   Y26       15.84771   0.00000   0.00000   0.00000   0.00000  15.84771
+   Z26       -3.32006   0.00000   0.00000   0.00000   0.00000  -3.32006
+   X27       10.54391   0.00000   0.00000   0.00000   0.00000  10.54391
+   Y27        6.60093   0.00000   0.00000   0.00000   0.00000   6.60093
+   Z27       -4.43190   0.00000   0.00000   0.00000   0.00000  -4.43190
+   X28        6.99474   0.00000   0.00000   0.00000   0.00000   6.99474
+   Y28       11.47269   0.00000   0.00000   0.00000   0.00000  11.47269
+   Z28       -4.55874   0.00000   0.00000   0.00000   0.00000  -4.55874
+   X29        3.44557   0.00000   0.00000   0.00000   0.00000   3.44557
+   Y29       16.34444   0.00000   0.00000   0.00000   0.00000  16.34444
+   Z29       -4.68558   0.00000   0.00000   0.00000   0.00000  -4.68558
+   X30       -3.67265   0.00000   0.00000   0.00000   0.00000  -3.67265
+   Y30        7.59083   0.00000   0.00000   0.00000   0.00000   7.59083
+   Z30        1.55563   0.00000   0.00000   0.00000   0.00000   1.55563
+   X31       -7.22182   0.00000   0.00000   0.00000   0.00000  -7.22182
+   Y31       12.46259   0.00000   0.00000   0.00000   0.00000  12.46259
+   Z31        1.42879   0.00000   0.00000   0.00000   0.00000   1.42879
+   X32      -10.77099   0.00000   0.00000   0.00000   0.00000 -10.77099
+   Y32       17.33434   0.00000   0.00000   0.00000   0.00000  17.33434
+   Z32        1.30195   0.00000   0.00000   0.00000   0.00000   1.30195
+   X33        2.17845   0.00000   0.00000   0.00000   0.00000   2.17845
+   Y33        8.08757   0.00000   0.00000   0.00000   0.00000   8.08757
+   Z33        0.19012   0.00000   0.00000   0.00000   0.00000   0.19012
+   X34       -1.37072   0.00000   0.00000   0.00000   0.00000  -1.37072
+   Y34       12.95933   0.00000   0.00000   0.00000   0.00000  12.95933
+   Z34        0.06328   0.00000   0.00000   0.00000   0.00000   0.06328
+   X35       -4.91989   0.00000   0.00000   0.00000   0.00000  -4.91989
+   Y35       17.83108   0.00000   0.00000   0.00000   0.00000  17.83108
+   Z35       -0.06356   0.00000   0.00000   0.00000   0.00000  -0.06356
+   X36        8.02954   0.00000   0.00000   0.00000   0.00000   8.02954
+   Y36        8.58431   0.00000   0.00000   0.00000   0.00000   8.58431
+   Z36       -1.17539   0.00000   0.00000   0.00000   0.00000  -1.17539
+   X37        4.48038   0.00000   0.00000   0.00000   0.00000   4.48038
+   Y37       13.45606   0.00000   0.00000   0.00000   0.00000  13.45606
+   Z37       -1.30223   0.00000   0.00000   0.00000   0.00000  -1.30223
+   X38        0.93121   0.00000   0.00000   0.00000   0.00000   0.93121
+   Y38       18.32782   0.00000   0.00000   0.00000   0.00000  18.32782
+   Z38       -1.42907   0.00000   0.00000   0.00000   0.00000  -1.42907
+   X39       -4.91077   0.00000   0.00000   0.00000   0.00000  -4.91077
+   Y39        6.54076   0.00000   0.00000   0.00000   0.00000   6.54076
+   Z39       -4.13160   0.00000   0.00000   0.00000   0.00000  -4.13160
+   X40       -8.45994   0.00000   0.00000   0.00000   0.00000  -8.45994
+   Y40       11.41252   0.00000   0.00000   0.00000   0.00000  11.41252
+   Z40       -4.25844   0.00000   0.00000   0.00000   0.00000  -4.25844
+   X41      -12.00911   0.00000   0.00000   0.00000   0.00000 -12.00911
+   Y41       16.28428   0.00000   0.00000   0.00000   0.00000  16.28428
+   Z41       -4.38528   0.00000   0.00000   0.00000   0.00000  -4.38528
+   X42        0.94032   0.00000   0.00000   0.00000   0.00000   0.94032
+   Y42        7.03750   0.00000   0.00000   0.00000   0.00000   7.03750
+   Z42       -5.49711   0.00000   0.00000   0.00000   0.00000  -5.49711
+   X43       -2.60884   0.00000   0.00000   0.00000   0.00000  -2.60884
+   Y43       11.90926   0.00000   0.00000   0.00000   0.00000  11.90926
+   Z43       -5.62395   0.00000   0.00000   0.00000   0.00000  -5.62395
+   X44       -6.15801   0.00000   0.00000   0.00000   0.00000  -6.15801
+   Y44       16.78101   0.00000   0.00000   0.00000   0.00000  16.78101
+   Z44       -5.75079   0.00000   0.00000   0.00000   0.00000  -5.75079
+   X45        6.79142   0.00000   0.00000   0.00000   0.00000   6.79142
+   Y45        7.53424   0.00000   0.00000   0.00000   0.00000   7.53424
+   Z45       -6.86262   0.00000   0.00000   0.00000   0.00000  -6.86262
+   X46        3.24225   0.00000   0.00000   0.00000   0.00000   3.24225
+   Y46       12.40599   0.00000   0.00000   0.00000   0.00000  12.40599
+   Z46       -6.98946   0.00000   0.00000   0.00000   0.00000  -6.98946
+   X47       -0.30692   0.00000   0.00000   0.00000   0.00000  -0.30692
+   Y47       17.27775   0.00000   0.00000   0.00000   0.00000  17.27775
+   Z47       -7.11630   0.00000   0.00000   0.00000   0.00000  -7.11630
+   X48        1.14364   0.00000   0.00000   0.00000   0.00000   1.14364
+   Y48       10.97595   0.00000   0.00000   0.00000   0.00000  10.97595
+   Z48       -3.19323   0.00000   0.00000   0.00000   0.00000  -3.19323
+   X49       -0.61481   0.07214   0.00000   0.09219   0.09219  -0.52262
+   Y49        6.88077   0.01176   0.00000  -0.00811  -0.00811   6.87266
+   Z49        4.71278   0.13132   0.00000   0.22890   0.22890   4.94167
+   X50        1.17705   0.09832   0.00000   0.04800   0.04800   1.22505
+   Y50        7.61692   0.06537   0.00000   0.08675   0.08675   7.70367
+   Z50        3.73937  -0.04258   0.00000  -0.04997  -0.04997   3.68940
+   X51       -2.31783  -0.13508   0.00000  -0.03824  -0.03824  -2.35606
+   Y51        5.73177  -0.07981   0.00000  -0.02198  -0.02198   5.70979
+   Z51        4.06135   0.01046   0.00000   0.12161   0.12161   4.18296
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.135085     0.000450     NO 
+ RMS     Force            0.020303     0.000300     NO 
+ Maximum Displacement     0.228895     0.001800     NO 
+ RMS     Displacement     0.024256     0.001200     NO 
+ Predicted change in Energy=-3.938155D-02
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ 1|1|UNPC-YASH|Freq|UPM6|ZDO|Mo15N1O2Pt1S32(2)|YASH SHAW|05-Jan-2025|0|
+ |# freq pm6 guess=huckel scf=qc geom=connectivity||Title Card Required
+ ||0,2|Mo,-1.83106716,0.1264544,-0.11034483|S,-3.16160946,1.17601056,1.
+ 61292441|S,-3.81679604,0.62033871,-1.39662899|Mo,1.26519993,0.38931628
+ ,-0.83294294|Mo,4.36146702,0.65217815,-1.55554104|Mo,7.45773411,0.9150
+ 4003,-2.27813914|S,-0.06534237,1.43887244,0.89032631|S,3.03092471,1.70
+ 173431,0.16772821|S,6.1271918,1.96459619,-0.5548699|S,-0.72052895,0.88
+ 320058,-2.11922709|S,2.37573814,1.14606246,-2.84182519|S,5.47200523,1.
+ 40892433,-3.56442329|Mo,-3.70920684,2.70447698,-0.17746532|Mo,-5.58734
+ 654,5.28249956,-0.24458579|Mo,-7.46548623,7.86052213,-0.31170628|S,-5.
+ 03974916,3.75403314,1.54580392|S,-6.91788885,6.33205572,1.47868344|S,-
+ 8.79602854,8.9100783,1.41156296|S,-5.69493573,3.19836129,-1.46374947|S
+ ,-7.57307542,5.77638385,-1.53086996|S,-9.45121511,8.35440643,-1.597990
+ 44|Mo,-0.61293976,2.96733885,-0.90006342|Mo,-2.49107946,5.54536143,-0.
+ 9671839|Mo,-4.36921915,8.12338401,-1.03430438|Mo,2.48332733,3.23020073
+ ,-1.62266152|Mo,-1.27295206,8.38624588,-1.75690248|Mo,5.57959441,3.493
+ 0626,-2.34525962|Mo,3.70145472,6.07108518,-2.4123801|Mo,1.82331503,8.6
+ 4910776,-2.47950058|S,-1.94348206,4.01689502,0.82320582|S,-3.82162176,
+ 6.59491759,0.75608534|S,-5.69976145,9.17294017,0.68896485|S,1.15278502
+ ,4.27975689,0.10060772|S,-0.72535468,6.85777947,0.03348724|S,-2.603494
+ 36,9.43580205,-0.03363325|S,4.24905211,4.54261877,-0.62199038|S,2.3709
+ 1242,7.12064134,-0.68911087|S,0.49277272,9.69866392,-0.75623135|S,-2.5
+ 9866864,3.46122316,-2.18634757|S,-4.47680834,6.03924574,-2.25346806|S,
+ -6.35494803,8.61726831,-2.32058854|S,0.49759845,3.72408504,-2.90894567
+ |S,-1.38054124,6.30210761,-2.97606616|S,-3.25868094,8.88013019,-3.0431
+ 8664|S,3.59386553,3.98694691,-3.63154378|S,1.71572584,6.56496949,-3.69
+ 866426|S,-0.16241385,9.14299207,-3.76578475|Pt,0.60518764,5.8082233,-1
+ .689782|N,-0.32534134,3.64114808,2.49389474|O,0.62286669,4.03070095,1.
+ 97878964|O,-1.22654179,3.03312376,2.14917368||Version=IA32W-G09RevD.01
+ |State=2-A|HF=-1.4634184|S2=13.5255|S2-1=0.|S2A=43.86712|RMSD=0.000e+0
+ 00|RMSF=2.030e-002|ZeroPoint=0.0099939|Thermal=0.0141035|Dipole=17.999
+ 1123,-3.3451228,-3.2077433|DipoleDeriv=0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.5019401,0.788858,0.4957605,-0.4042112,0.7424464,-0.0180601,0.74
+ 14383,1.0137748,-1.859541,-0.0097244,0.3124596,-1.1954383,0.7085919,0.
+ 0825938,-0.5943455,-0.9984594,-0.0510207,1.2788885,-0.6659419,-1.26975
+ 58,0.6870594,0.2851198,-0.0355821,0.2449873,-0.4765897,-0.9225826,0.82
+ 6976|Polar=3646.1114314,-135.8738114,4395.0013401,-552.9158537,-653.53
+ 48117,1325.261577|HyperPolar=-20433.5619233,-27611.0667338,758461.2061
+ 951,13765240.4466875,14287.728421,-149738.6181776,-2988773.8969869,279
+ 09.7025785,643065.3273298,-136931.7313092|PG=C01 [X(Mo15N1O2Pt1S32)]|N
+ Imag=4||0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,1.12091587,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.61048114,0.12972740,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.06096721,0.02271302,0.22945459
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,-0.52846439,-0.23033721,0.26419743,0.66911519,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,-0.21766419,-0.00727754,0.08910134,0.30448789,0.07509786,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.25207334,0.07215139,-0.11452992,-0.22575593,-0.06027332,0.08794192,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,-0.50558796,-0.36279147,-0.17820371,-0.16192699,-0.09914056
+ ,0.00399035,0.64973313,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.42729313,-0.09804640,-0.16155387
+ ,-0.08170366,-0.08535562,0.02254557,0.45635708,0.20549115,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ -0.17279122,-0.11796969,0.00144065,0.03025454,0.02043921,0.00036416,0.
+ 16524690,0.07811327,0.06918445||0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.07214385,-0.01176401,-0
+ .13132043,-0.09832066,-0.06537002,0.04258023,0.13508451,0.07981375,-0.
+ 01046309|||@
+
+
+ FIREWORKS ENDED
+ AND SPECTATORS GONE AWAY....
+ AH, HOW VAST AND DARK
+                     SHIKI
+ Job cpu time:       0 days  0 hours 11 minutes 30.0 seconds.
+ File lengths (MBytes):  RWF=   2376 Int=      0 D2E=      0 Chk=     17 Scr=      1
+ Normal termination of Gaussian 09 at Sun Jan 05 17:25:14 2025.

@@ -1,0 +1,2325 @@
+ Entering Link 1 = C:\G09W\l1.exe PID=     27460.
+  
+ Copyright (c) 1988,1990,1992,1993,1995,1998,2003,2009,2013,
+            Gaussian, Inc.  All Rights Reserved.
+  
+ This is part of the Gaussian(R) 09 program.  It is based on
+ the Gaussian(R) 03 system (copyright 2003, Gaussian, Inc.),
+ the Gaussian(R) 98 system (copyright 1998, Gaussian, Inc.),
+ the Gaussian(R) 94 system (copyright 1995, Gaussian, Inc.),
+ the Gaussian 92(TM) system (copyright 1992, Gaussian, Inc.),
+ the Gaussian 90(TM) system (copyright 1990, Gaussian, Inc.),
+ the Gaussian 88(TM) system (copyright 1988, Gaussian, Inc.),
+ the Gaussian 86(TM) system (copyright 1986, Carnegie Mellon
+ University), and the Gaussian 82(TM) system (copyright 1983,
+ Carnegie Mellon University). Gaussian is a federally registered
+ trademark of Gaussian, Inc.
+  
+ This software contains proprietary and confidential information,
+ including trade secrets, belonging to Gaussian, Inc.
+  
+ This software is provided under written license and may be
+ used, copied, transmitted, or stored only in accord with that
+ written license.
+  
+ The following legend is applicable only to US Government
+ contracts under FAR:
+  
+                    RESTRICTED RIGHTS LEGEND
+  
+ Use, reproduction and disclosure by the US Government is
+ subject to restrictions as set forth in subparagraphs (a)
+ and (c) of the Commercial Computer Software - Restricted
+ Rights clause in FAR 52.227-19.
+  
+ Gaussian, Inc.
+ 340 Quinnipiac St., Bldg. 40, Wallingford CT 06492
+  
+  
+ ---------------------------------------------------------------
+ Warning -- This program may not be used in any manner that
+ competes with the business of Gaussian, Inc. or will provide
+ assistance to any competitor of Gaussian, Inc.  The licensee
+ of this program is prohibited from giving any competitor of
+ Gaussian, Inc. access to this program.  By using this program,
+ the user acknowledges that Gaussian, Inc. is engaged in the
+ business of creating and licensing software in the field of
+ computational chemistry and represents and warrants to the
+ licensee that it is not a competitor of Gaussian, Inc. and that
+ it will not use this program in any manner prohibited above.
+ ---------------------------------------------------------------
+  
+
+ Cite this work as:
+ Gaussian 09, Revision D.01,
+ M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, 
+ M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci, 
+ G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian, 
+ A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada, 
+ M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, 
+ Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr., 
+ J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers, 
+ K. N. Kudin, V. N. Staroverov, T. Keith, R. Kobayashi, J. Normand, 
+ K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, 
+ M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross, 
+ V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann, 
+ O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski, 
+ R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth, 
+ P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels, 
+ O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski, 
+ and D. J. Fox, Gaussian, Inc., Wallingford CT, 2013.
+ 
+ ******************************************
+ Gaussian 09:  IA32W-G09RevD.01 24-Apr-2013
+                05-Jan-2025 
+ ******************************************
+ %nprocshared=2
+ Will use up to    2 processors via shared memory.
+ %mem=1GB
+ %chk=G:\My Drive\Boro Kaaz\Pt doped MoS2\NH3\Pt doped MoS2+NH3_AMAN_freq.chk
+ ------------------------------------------------
+ # freq pm6 guess=huckel scf=qc geom=connectivity
+ ------------------------------------------------
+ 1/10=4,30=1,38=1,57=2/1,3;
+ 2/12=2,17=6,18=5,40=1/2;
+ 3/5=2,16=1,25=1,41=3900000,71=2,140=1/1,2,3;
+ 4/11=4,35=1/1;
+ 5/5=2,8=3,35=1,38=5,98=1/8;
+ 8/6=4,10=90,11=11/1;
+ 11/6=1,8=1,9=11,15=111,16=1/1,2,10;
+ 10/6=1/2;
+ 6/7=2,8=2,9=2,10=2,18=1,28=1/1;
+ 7/8=1,10=1,25=1/1,2,3,16;
+ 1/10=4,30=1/3;
+ 99//99;
+ -------------------
+ Title Card Required
+ -------------------
+ Symbolic Z-matrix:
+ Charge =  0 Multiplicity = 1
+ Mo                   -1   -0.89381   0.39584   1.51544 
+ S                    -1   -2.22435   1.44539   3.23871 
+ S                    -1   -2.87954   0.88972   0.22915 
+ Mo                   -1    2.20246   0.6587    0.79284 
+ Mo                   -1    5.29873   0.92156   0.07024 
+ Mo                   -1    8.395     1.18442  -0.65236 
+ S                    -1    0.87192   1.70825   2.51611 
+ S                    -1    3.96819   1.97112   1.79351 
+ S                    -1    7.06445   2.23398   1.07091 
+ S                    -1    0.21673   1.15258  -0.49345 
+ S                    -1    3.313     1.41544  -1.21604 
+ S                    -1    6.40927   1.67831  -1.93864 
+ Mo                   -1   -2.77195   2.97386   1.44832 
+ Mo                   -1   -4.65009   5.55188   1.3812 
+ Mo                   -1   -6.52823   8.1299    1.31407 
+ S                    -1   -4.10249   4.02342   3.17158 
+ S                    -1   -5.98063   6.60144   3.10446 
+ S                    -1   -7.85877   9.17946   3.03734 
+ S                    -1   -4.75767   3.46774   0.16203 
+ S                    -1   -6.63581   6.04577   0.09491 
+ S                    -1   -8.51395   8.62379   0.02779 
+ Mo                   -1    0.32432   3.23672   0.72572 
+ Mo                   -1   -1.55382   5.81474   0.6586 
+ Mo                   -1   -3.43196   8.39277   0.59148 
+ Mo                   -1    3.42059   3.49958   0.00312 
+ Mo                   -1   -0.33569   8.65563  -0.13112 
+ Mo                   -1    6.51686   3.76244  -0.71948 
+ Mo                   -1    4.63872   6.34047  -0.7866 
+ Mo                   -1    2.76058   8.91849  -0.85372 
+ S                    -1   -1.00622   4.28628   2.44899 
+ S                    -1   -2.88436   6.8643    2.38187 
+ S                    -1   -4.7625    9.44232   2.31475 
+ S                    -1    2.09005   4.54914   1.72639 
+ S                    -1    0.21191   7.12716   1.65927 
+ S                    -1   -1.66623   9.70518   1.59215 
+ S                    -1    5.18631   4.812     1.00379 
+ S                    -1    3.30817   7.39002   0.93667 
+ S                    -1    1.43003   9.96805   0.86955 
+ S                    -1   -1.66141   3.73061  -0.56057 
+ S                    -1   -3.53955   6.30863  -0.62769 
+ S                    -1   -5.41769   8.88665  -0.69481 
+ S                    -1    1.43486   3.99347  -1.28316 
+ S                    -1   -0.44328   6.57149  -1.35029 
+ S                    -1   -2.32142   9.14951  -1.41741 
+ S                    -1    4.53113   4.25633  -2.00576 
+ S                    -1    2.65299   6.83435  -2.07288 
+ S                    -1    0.77485   9.41237  -2.14 
+ Pt                   -1    1.54245   6.07761  -0.064 
+ N                    0    -0.0474    5.85213   3.78481 
+ H                    0    -0.1706    4.86121   3.73096 
+ H                    0     0.71206   6.12616   3.19479 
+ H                    0    -0.88465   6.30894   3.48423 
+ 
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Initialization pass.
+ Trust Radius=3.00D-01 FncErr=1.00D-07 GrdErr=1.00D-07
+ Number of steps in this run=      2 maximum allowed number of steps=      2.
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ Stoichiometry    H3Mo15NPtS32
+ Framework group  C1[X(H3Mo15NPtS32)]
+ Deg. of freedom   150
+ Full point group                 C1      NOp   1
+ Largest Abelian subgroup         C1      NOp   1
+ Largest concise Abelian subgroup C1      NOp   1
+                         Standard orientation:                         
+ ---------------------------------------------------------------------
+ Center     Atomic      Atomic             Coordinates (Angstroms)
+ Number     Number       Type             X           Y           Z
+ ---------------------------------------------------------------------
+      1         42           0       -0.767221    4.832982   -0.030549
+      2         16           0        1.076985    4.829365    1.531647
+      3         16           0        1.072412    4.825854   -1.598116
+      4         42           0       -3.534751    3.245890   -0.024725
+      5         42           0       -6.302281    1.658799   -0.018901
+      6         42           0       -9.069810    0.071707   -0.013077
+      7         16           0       -1.690545    3.242273    1.537472
+      8         16           0       -4.458074    1.655182    1.543296
+      9         16           0       -7.225604    0.068091    1.549120
+     10         16           0       -1.695117    3.238762   -1.592292
+     11         16           0       -4.462647    1.651671   -1.586468
+     12         16           0       -7.230177    0.064579   -1.580643
+     13         42           0        1.991009    3.229773   -0.032780
+     14         42           0        4.749238    1.626564   -0.035012
+     15         42           0        7.507468    0.023355   -0.037243
+     16         16           0        3.835215    3.226156    1.529416
+     17         16           0        6.593445    1.622947    1.527185
+     18         16           0        9.351674    0.019739    1.524954
+     19         16           0        3.830642    3.222645   -1.600347
+     20         16           0        6.588872    1.619436   -1.602579
+     21         16           0        9.347102    0.016227   -1.604810
+     22         42           0       -0.776521    1.642682   -0.026956
+     23         42           0        1.981709    0.039473   -0.029188
+     24         42           0        4.739938   -1.563736   -0.031419
+     25         42           0       -3.544051    0.055590   -0.021132
+     26         42           0        1.972408   -3.150827   -0.025595
+     27         42           0       -6.311581   -1.531501   -0.015308
+     28         42           0       -3.553351   -3.134710   -0.017539
+     29         42           0       -0.795121   -4.737919   -0.019771
+     30         16           0        1.067685    1.639065    1.535240
+     31         16           0        3.825915    0.035856    1.533009
+     32         16           0        6.584145   -1.567353    1.530778
+     33         16           0       -1.699845    0.051973    1.541064
+     34         16           0        1.058385   -1.551235    1.538833
+     35         16           0        3.816615   -3.154444    1.536602
+     36         16           0       -4.467374   -1.535118    1.546889
+     37         16           0       -1.709145   -3.138327    1.544657
+     38         16           0        1.049085   -4.741535    1.542426
+     39         16           0        1.063112    1.635553   -1.594523
+     40         16           0        3.821342    0.032345   -1.596754
+     41         16           0        6.579572   -1.570864   -1.598986
+     42         16           0       -1.704417    0.048462   -1.588699
+     43         16           0        1.053812   -1.554747   -1.590930
+     44         16           0        3.812042   -3.157955   -1.593162
+     45         16           0       -4.471947   -1.538629   -1.582875
+     46         16           0       -1.713718   -3.141838   -1.585106
+     47         16           0        1.044512   -4.745047   -1.587337
+     48         78           0       -0.785821   -1.547619   -0.023363
+     49          7           0        1.017457    0.211414    3.300155
+     50          1           0        0.709103    1.128127    3.046077
+     51          1           0        0.376090   -0.467168    2.942141
+     52          1           0        1.925858    0.046829    2.915812
+ ---------------------------------------------------------------------
+ Rotational constants (GHZ):      0.0260510      0.0093111      0.0073990
+ Standard basis: VSTO-6G (5D, 7F)
+ There are   487 symmetry adapted cartesian basis functions of A   symmetry.
+ There are   439 symmetry adapted basis functions of A   symmetry.
+   439 basis functions,  2922 primitive gaussians,   487 cartesian basis functions
+   150 alpha electrons      150 beta electrons
+       nuclear repulsion energy      4340.8557803317 Hartrees.
+ Integral buffers will be    262144 words long.
+ Regular integral format.
+ Two-electron integral symmetry is turned off.
+ Do NDO integrals.
+ One-electron integrals computed using PRISM.
+ NBasis=   439 RedAO= F EigKep=  0.00D+00  NBF=   439
+ NBsUse=   439 1.00D-04 EigRej=  0.00D+00 NBFU=   439
+ Projected New-EHT guess.
+ Enter ItEHT:  IZDO=4 IZDPar=0 Conv= 1.00D-06 N=  279
+ It=   1                  EEH= -11.2286549033     EQH= 0.000000000000E+00 EH= -11.2286549033    
+ Keep J ints in memory in canonical form, NReq=6151171.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Note:  rotation exceeds Pi/2.
+     Accept linear search using points  5 and  6.
+     Minimum is close to point  6 DX= -6.97D-03 DF= -1.14D-01 DXR=  7.02D-03 DFR=  2.25D-04 which will be used.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Minimum is close to point  3 DX= -4.62D-03 DF= -3.22D-02 DXR=  1.56D-02 DFR=  1.83D-04 which will be used.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Minimum is close to point  2 DX=  2.12D-02 DF= -4.30D-01 DXR=  6.60D-02 DFR=  4.38D-03 which will be used.
+ Gradient too large for Newton-Raphson or scaled steepest descent --
+ use steepest descent instead.
+     Minimum is close to point  4 DX=  3.93D-02 DF= -1.72D-01 DXR=  6.15D-02 DFR=  3.18D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  3.48D-03 DF= -9.49D-04 DXR=  1.15D-02 DFR=  1.31D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  5 DX= -9.75D-03 DF= -5.22D-04 DXR=  1.10D-02 DFR=  1.01D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  9.13D-02 DF= -1.89D-02 DXR=  9.21D-02 DFR=  8.56D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  1.01D-01 DF= -1.00D-02 DXR=  9.19D-02 DFR=  8.52D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+     Minimum is close to point  2 DX= -6.98D-04 DF= -3.03D-07 DXR=  6.35D-04 DFR=  4.63D-07 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -2.35D-02 DF= -9.57D-05 DXR=  1.08D-02 DFR=  1.39D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -2.27D-02 DF= -1.43D-03 DXR=  6.03D-02 DFR=  3.65D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  7.70D-02 DF= -5.88D-04 DXR=  6.54D-02 DFR=  4.14D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -9.76D-03 DF= -8.09D-05 DXR=  2.50D-02 DFR=  6.25D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+     Minimum is close to point  4 DX= -6.57D-02 DF= -1.07D-04 DXR=  2.24D-02 DFR=  8.45D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -1.04D-02 DF= -7.80D-05 DXR=  2.68D-02 DFR=  7.16D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.45D-01 DF= -3.37D-04 DXR=  7.44D-02 DFR=  5.62D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.84D-02 DF= -1.13D-04 DXR=  4.40D-02 DFR=  1.94D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX= -6.25D-02 DF= -2.42D-05 DXR=  1.77D-02 DFR=  3.22D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.10D-02 DF= -2.27D-05 DXR=  2.68D-02 DFR=  7.17D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  4 DX= -3.59D-01 DF= -2.49D-04 DXR=  8.47D-02 DFR=  7.29D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.43D-01 DF= -5.60D-05 DXR=  5.80D-02 DFR=  4.30D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -3.67D-02 DF= -7.78D-05 DXR=  7.93D-02 DFR=  6.32D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX= -4.17D-02 DF= -5.86D-05 DXR=  9.10D-02 DFR=  8.35D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  3.11D-02 DF= -3.79D-05 DXR=  7.22D-02 DFR=  5.24D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  4 and  5.
+     Minimum is close to point  5 DX= -5.85D-01 DF= -9.73D-05 DXR=  8.00D-02 DFR=  6.16D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.54D-01 DF= -3.68D-05 DXR=  8.05D-02 DFR=  6.58D-03 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  1.19D-02 DF= -1.36D-07 DXR=  6.58D-03 DFR=  4.34D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -3.59D-02 DF= -1.01D-06 DXR=  2.04D-02 DFR=  3.41D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  5.10D-03 DF= -2.33D-08 DXR=  2.82D-03 DFR=  8.00D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -2.41D-02 DF= -4.13D-07 DXR=  1.36D-02 DFR=  1.50D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -5.04D-03 DF= -1.66D-08 DXR=  2.81D-03 DFR=  6.33D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -2.09D-02 DF= -2.72D-07 DXR=  1.17D-02 DFR=  1.12D-04 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.17D-02 DF= -7.82D-08 DXR=  6.56D-03 DFR=  3.47D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.89D-02 DF= -1.87D-07 DXR=  1.06D-02 DFR=  9.11D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.47D-02 DF= -1.01D-07 DXR=  8.22D-03 DFR=  5.46D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.52D-02 DF= -9.74D-08 DXR=  8.54D-03 DFR=  5.88D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.06D-02 DF= -4.16D-08 DXR=  5.93D-03 DFR=  2.83D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -1.10D-02 DF= -3.97D-08 DXR=  6.17D-03 DFR=  3.06D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -6.54D-03 DF= -1.22D-08 DXR=  3.65D-03 DFR=  1.06D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -7.27D-03 DF= -1.34D-08 DXR=  4.06D-03 DFR=  1.32D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -3.22D-03 DF= -2.30D-09 DXR=  1.79D-03 DFR=  2.56D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+     Minimum is close to point  3 DX= -4.45D-03 DF= -3.90D-09 DXR=  2.48D-03 DFR=  4.90D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  8.36D-04 DF= -1.53D-10 DXR=  4.64D-04 DFR=  2.16D-07 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  3.92D-04 DF= -3.04D-11 DXR=  2.18D-04 DFR=  4.75D-08 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  2.89D-03 DF= -1.49D-09 DXR=  1.60D-03 DFR=  2.57D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  3.11D-03 DF= -1.56D-09 DXR=  1.73D-03 DFR=  2.98D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  4.73D-03 DF= -3.29D-09 DXR=  2.62D-03 DFR=  6.87D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  5.16D-03 DF= -3.60D-09 DXR=  2.86D-03 DFR=  8.16D-06 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  6.23D-03 DF= -4.85D-09 DXR=  3.45D-03 DFR=  1.19D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  6.66D-03 DF= -5.15D-09 DXR=  3.69D-03 DFR=  1.36D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  7.37D-03 DF= -5.89D-09 DXR=  4.08D-03 DFR=  1.66D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  3 DX=  7.71D-03 DF= -6.06D-09 DXR=  4.27D-03 DFR=  1.82D-05 which will be used.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.85D-04 Max=1.45D-02 NDo=     1
+ AX will form     1 AO Fock derivatives at one time.
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.36D-04 Max=2.35D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.56D-05 Max=2.41D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=6.14D-05 Max=2.30D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=4.97D-05 Max=2.30D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=5.77D-05 Max=2.52D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=4.16D-05 Max=1.48D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.64D-05 Max=7.84D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.34D-05 Max=7.50D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=2.26D-05 Max=7.15D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.27D-05 Max=1.04D-03 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.07D-05 Max=7.90D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.85D-05 Max=6.84D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.75D-05 Max=5.31D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=1.33D-05 Max=3.99D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.02D-05 Max=2.90D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=8.75D-06 Max=2.52D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=7.93D-06 Max=2.49D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=7.90D-06 Max=2.41D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=6.56D-06 Max=1.96D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=6.68D-06 Max=1.19D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=5.95D-06 Max=1.34D-04 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.37D-06 Max=9.26D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=3.49D-06 Max=8.71D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.45D-06 Max=6.05D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.67D-06 Max=4.11D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.11D-06 Max=2.17D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=6.93D-07 Max=1.12D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=4.07D-07 Max=7.69D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.80D-07 Max=4.57D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.66D-07 Max=3.78D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.12D-07 Max=2.95D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=6.97D-08 Max=1.81D-06 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=4.34D-08 Max=1.03D-06 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=2.51D-08 Max=5.61D-07 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=1.49D-08 Max=3.42D-07 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     0 RMS=1.03D-08 Max=2.07D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    36 iterations.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.32D-04 Max=6.70D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.07D-04 Max=2.81D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.18D-05 Max=2.65D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.70D-05 Max=1.04D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.94D-05 Max=1.24D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.24D-05 Max=1.23D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.35D-05 Max=9.34D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.85D-05 Max=6.71D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.43D-05 Max=8.17D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.44D-05 Max=3.98D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.62D-05 Max=5.00D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.65D-05 Max=4.02D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.32D-05 Max=4.09D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.17D-05 Max=3.34D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=9.80D-06 Max=3.13D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=8.00D-06 Max=3.29D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.46D-06 Max=3.14D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.36D-06 Max=1.61D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=6.34D-06 Max=2.82D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=5.68D-06 Max=1.58D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=4.40D-06 Max=1.36D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=3.29D-06 Max=6.77D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=2.29D-06 Max=6.96D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.43D-06 Max=5.05D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.09D-06 Max=3.59D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=7.40D-07 Max=2.50D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=4.24D-07 Max=1.23D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.13D-07 Max=5.63D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.71D-07 Max=3.48D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.30D-07 Max=2.44D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=8.45D-08 Max=1.52D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=5.13D-08 Max=7.95D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=3.92D-08 Max=6.32D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=2.28D-08 Max=4.01D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     0 RMS=1.57D-08 Max=2.67D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    34 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.27D-04 Max=6.55D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=9.54D-05 Max=2.26D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=5.05D-05 Max=2.37D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.44D-05 Max=8.70D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.80D-05 Max=1.14D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.40D-05 Max=1.32D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.17D-05 Max=9.18D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.72D-05 Max=7.18D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.70D-05 Max=8.08D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.82D-05 Max=3.69D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.48D-05 Max=4.15D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.52D-05 Max=3.20D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.52D-05 Max=4.25D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.34D-05 Max=3.70D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=9.85D-06 Max=3.07D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=7.18D-06 Max=3.67D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=5.56D-06 Max=2.67D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=4.00D-06 Max=1.89D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.22D-06 Max=2.00D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.94D-06 Max=1.24D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=3.70D-06 Max=6.95D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=3.48D-06 Max=7.43D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=2.89D-06 Max=6.67D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=2.19D-06 Max=4.96D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.68D-06 Max=4.87D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=9.74D-07 Max=2.87D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=6.23D-07 Max=1.50D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.30D-07 Max=6.32D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=2.13D-07 Max=4.72D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.57D-07 Max=2.90D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=7.81D-08 Max=1.43D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=5.29D-08 Max=9.00D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=3.40D-08 Max=6.37D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=2.07D-08 Max=4.34D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     0 RMS=1.44D-08 Max=2.45D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    34 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.23D-04 Max=5.80D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.89D-04 Max=1.18D-02 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.62D-05 Max=1.89D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.01D-04 Max=3.61D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=7.08D-05 Max=1.57D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=6.76D-05 Max=2.09D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=5.92D-05 Max=2.24D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=4.83D-05 Max=1.47D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.89D-05 Max=1.08D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=4.33D-05 Max=1.55D-03 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=3.74D-05 Max=8.86D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=3.38D-05 Max=1.02D-03 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.76D-05 Max=8.20D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=3.07D-05 Max=9.60D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.74D-05 Max=9.00D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.94D-05 Max=8.69D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.14D-05 Max=4.94D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.66D-05 Max=3.65D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.18D-05 Max=4.30D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.05D-05 Max=4.10D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.20D-05 Max=7.29D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.19D-05 Max=6.07D-04 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=8.88D-06 Max=5.08D-04 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=6.25D-06 Max=3.19D-04 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=3.52D-06 Max=1.25D-04 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.83D-06 Max=8.19D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.72D-06 Max=5.41D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=9.06D-07 Max=2.18D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=6.76D-07 Max=1.27D-05 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=4.13D-07 Max=8.55D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=2.79D-07 Max=4.94D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.91D-07 Max=4.01D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.02D-07 Max=2.22D-06 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=6.54D-08 Max=1.58D-06 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=3.97D-08 Max=8.65D-07 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=2.46D-08 Max=3.83D-07 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     1 RMS=1.54D-08 Max=2.99D-07 NDo=     1
+ LinEq1:  Iter= 37 NonCon=     0 RMS=8.37D-09 Max=1.53D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    37 iterations.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Minimum is close to point  2 DX=  6.35D-02 DF= -2.01D-06 DXR=  9.57D-02 DFR=  9.25D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.27D-04 Max=9.37D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.97D-04 Max=5.68D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=6.53D-05 Max=2.36D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=8.13D-05 Max=2.67D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=5.11D-05 Max=1.36D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=4.96D-05 Max=1.72D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=3.53D-05 Max=8.77D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=3.24D-05 Max=8.45D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=3.46D-05 Max=9.85D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=3.12D-05 Max=6.77D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=2.65D-05 Max=5.48D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=2.60D-05 Max=8.08D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=2.86D-05 Max=7.73D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=2.24D-05 Max=6.66D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.22D-05 Max=5.20D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=1.61D-05 Max=3.38D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=1.15D-05 Max=3.09D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=8.96D-06 Max=3.69D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=6.02D-06 Max=3.19D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=5.47D-06 Max=3.46D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=5.06D-06 Max=2.06D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=5.81D-06 Max=3.39D-04 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.30D-06 Max=2.03D-04 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=2.64D-06 Max=8.61D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.03D-06 Max=5.27D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.35D-06 Max=4.12D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=7.83D-07 Max=2.23D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=4.83D-07 Max=1.21D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=3.46D-07 Max=7.17D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.24D-07 Max=4.61D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.46D-07 Max=2.80D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.00D-07 Max=2.00D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=4.85D-08 Max=8.28D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=3.01D-08 Max=4.85D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=2.08D-08 Max=4.07D-07 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     0 RMS=9.90D-09 Max=2.01D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    35 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.24D-04 Max=1.10D-02 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.59D-04 Max=4.37D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.87D-05 Max=1.96D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.43D-05 Max=8.62D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.20D-05 Max=1.09D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.60D-05 Max=3.69D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.30D-05 Max=4.40D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.48D-05 Max=3.46D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.97D-06 Max=2.16D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=9.33D-06 Max=2.08D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.02D-05 Max=2.57D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=9.34D-06 Max=2.56D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=7.28D-06 Max=1.72D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=6.94D-06 Max=1.31D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=4.93D-06 Max=9.74D-05 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=3.93D-06 Max=1.39D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=3.76D-06 Max=1.21D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=3.98D-06 Max=2.47D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=3.92D-06 Max=2.31D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.80D-06 Max=1.49D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.95D-06 Max=1.10D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.20D-06 Max=4.12D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=9.30D-07 Max=2.41D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=5.84D-07 Max=1.69D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=3.83D-07 Max=1.02D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.45D-07 Max=7.42D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.24D-07 Max=2.53D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.06D-07 Max=2.43D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=6.12D-08 Max=1.19D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=3.50D-08 Max=6.07D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=2.55D-08 Max=4.34D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     0 RMS=1.29D-08 Max=2.29D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    31 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.47D-04 Max=1.44D-02 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.68D-04 Max=4.85D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.35D-05 Max=2.30D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.98D-05 Max=4.94D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.09D-05 Max=4.77D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.08D-05 Max=5.14D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.97D-05 Max=7.36D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.79D-05 Max=3.93D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.65D-05 Max=4.15D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.47D-05 Max=3.71D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.21D-05 Max=2.74D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.17D-05 Max=2.90D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=9.50D-06 Max=2.05D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=7.16D-06 Max=1.72D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=6.89D-06 Max=1.67D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=6.97D-06 Max=3.33D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=6.38D-06 Max=2.71D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.97D-06 Max=3.89D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.43D-06 Max=2.94D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.56D-06 Max=2.00D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=2.84D-06 Max=9.81D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.90D-06 Max=4.11D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.33D-06 Max=3.35D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=9.54D-07 Max=2.53D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=7.32D-07 Max=1.58D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=5.12D-07 Max=1.40D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=3.19D-07 Max=7.84D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=2.18D-07 Max=6.54D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.51D-07 Max=3.16D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.03D-07 Max=2.45D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=5.95D-08 Max=1.09D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=4.45D-08 Max=9.22D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=2.50D-08 Max=4.92D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=1.74D-08 Max=2.66D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    33 iterations.
+ Incorrect curvature in search direction -- initial direction reversed.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  2 and  3.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.60D-04 Max=1.62D-02 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.28D-04 Max=3.60D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.58D-05 Max=2.36D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=3.54D-05 Max=1.18D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.07D-05 Max=7.80D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=3.04D-05 Max=1.17D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.78D-05 Max=5.54D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.52D-05 Max=6.05D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.75D-05 Max=4.59D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.31D-05 Max=2.56D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=9.30D-06 Max=2.19D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.11D-05 Max=2.56D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=7.55D-06 Max=1.70D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=6.37D-06 Max=2.00D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=7.07D-06 Max=2.28D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=5.84D-06 Max=2.97D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=4.93D-06 Max=2.61D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=4.11D-06 Max=1.75D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=2.88D-06 Max=7.02D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.26D-06 Max=4.36D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.65D-06 Max=2.83D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.51D-06 Max=2.67D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=1.07D-06 Max=2.45D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=7.50D-07 Max=1.36D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=6.03D-07 Max=1.12D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.18D-07 Max=7.88D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.31D-07 Max=4.20D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.61D-07 Max=3.81D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=9.10D-08 Max=1.89D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=7.57D-08 Max=1.70D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=4.09D-08 Max=1.09D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.77D-08 Max=5.73D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.94D-08 Max=4.09D-07 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     0 RMS=1.06D-08 Max=2.11D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    33 iterations.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  3 and  4.
+ Gradient too large for Newton-Raphson -- use scaled steepest descent instead.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.13D-04 Max=4.48D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.40D-04 Max=3.91D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=4.40D-05 Max=3.95D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=5.49D-05 Max=1.63D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=3.30D-05 Max=7.89D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.55D-05 Max=8.20D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.81D-05 Max=5.43D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.89D-05 Max=5.18D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.53D-05 Max=3.26D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.38D-05 Max=3.43D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.18D-05 Max=2.96D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=9.21D-06 Max=2.74D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=8.02D-06 Max=2.12D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=8.67D-06 Max=3.16D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=7.40D-06 Max=1.92D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=6.92D-06 Max=1.68D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=5.45D-06 Max=1.06D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=5.14D-06 Max=9.85D-05 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=3.25D-06 Max=6.83D-05 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=2.44D-06 Max=5.22D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.57D-06 Max=2.91D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=9.22D-07 Max=1.91D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=7.30D-07 Max=1.91D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=4.18D-07 Max=1.23D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.62D-07 Max=5.01D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.95D-07 Max=4.24D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=1.19D-07 Max=2.47D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=7.93D-08 Max=1.93D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=5.97D-08 Max=9.66D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=3.82D-08 Max=8.57D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.02D-08 Max=8.56D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.73D-08 Max=4.04D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.15D-08 Max=2.36D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    32 iterations.
+     Accept linear search using points  1 and  2.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=8.80D-05 Max=1.96D-03 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=1.33D-04 Max=4.32D-03 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=9.10D-05 Max=1.93D-03 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=9.66D-05 Max=2.04D-03 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.13D-04 Max=2.50D-03 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=9.19D-05 Max=2.05D-03 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=8.25D-05 Max=1.60D-03 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=8.22D-05 Max=2.06D-03 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=6.01D-05 Max=1.27D-03 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=5.86D-05 Max=1.33D-03 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=5.93D-05 Max=1.74D-03 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=4.62D-05 Max=1.58D-03 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=3.36D-05 Max=9.66D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=2.72D-05 Max=6.86D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=2.56D-05 Max=5.33D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=2.73D-05 Max=5.98D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=2.03D-05 Max=2.97D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=1.94D-05 Max=3.01D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=1.62D-05 Max=2.86D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=1.51D-05 Max=3.26D-04 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.03D-05 Max=2.52D-04 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=8.61D-06 Max=1.88D-04 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=4.75D-06 Max=1.04D-04 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=2.81D-06 Max=7.32D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=2.21D-06 Max=4.25D-05 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=1.34D-06 Max=2.74D-05 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=8.66D-07 Max=1.88D-05 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=6.61D-07 Max=1.37D-05 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=4.03D-07 Max=7.56D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=2.78D-07 Max=6.20D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.74D-07 Max=3.15D-06 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=1.10D-07 Max=2.20D-06 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=7.35D-08 Max=1.49D-06 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=4.74D-08 Max=9.48D-07 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=2.68D-08 Max=4.26D-07 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     1 RMS=1.72D-08 Max=3.16D-07 NDo=     1
+ LinEq1:  Iter= 36 NonCon=     0 RMS=1.18D-08 Max=2.32D-07 NDo=     1
+ Linear equations converged to 2.944D-08 2.944D-07 after    36 iterations.
+     Minimum is close to point  2 DX=  1.06D-01 DF= -5.56D-06 DXR=  9.61D-02 DFR=  9.32D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.63D-05 Max=4.52D-04 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.12D-05 Max=7.76D-04 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.78D-05 Max=6.12D-04 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.69D-05 Max=4.75D-04 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.92D-05 Max=5.40D-04 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.80D-05 Max=4.00D-04 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.70D-05 Max=3.06D-04 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=1.75D-05 Max=2.93D-04 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=1.43D-05 Max=3.45D-04 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.09D-05 Max=2.14D-04 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.15D-05 Max=2.39D-04 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=8.87D-06 Max=1.60D-04 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=8.00D-06 Max=1.73D-04 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=6.59D-06 Max=1.41D-04 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=6.91D-06 Max=1.71D-04 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=5.15D-06 Max=1.48D-04 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=5.02D-06 Max=1.33D-04 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=4.68D-06 Max=1.39D-04 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=4.89D-06 Max=1.18D-04 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.42D-06 Max=8.95D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.93D-06 Max=4.77D-05 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.27D-06 Max=2.73D-05 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=7.85D-07 Max=1.59D-05 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=5.34D-07 Max=1.05D-05 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=3.63D-07 Max=6.92D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=2.71D-07 Max=6.58D-06 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.02D-07 Max=6.53D-06 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.28D-07 Max=3.95D-06 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=9.84D-08 Max=2.77D-06 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=5.93D-08 Max=1.56D-06 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.18D-08 Max=7.33D-07 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.30D-08 Max=4.75D-07 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     0 RMS=1.08D-08 Max=1.72D-07 NDo=     1
+ Linear equations converged to 1.816D-08 1.816D-07 after    32 iterations.
+     Minimum is close to point  2 DX=  9.35D-02 DF= -2.18D-07 DXR=  8.55D-02 DFR=  7.37D-03 which will be used.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=1.66D-06 Max=6.06D-05 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.15D-06 Max=7.87D-05 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=1.86D-06 Max=6.12D-05 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=1.56D-06 Max=5.20D-05 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=1.57D-06 Max=5.22D-05 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=1.19D-06 Max=3.54D-05 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=1.06D-06 Max=2.66D-05 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=8.65D-07 Max=2.13D-05 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=9.29D-07 Max=1.62D-05 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=7.26D-07 Max=1.61D-05 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=5.64D-07 Max=1.07D-05 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=5.37D-07 Max=1.17D-05 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=6.17D-07 Max=1.06D-05 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=5.17D-07 Max=1.08D-05 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=5.33D-07 Max=1.17D-05 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=5.35D-07 Max=1.00D-05 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=4.79D-07 Max=7.79D-06 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=3.60D-07 Max=6.68D-06 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=3.26D-07 Max=8.09D-06 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=3.05D-07 Max=1.16D-05 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=1.72D-07 Max=6.11D-06 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=1.49D-07 Max=4.77D-06 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=9.43D-08 Max=2.29D-06 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=7.17D-08 Max=1.57D-06 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=5.02D-08 Max=1.22D-06 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=3.59D-08 Max=9.08D-07 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=2.46D-08 Max=7.33D-07 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=1.67D-08 Max=5.40D-07 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=1.13D-08 Max=3.66D-07 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=6.46D-09 Max=1.83D-07 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=3.71D-09 Max=5.31D-08 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=2.58D-09 Max=3.46D-08 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=1.33D-09 Max=2.03D-08 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=1.01D-09 Max=1.84D-08 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     0 RMS=5.43D-10 Max=1.04D-08 NDo=     1
+ Linear equations converged to 1.774D-09 1.774D-08 after    34 iterations.
+ LinEq1:  Iter=  0 NonCon=     1 RMS=2.87D-08 Max=5.74D-07 NDo=     1
+ LinEq1:  Iter=  1 NonCon=     1 RMS=2.89D-08 Max=6.13D-07 NDo=     1
+ LinEq1:  Iter=  2 NonCon=     1 RMS=3.45D-08 Max=1.20D-06 NDo=     1
+ LinEq1:  Iter=  3 NonCon=     1 RMS=2.62D-08 Max=4.41D-07 NDo=     1
+ LinEq1:  Iter=  4 NonCon=     1 RMS=2.38D-08 Max=5.14D-07 NDo=     1
+ LinEq1:  Iter=  5 NonCon=     1 RMS=2.28D-08 Max=4.34D-07 NDo=     1
+ LinEq1:  Iter=  6 NonCon=     1 RMS=2.32D-08 Max=3.92D-07 NDo=     1
+ LinEq1:  Iter=  7 NonCon=     1 RMS=2.45D-08 Max=4.37D-07 NDo=     1
+ LinEq1:  Iter=  8 NonCon=     1 RMS=2.39D-08 Max=5.74D-07 NDo=     1
+ LinEq1:  Iter=  9 NonCon=     1 RMS=1.93D-08 Max=5.01D-07 NDo=     1
+ LinEq1:  Iter= 10 NonCon=     1 RMS=1.72D-08 Max=3.29D-07 NDo=     1
+ LinEq1:  Iter= 11 NonCon=     1 RMS=1.77D-08 Max=3.87D-07 NDo=     1
+ LinEq1:  Iter= 12 NonCon=     1 RMS=1.50D-08 Max=3.17D-07 NDo=     1
+ LinEq1:  Iter= 13 NonCon=     1 RMS=1.08D-08 Max=2.36D-07 NDo=     1
+ LinEq1:  Iter= 14 NonCon=     1 RMS=8.65D-09 Max=1.84D-07 NDo=     1
+ LinEq1:  Iter= 15 NonCon=     1 RMS=8.25D-09 Max=1.43D-07 NDo=     1
+ LinEq1:  Iter= 16 NonCon=     1 RMS=8.13D-09 Max=2.40D-07 NDo=     1
+ LinEq1:  Iter= 17 NonCon=     1 RMS=6.87D-09 Max=1.51D-07 NDo=     1
+ LinEq1:  Iter= 18 NonCon=     1 RMS=5.33D-09 Max=1.38D-07 NDo=     1
+ LinEq1:  Iter= 19 NonCon=     1 RMS=4.97D-09 Max=1.26D-07 NDo=     1
+ LinEq1:  Iter= 20 NonCon=     1 RMS=4.63D-09 Max=1.10D-07 NDo=     1
+ LinEq1:  Iter= 21 NonCon=     1 RMS=3.24D-09 Max=9.63D-08 NDo=     1
+ LinEq1:  Iter= 22 NonCon=     1 RMS=2.14D-09 Max=7.76D-08 NDo=     1
+ LinEq1:  Iter= 23 NonCon=     1 RMS=1.85D-09 Max=5.59D-08 NDo=     1
+ LinEq1:  Iter= 24 NonCon=     1 RMS=1.30D-09 Max=4.14D-08 NDo=     1
+ LinEq1:  Iter= 25 NonCon=     1 RMS=8.78D-10 Max=2.02D-08 NDo=     1
+ LinEq1:  Iter= 26 NonCon=     1 RMS=5.54D-10 Max=1.05D-08 NDo=     1
+ LinEq1:  Iter= 27 NonCon=     1 RMS=3.94D-10 Max=8.77D-09 NDo=     1
+ LinEq1:  Iter= 28 NonCon=     1 RMS=2.74D-10 Max=6.03D-09 NDo=     1
+ LinEq1:  Iter= 29 NonCon=     1 RMS=1.60D-10 Max=3.51D-09 NDo=     1
+ LinEq1:  Iter= 30 NonCon=     1 RMS=1.07D-10 Max=2.53D-09 NDo=     1
+ LinEq1:  Iter= 31 NonCon=     1 RMS=6.46D-11 Max=1.57D-09 NDo=     1
+ LinEq1:  Iter= 32 NonCon=     1 RMS=4.03D-11 Max=7.75D-10 NDo=     1
+ LinEq1:  Iter= 33 NonCon=     1 RMS=2.91D-11 Max=4.99D-10 NDo=     1
+ LinEq1:  Iter= 34 NonCon=     1 RMS=1.67D-11 Max=4.68D-10 NDo=     1
+ LinEq1:  Iter= 35 NonCon=     0 RMS=8.63D-12 Max=1.60D-10 NDo=     1
+ Linear equations converged to 3.614D-11 3.614D-10 after    35 iterations.
+ SCF Done:  E(RPM6) =  -1.23818275076     a.u. after  141 cycles
+            Convg  =    0.9994D-07                   807 Fock formations.
+              S**2 =  0.0000                  -V/T =  0.9929
+ Range of M.O.s used for correlation:     1   439
+ NBasis=   439 NAE=   150 NBE=   150 NFC=     0 NFV=     0
+ NROrb=    439 NOA=   150 NOB=   150 NVA=   289 NVB=   289
+ Symmetrizing basis deriv contribution to polar:
+ IMax=3 JMax=2 DiffMx= 0.00D+00
+ G2DrvN: will do    53 centers at a time, making    1 passes.
+ Calling FoFCou, ICntrl=  3107 FMM=F I1Cent=   0 AccDes= 0.00D+00.
+ End of G2Drv F.D. properties file   721 does not exist.
+ End of G2Drv F.D. properties file   722 does not exist.
+ End of G2Drv F.D. properties file   788 does not exist.
+          IDoAtm=00000000000000000000000000000000000000000000000011
+          IDoAtm=11
+          Differentiating once with respect to electric field.
+                with respect to dipole field.
+          Differentiating once with respect to nuclear coordinates.
+          Electric field/nuclear overlap derivatives assumed to be zero.
+ Keep J ints in memory in canonical form, NReq=4278518.
+          There are    15 degrees of freedom in the 1st order CPHF.  IDoFFX=5 NUNeed=    15.
+ LinEq1:  Iter=  0 NonCon=    15 RMS=3.00D-01 Max=9.31D+00 NDo=    15
+ AX will form    15 AO Fock derivatives at one time.
+ LinEq1:  Iter=  1 NonCon=    15 RMS=2.87D-01 Max=6.00D+00 NDo=    15
+ LinEq1:  Iter=  2 NonCon=    15 RMS=2.38D-01 Max=4.55D+00 NDo=    15
+ LinEq1:  Iter=  3 NonCon=    15 RMS=2.13D-01 Max=3.78D+00 NDo=    15
+ LinEq1:  Iter=  4 NonCon=    15 RMS=1.61D-01 Max=3.85D+00 NDo=    15
+ LinEq1:  Iter=  5 NonCon=    15 RMS=1.55D-01 Max=3.04D+00 NDo=    15
+ LinEq1:  Iter=  6 NonCon=    15 RMS=1.44D-01 Max=2.96D+00 NDo=    15
+ LinEq1:  Iter=  7 NonCon=    15 RMS=1.26D-01 Max=3.06D+00 NDo=    15
+ LinEq1:  Iter=  8 NonCon=    15 RMS=1.54D-01 Max=3.56D+00 NDo=    15
+ LinEq1:  Iter=  9 NonCon=    15 RMS=1.44D-01 Max=2.26D+00 NDo=    15
+ LinEq1:  Iter= 10 NonCon=    15 RMS=1.14D-01 Max=2.31D+00 NDo=    15
+ LinEq1:  Iter= 11 NonCon=    15 RMS=9.45D-02 Max=1.62D+00 NDo=    15
+ LinEq1:  Iter= 12 NonCon=    15 RMS=8.93D-02 Max=1.63D+00 NDo=    15
+ LinEq1:  Iter= 13 NonCon=    15 RMS=7.57D-02 Max=1.53D+00 NDo=    15
+ LinEq1:  Iter= 14 NonCon=    15 RMS=7.89D-02 Max=1.42D+00 NDo=    15
+ LinEq1:  Iter= 15 NonCon=    15 RMS=6.19D-02 Max=1.02D+00 NDo=    15
+ LinEq1:  Iter= 16 NonCon=    15 RMS=6.15D-02 Max=1.27D+00 NDo=    15
+ LinEq1:  Iter= 17 NonCon=    15 RMS=3.68D-02 Max=9.49D-01 NDo=    15
+ LinEq1:  Iter= 18 NonCon=    15 RMS=3.13D-02 Max=6.03D-01 NDo=    15
+ LinEq1:  Iter= 19 NonCon=    15 RMS=2.89D-02 Max=7.05D-01 NDo=    15
+ LinEq1:  Iter= 20 NonCon=    15 RMS=1.80D-02 Max=4.20D-01 NDo=    15
+ LinEq1:  Iter= 21 NonCon=    15 RMS=1.46D-02 Max=3.36D-01 NDo=    15
+ LinEq1:  Iter= 22 NonCon=    15 RMS=9.47D-03 Max=1.98D-01 NDo=    15
+ LinEq1:  Iter= 23 NonCon=    15 RMS=6.93D-03 Max=1.35D-01 NDo=    15
+ LinEq1:  Iter= 24 NonCon=    15 RMS=7.09D-03 Max=1.55D-01 NDo=    15
+ LinEq1:  Iter= 25 NonCon=    15 RMS=5.72D-03 Max=8.38D-02 NDo=    15
+ LinEq1:  Iter= 26 NonCon=    15 RMS=3.41D-03 Max=6.95D-02 NDo=    15
+ LinEq1:  Iter= 27 NonCon=    15 RMS=2.29D-03 Max=4.01D-02 NDo=    15
+ LinEq1:  Iter= 28 NonCon=    15 RMS=1.63D-03 Max=2.77D-02 NDo=    15
+ LinEq1:  Iter= 29 NonCon=    15 RMS=1.00D-03 Max=1.91D-02 NDo=    15
+ LinEq1:  Iter= 30 NonCon=    15 RMS=6.04D-04 Max=9.64D-03 NDo=    15
+ LinEq1:  Iter= 31 NonCon=    15 RMS=3.37D-04 Max=5.22D-03 NDo=    15
+ LinEq1:  Iter= 32 NonCon=    15 RMS=1.71D-04 Max=3.99D-03 NDo=    15
+ LinEq1:  Iter= 33 NonCon=    15 RMS=1.31D-04 Max=2.32D-03 NDo=    15
+ LinEq1:  Iter= 34 NonCon=    15 RMS=7.38D-05 Max=1.78D-03 NDo=    15
+ LinEq1:  Iter= 35 NonCon=    15 RMS=4.11D-05 Max=8.37D-04 NDo=    15
+ LinEq1:  Iter= 36 NonCon=    15 RMS=3.32D-05 Max=7.16D-04 NDo=    15
+ LinEq1:  Iter= 37 NonCon=    15 RMS=1.76D-05 Max=4.57D-04 NDo=    15
+ LinEq1:  Iter= 38 NonCon=    15 RMS=9.05D-06 Max=2.19D-04 NDo=    15
+ LinEq1:  Iter= 39 NonCon=    10 RMS=6.89D-06 Max=1.59D-04 NDo=    15
+ LinEq1:  Iter= 40 NonCon=     8 RMS=3.82D-06 Max=8.19D-05 NDo=    15
+ LinEq1:  Iter= 41 NonCon=     5 RMS=2.13D-06 Max=4.59D-05 NDo=    15
+ LinEq1:  Iter= 42 NonCon=     3 RMS=1.72D-06 Max=3.45D-05 NDo=    15
+ LinEq1:  Iter= 43 NonCon=     3 RMS=8.88D-07 Max=1.88D-05 NDo=    15
+ LinEq1:  Iter= 44 NonCon=     3 RMS=3.90D-07 Max=6.66D-06 NDo=    15
+ LinEq1:  Iter= 45 NonCon=     3 RMS=2.33D-07 Max=3.90D-06 NDo=    15
+ LinEq1:  Iter= 46 NonCon=     3 RMS=1.48D-07 Max=2.72D-06 NDo=    15
+ LinEq1:  Iter= 47 NonCon=     3 RMS=7.55D-08 Max=1.34D-06 NDo=    15
+ LinEq1:  Iter= 48 NonCon=     3 RMS=2.87D-08 Max=4.82D-07 NDo=    15
+ LinEq1:  Iter= 49 NonCon=     2 RMS=1.08D-08 Max=2.26D-07 NDo=    15
+ LinEq1:  Iter= 50 NonCon=     0 RMS=3.98D-09 Max=9.50D-08 NDo=    15
+ Linear equations converged to 1.000D-08 1.000D-07 after    50 iterations.
+ Isotropic polarizability for W=    0.000000     2875.05 Bohr**3.
+ End of Minotr F.D. properties file   721 does not exist.
+ End of Minotr F.D. properties file   722 does not exist.
+ End of Minotr F.D. properties file   788 does not exist.
+
+ **********************************************************************
+
+            Population analysis using the SCF density.
+
+ **********************************************************************
+
+ Orbital symmetries:
+       Occupied  (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A)
+       Virtual   (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A) (A)
+                 (A)
+ The electronic state is 1-A.
+ Alpha  occ. eigenvalues --   -1.20664  -1.10198  -1.08033  -1.04160  -1.02130
+ Alpha  occ. eigenvalues --   -1.00426  -1.00087  -0.99602  -0.99131  -0.99003
+ Alpha  occ. eigenvalues --   -0.98541  -0.98358  -0.98217  -0.97809  -0.97710
+ Alpha  occ. eigenvalues --   -0.97320  -0.97003  -0.96695  -0.96121  -0.95799
+ Alpha  occ. eigenvalues --   -0.95451  -0.95366  -0.94895  -0.94168  -0.94032
+ Alpha  occ. eigenvalues --   -0.93353  -0.93001  -0.92655  -0.92464  -0.92246
+ Alpha  occ. eigenvalues --   -0.91422  -0.90821  -0.88529  -0.59566  -0.57582
+ Alpha  occ. eigenvalues --   -0.50477  -0.49548  -0.49494  -0.49041  -0.48047
+ Alpha  occ. eigenvalues --   -0.47952  -0.47307  -0.47143  -0.46681  -0.46532
+ Alpha  occ. eigenvalues --   -0.46077  -0.45492  -0.45271  -0.44567  -0.44229
+ Alpha  occ. eigenvalues --   -0.44051  -0.43731  -0.43579  -0.43198  -0.42824
+ Alpha  occ. eigenvalues --   -0.42655  -0.42349  -0.42253  -0.41401  -0.41255
+ Alpha  occ. eigenvalues --   -0.41170  -0.40285  -0.39747  -0.39655  -0.39580
+ Alpha  occ. eigenvalues --   -0.39271  -0.38715  -0.38538  -0.38049  -0.37958
+ Alpha  occ. eigenvalues --   -0.37706  -0.37381  -0.37001  -0.36668  -0.36202
+ Alpha  occ. eigenvalues --   -0.35626  -0.35253  -0.35115  -0.35024  -0.34873
+ Alpha  occ. eigenvalues --   -0.34740  -0.34678  -0.34446  -0.34334  -0.34316
+ Alpha  occ. eigenvalues --   -0.33875  -0.33478  -0.33255  -0.33180  -0.33074
+ Alpha  occ. eigenvalues --   -0.33000  -0.32878  -0.32708  -0.32624  -0.32413
+ Alpha  occ. eigenvalues --   -0.32195  -0.31832  -0.31764  -0.31598  -0.31358
+ Alpha  occ. eigenvalues --   -0.30904  -0.30736  -0.30492  -0.30373  -0.30225
+ Alpha  occ. eigenvalues --   -0.30036  -0.29727  -0.29497  -0.29438  -0.28868
+ Alpha  occ. eigenvalues --   -0.28817  -0.28546  -0.28440  -0.28156  -0.28079
+ Alpha  occ. eigenvalues --   -0.28017  -0.27867  -0.27720  -0.27495  -0.27416
+ Alpha  occ. eigenvalues --   -0.27210  -0.27087  -0.27042  -0.26714  -0.26576
+ Alpha  occ. eigenvalues --   -0.26490  -0.26427  -0.26226  -0.26035  -0.25999
+ Alpha  occ. eigenvalues --   -0.25785  -0.25653  -0.25509  -0.25435  -0.25235
+ Alpha  occ. eigenvalues --   -0.25178  -0.24763  -0.24340  -0.24314  -0.24019
+ Alpha  occ. eigenvalues --   -0.23728  -0.23532  -0.23483  -0.23031  -0.22879
+ Alpha  occ. eigenvalues --   -0.22806  -0.22679  -0.22494  -0.22151  -0.21326
+ Alpha virt. eigenvalues --   -0.08017  -0.07878  -0.07567  -0.07101  -0.06472
+ Alpha virt. eigenvalues --   -0.06113  -0.05674  -0.05253  -0.05206  -0.04508
+ Alpha virt. eigenvalues --   -0.04201  -0.04037  -0.03637  -0.03161  -0.02589
+ Alpha virt. eigenvalues --   -0.02286  -0.02131  -0.01844  -0.01780  -0.01566
+ Alpha virt. eigenvalues --   -0.01410  -0.01157  -0.00970  -0.00528  -0.00130
+ Alpha virt. eigenvalues --    0.00158   0.00326   0.00556   0.01087   0.01138
+ Alpha virt. eigenvalues --    0.01204   0.01634   0.01804   0.02012   0.02286
+ Alpha virt. eigenvalues --    0.02406   0.02477   0.02730   0.02926   0.03196
+ Alpha virt. eigenvalues --    0.03222   0.03761   0.03851   0.03976   0.04059
+ Alpha virt. eigenvalues --    0.04457   0.04475   0.04531   0.04710   0.04966
+ Alpha virt. eigenvalues --    0.05110   0.05398   0.05602   0.05655   0.05754
+ Alpha virt. eigenvalues --    0.05778   0.05971   0.06079   0.06203   0.06273
+ Alpha virt. eigenvalues --    0.06335   0.06350   0.06557   0.06649   0.06739
+ Alpha virt. eigenvalues --    0.06747   0.06776   0.06819   0.06878   0.07033
+ Alpha virt. eigenvalues --    0.07095   0.07131   0.07187   0.07193   0.07381
+ Alpha virt. eigenvalues --    0.07445   0.07668   0.07689   0.07861   0.07886
+ Alpha virt. eigenvalues --    0.07931   0.07985   0.08024   0.08140   0.08206
+ Alpha virt. eigenvalues --    0.08266   0.08332   0.08479   0.08490   0.08542
+ Alpha virt. eigenvalues --    0.08600   0.08781   0.08852   0.08932   0.09009
+ Alpha virt. eigenvalues --    0.09052   0.09112   0.09125   0.09194   0.09304
+ Alpha virt. eigenvalues --    0.09335   0.09414   0.09449   0.09557   0.09579
+ Alpha virt. eigenvalues --    0.09651   0.09785   0.09805   0.09885   0.09910
+ Alpha virt. eigenvalues --    0.09941   0.09975   0.10023   0.10128   0.10181
+ Alpha virt. eigenvalues --    0.10230   0.10272   0.10295   0.10313   0.10341
+ Alpha virt. eigenvalues --    0.10392   0.10425   0.10433   0.10498   0.10548
+ Alpha virt. eigenvalues --    0.10561   0.10617   0.10641   0.10660   0.10698
+ Alpha virt. eigenvalues --    0.10719   0.10829   0.10848   0.10859   0.10947
+ Alpha virt. eigenvalues --    0.10970   0.10971   0.11031   0.11032   0.11119
+ Alpha virt. eigenvalues --    0.11155   0.11401   0.11518   0.11584   0.11606
+ Alpha virt. eigenvalues --    0.11704   0.11723   0.11748   0.11847   0.11888
+ Alpha virt. eigenvalues --    0.11923   0.11957   0.11991   0.12032   0.12078
+ Alpha virt. eigenvalues --    0.12154   0.12217   0.12228   0.12323   0.12340
+ Alpha virt. eigenvalues --    0.12380   0.12405   0.12429   0.12479   0.12492
+ Alpha virt. eigenvalues --    0.12550   0.12605   0.12670   0.12697   0.12795
+ Alpha virt. eigenvalues --    0.12821   0.12884   0.12892   0.12938   0.12981
+ Alpha virt. eigenvalues --    0.13006   0.13044   0.13122   0.13140   0.13173
+ Alpha virt. eigenvalues --    0.13236   0.13267   0.13297   0.13348   0.13418
+ Alpha virt. eigenvalues --    0.13529   0.13636   0.13651   0.13703   0.13777
+ Alpha virt. eigenvalues --    0.13835   0.13859   0.13908   0.13975   0.13996
+ Alpha virt. eigenvalues --    0.14051   0.14114   0.14158   0.14207   0.14242
+ Alpha virt. eigenvalues --    0.14260   0.14352   0.14365   0.14400   0.14461
+ Alpha virt. eigenvalues --    0.14474   0.14509   0.14516   0.14608   0.14649
+ Alpha virt. eigenvalues --    0.14679   0.14724   0.14784   0.14826   0.15044
+ Alpha virt. eigenvalues --    0.15136   0.15192   0.15231   0.15289   0.15313
+ Alpha virt. eigenvalues --    0.15359   0.15495   0.15508   0.15594   0.15639
+ Alpha virt. eigenvalues --    0.15862   0.15981   0.16021   0.16089   0.16258
+ Alpha virt. eigenvalues --    0.16298   0.16338   0.16440   0.16573   0.16720
+ Alpha virt. eigenvalues --    0.16769   0.16811   0.16978   0.17070   0.17229
+ Alpha virt. eigenvalues --    0.17348   0.17522   0.17575   0.17635   0.17706
+ Alpha virt. eigenvalues --    0.17892   0.17960   0.18108   0.18260   0.18309
+ Alpha virt. eigenvalues --    0.18436   0.18489   0.18627   0.18676   0.18859
+ Alpha virt. eigenvalues --    0.18949   0.19140   0.19253   0.19607   0.19821
+ Alpha virt. eigenvalues --    0.20221   0.20872   0.21237   0.21315   0.21463
+ Alpha virt. eigenvalues --    0.21592   0.21703   0.22094   0.22186   0.22485
+ Alpha virt. eigenvalues --    0.25511   0.26285   0.26923   0.29533   0.30323
+ Alpha virt. eigenvalues --    0.31467   0.31725   0.34264   0.37232   0.37860
+ Alpha virt. eigenvalues --    0.39119   0.40236   0.41537   0.43598   0.46240
+ Alpha virt. eigenvalues --    0.48098   0.48504   0.49272   0.49892
+          Condensed to atoms (all electrons):
+ Mulliken charges:
+               1
+     1  Mo   0.194370
+     2  S   -0.388504
+     3  S   -0.440647
+     4  Mo   0.024326
+     5  Mo   0.151367
+     6  Mo   0.190032
+     7  S    0.049084
+     8  S   -0.003077
+     9  S    0.121982
+    10  S    0.007248
+    11  S   -0.022954
+    12  S    0.116079
+    13  Mo   0.234497
+    14  Mo   0.290001
+    15  Mo   1.082417
+    16  S   -0.344758
+    17  S   -0.341203
+    18  S   -0.227848
+    19  S   -0.420352
+    20  S   -0.354681
+    21  S   -0.226764
+    22  Mo  -0.057634
+    23  Mo   0.018002
+    24  Mo  -0.000977
+    25  Mo  -0.381819
+    26  Mo   0.058703
+    27  Mo  -0.093738
+    28  Mo   0.058054
+    29  Mo   0.312552
+    30  S    0.534013
+    31  S    0.190883
+    32  S   -0.451466
+    33  S    0.020218
+    34  S    0.237075
+    35  S    0.007027
+    36  S   -0.091186
+    37  S    0.070732
+    38  S   -0.514083
+    39  S    0.254250
+    40  S    0.177054
+    41  S   -0.464907
+    42  S    0.055170
+    43  S    0.273482
+    44  S   -0.035762
+    45  S   -0.103928
+    46  S    0.064651
+    47  S   -0.535055
+    48  Pt   0.577586
+    49  N   -0.621060
+    50  H    0.245909
+    51  H    0.261306
+    52  H    0.244335
+ Sum of Mulliken charges =   0.00000
+ Mulliken charges with hydrogens summed into heavy atoms:
+               1
+     1  Mo   0.194370
+     2  S   -0.388504
+     3  S   -0.440647
+     4  Mo   0.024326
+     5  Mo   0.151367
+     6  Mo   0.190032
+     7  S    0.049084
+     8  S   -0.003077
+     9  S    0.121982
+    10  S    0.007248
+    11  S   -0.022954
+    12  S    0.116079
+    13  Mo   0.234497
+    14  Mo   0.290001
+    15  Mo   1.082417
+    16  S   -0.344758
+    17  S   -0.341203
+    18  S   -0.227848
+    19  S   -0.420352
+    20  S   -0.354681
+    21  S   -0.226764
+    22  Mo  -0.057634
+    23  Mo   0.018002
+    24  Mo  -0.000977
+    25  Mo  -0.381819
+    26  Mo   0.058703
+    27  Mo  -0.093738
+    28  Mo   0.058054
+    29  Mo   0.312552
+    30  S    0.534013
+    31  S    0.190883
+    32  S   -0.451466
+    33  S    0.020218
+    34  S    0.237075
+    35  S    0.007027
+    36  S   -0.091186
+    37  S    0.070732
+    38  S   -0.514083
+    39  S    0.254250
+    40  S    0.177054
+    41  S   -0.464907
+    42  S    0.055170
+    43  S    0.273482
+    44  S   -0.035762
+    45  S   -0.103928
+    46  S    0.064651
+    47  S   -0.535055
+    48  Pt   0.577586
+    49  N    0.130489
+ Charge=              0.0000 electrons
+ Dipole moment (field-independent basis, Debye):
+    X=            -43.0340    Y=              1.4606    Z=             -1.4077  Tot=             43.0818
+ N-N= 4.340855780332D+03 E-N=-8.364252547116D+03  KE=-1.755699149993D+02
+  Exact polarizability:3836.592  73.6003704.569  -8.453 -12.4621083.995
+ Approx polarizability:4067.314   1.5283077.254   5.065  -9.7912584.707
+ Calling FoFJK, ICntrl=    100127 FMM=F ISym2X=0 I1Cent= 0 IOpClX= 0 NMat=1 NMatS=1 NMatT=0.
+   48 atoms frozen in the vibrational analysis.
+ ******    3 imaginary frequencies (negative Signs) ****** 
+ Diagonal vibrational polarizability:
+        1.7302146      29.2639111      49.0220221
+ Harmonic frequencies (cm**-1), IR intensities (KM/Mole), Raman scattering
+ activities (A**4/AMU), depolarization ratios for plane and unpolarized
+ incident light, reduced masses (AMU), force constants (mDyne/A),
+ and normal coordinates:
+                      1                      2                      3
+                      A                      A                      A
+ Frequencies --   -680.4134              -372.0116              -124.6920
+ Red. masses --      1.0511                 3.5520                 4.4537
+ Frc consts  --      0.2867                 0.2896                 0.0408
+ IR Inten    --     47.2919               281.1791                 2.2268
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7     0.01   0.02  -0.05    -0.07   0.31  -0.30     0.51   0.09  -0.01
+    50   1     0.63   0.34   0.30    -0.49   0.31   0.12     0.26   0.03   0.10
+    51   1    -0.28   0.41  -0.25     0.18   0.03  -0.28     0.55  -0.08   0.24
+    52   1    -0.02  -0.29   0.02     0.10   0.58   0.00     0.45   0.22  -0.19
+                      4                      5                      6
+                      A                      A                      A
+ Frequencies --    291.1273               566.9875               786.1023
+ Red. masses --      5.2635                 1.0851                 1.0907
+ Frc consts  --      0.2628                 0.2055                 0.3971
+ IR Inten    --     22.1514                 7.5722               103.9777
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7    -0.07   0.36   0.44     0.00   0.08  -0.01    -0.01   0.05  -0.06
+    50   1     0.08   0.33   0.11    -0.06   0.05  -0.06     0.21   0.01  -0.54
+    51   1     0.14   0.35   0.08    -0.31   0.06   0.65     0.05  -0.17   0.32
+    52   1    -0.02   0.31   0.55    -0.27  -0.23  -0.58     0.13  -0.43   0.57
+                      7                      8                      9
+                      A                      A                      A
+ Frequencies --   1123.2757              1490.7174              1643.6593
+ Red. masses --      1.0462                 1.0679                 1.0406
+ Frc consts  --      0.7777                 1.3982                 1.6563
+ IR Inten    --    217.8842                61.3575                 9.5321
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7    -0.04  -0.03  -0.02    -0.07   0.01   0.01     0.00  -0.05  -0.01
+    50   1     0.11   0.11   0.69     0.57   0.20  -0.22     0.23   0.03  -0.33
+    51   1     0.07  -0.31   0.53     0.43  -0.44  -0.06    -0.38   0.27   0.26
+    52   1     0.08   0.14   0.31    -0.09   0.21  -0.38     0.17   0.71   0.10
+                     10                     11                     12
+                      A                      A                      A
+ Frequencies --   2586.4525              2732.8020              2824.2288
+ Red. masses --      1.0823                 1.0724                 1.0540
+ Frc consts  --      4.2658                 4.7188                 4.9533
+ IR Inten    --     87.8825                96.1690               105.3745
+  Atom  AN      X      Y      Z        X      Y      Z        X      Y      Z
+    49   7     0.03  -0.07   0.02    -0.05  -0.04  -0.02    -0.05   0.01   0.03
+    50   1    -0.34   0.92  -0.15    -0.03  -0.01  -0.02    -0.05   0.04   0.03
+    51   1     0.01  -0.05   0.02     0.66   0.67   0.28    -0.15  -0.11  -0.02
+    52   1    -0.02  -0.04   0.03     0.13  -0.07  -0.07     0.92  -0.17  -0.29
+
+ -------------------
+ - Thermochemistry -
+ -------------------
+ Temperature   298.150 Kelvin.  Pressure   1.00000 Atm.
+ Atom     1 has atomic number 42 and mass  97.90550
+ Atom     2 has atomic number 16 and mass  31.97207
+ Atom     3 has atomic number 16 and mass  31.97207
+ Atom     4 has atomic number 42 and mass  97.90550
+ Atom     5 has atomic number 42 and mass  97.90550
+ Atom     6 has atomic number 42 and mass  97.90550
+ Atom     7 has atomic number 16 and mass  31.97207
+ Atom     8 has atomic number 16 and mass  31.97207
+ Atom     9 has atomic number 16 and mass  31.97207
+ Atom    10 has atomic number 16 and mass  31.97207
+ Atom    11 has atomic number 16 and mass  31.97207
+ Atom    12 has atomic number 16 and mass  31.97207
+ Atom    13 has atomic number 42 and mass  97.90550
+ Atom    14 has atomic number 42 and mass  97.90550
+ Atom    15 has atomic number 42 and mass  97.90550
+ Atom    16 has atomic number 16 and mass  31.97207
+ Atom    17 has atomic number 16 and mass  31.97207
+ Atom    18 has atomic number 16 and mass  31.97207
+ Atom    19 has atomic number 16 and mass  31.97207
+ Atom    20 has atomic number 16 and mass  31.97207
+ Atom    21 has atomic number 16 and mass  31.97207
+ Atom    22 has atomic number 42 and mass  97.90550
+ Atom    23 has atomic number 42 and mass  97.90550
+ Atom    24 has atomic number 42 and mass  97.90550
+ Atom    25 has atomic number 42 and mass  97.90550
+ Atom    26 has atomic number 42 and mass  97.90550
+ Atom    27 has atomic number 42 and mass  97.90550
+ Atom    28 has atomic number 42 and mass  97.90550
+ Atom    29 has atomic number 42 and mass  97.90550
+ Atom    30 has atomic number 16 and mass  31.97207
+ Atom    31 has atomic number 16 and mass  31.97207
+ Atom    32 has atomic number 16 and mass  31.97207
+ Atom    33 has atomic number 16 and mass  31.97207
+ Atom    34 has atomic number 16 and mass  31.97207
+ Atom    35 has atomic number 16 and mass  31.97207
+ Atom    36 has atomic number 16 and mass  31.97207
+ Atom    37 has atomic number 16 and mass  31.97207
+ Atom    38 has atomic number 16 and mass  31.97207
+ Atom    39 has atomic number 16 and mass  31.97207
+ Atom    40 has atomic number 16 and mass  31.97207
+ Atom    41 has atomic number 16 and mass  31.97207
+ Atom    42 has atomic number 16 and mass  31.97207
+ Atom    43 has atomic number 16 and mass  31.97207
+ Atom    44 has atomic number 16 and mass  31.97207
+ Atom    45 has atomic number 16 and mass  31.97207
+ Atom    46 has atomic number 16 and mass  31.97207
+ Atom    47 has atomic number 16 and mass  31.97207
+ Atom    48 has atomic number 78 and mass 194.96480
+ Atom    49 has atomic number  7 and mass  14.00307
+ Atom    50 has atomic number  1 and mass   1.00783
+ Atom    51 has atomic number  1 and mass   1.00783
+ Atom    52 has atomic number  1 and mass   1.00783
+ Molecular mass:  2703.68015 amu.
+ Principal axes and moments of inertia in atomic units:
+                           1         2         3
+     Eigenvalues --  ******************************
+           X            1.00000  -0.00032   0.00023
+           Y            0.00032   1.00000   0.00023
+           Z           -0.00023  -0.00023   1.00000
+ This molecule is an asymmetric top.
+ Rotational symmetry number  1.
+ Warning -- assumption of classical behavior for rotation
+           may cause significant error
+ Rotational temperatures (Kelvin)      0.00125     0.00045     0.00036
+ Rotational constants (GHZ):           0.02605     0.00931     0.00740
+    3 imaginary frequencies ignored.
+ Zero-point vibrational energy      84009.9 (Joules/Mol)
+                                   20.07884 (Kcal/Mol)
+ Warning -- explicit consideration of   2 degrees of freedom as
+           vibrations may cause significant error
+ Vibrational temperatures:    418.87   815.77  1131.02  1616.14  2144.81
+          (Kelvin)           2364.86  3721.32  3931.89  4063.43
+ 
+ Zero-point correction=                           0.031998 (Hartree/Particle)
+ Thermal correction to Energy=                    0.035554
+ Thermal correction to Enthalpy=                  0.036498
+ Thermal correction to Gibbs Free Energy=        -0.008696
+ Sum of electronic and zero-point Energies=             -1.206185
+ Sum of electronic and thermal Energies=                -1.202629
+ Sum of electronic and thermal Enthalpies=              -1.201685
+ Sum of electronic and thermal Free Energies=           -1.246878
+ 
+                     E (Thermal)             CV                S
+                      KCal/Mol        Cal/Mol-Kelvin    Cal/Mol-Kelvin
+ Total                   22.310              9.814             95.118
+ Electronic               0.000              0.000              0.000
+ Translational            0.889              2.981             49.546
+ Rotational               0.889              2.981             43.300
+ Vibrational             20.533              3.852              2.272
+ Vibration     1          0.687              1.690              1.467
+ Vibration     2          0.923              1.103              0.510
+                       Q            Log10(Q)             Ln(Q)
+ Total Bot       0.999251D+04          3.999674          9.209591
+ Total V=0       0.521854D+19         18.717549         43.098748
+ Vib (Bot)       0.279135D-14        -14.554186        -33.512251
+ Vib (Bot)    1  0.656467D+00         -0.182787         -0.420882
+ Vib (Bot)    2  0.272251D+00         -0.565030         -1.301030
+ Vib (V=0)       0.145777D+01          0.163689          0.376907
+ Vib (V=0)    1  0.132520D+01          0.122280          0.281561
+ Vib (V=0)    2  0.106932D+01          0.029106          0.067019
+ Electronic      0.100000D+01          0.000000          0.000000
+ Translational   0.552571D+10          9.742388         22.432678
+ Rotational      0.647846D+09          8.811472         20.289164
+ ***** Axes restored to original set *****
+ -------------------------------------------------------------------
+ Center     Atomic                   Forces (Hartrees/Bohr)
+ Number     Number              X              Y              Z
+ -------------------------------------------------------------------
+      1       42           0.000000000    0.000000000    0.000000000
+      2       16           0.000000000    0.000000000    0.000000000
+      3       16           0.000000000    0.000000000    0.000000000
+      4       42           0.000000000    0.000000000    0.000000000
+      5       42           0.000000000    0.000000000    0.000000000
+      6       42           0.000000000    0.000000000    0.000000000
+      7       16           0.000000000    0.000000000    0.000000000
+      8       16           0.000000000    0.000000000    0.000000000
+      9       16           0.000000000    0.000000000    0.000000000
+     10       16           0.000000000    0.000000000    0.000000000
+     11       16           0.000000000    0.000000000    0.000000000
+     12       16           0.000000000    0.000000000    0.000000000
+     13       42           0.000000000    0.000000000    0.000000000
+     14       42           0.000000000    0.000000000    0.000000000
+     15       42           0.000000000    0.000000000    0.000000000
+     16       16           0.000000000    0.000000000    0.000000000
+     17       16           0.000000000    0.000000000    0.000000000
+     18       16           0.000000000    0.000000000    0.000000000
+     19       16           0.000000000    0.000000000    0.000000000
+     20       16           0.000000000    0.000000000    0.000000000
+     21       16           0.000000000    0.000000000    0.000000000
+     22       42           0.000000000    0.000000000    0.000000000
+     23       42           0.000000000    0.000000000    0.000000000
+     24       42           0.000000000    0.000000000    0.000000000
+     25       42           0.000000000    0.000000000    0.000000000
+     26       42           0.000000000    0.000000000    0.000000000
+     27       42           0.000000000    0.000000000    0.000000000
+     28       42           0.000000000    0.000000000    0.000000000
+     29       42           0.000000000    0.000000000    0.000000000
+     30       16           0.000000000    0.000000000    0.000000000
+     31       16           0.000000000    0.000000000    0.000000000
+     32       16           0.000000000    0.000000000    0.000000000
+     33       16           0.000000000    0.000000000    0.000000000
+     34       16           0.000000000    0.000000000    0.000000000
+     35       16           0.000000000    0.000000000    0.000000000
+     36       16           0.000000000    0.000000000    0.000000000
+     37       16           0.000000000    0.000000000    0.000000000
+     38       16           0.000000000    0.000000000    0.000000000
+     39       16           0.000000000    0.000000000    0.000000000
+     40       16           0.000000000    0.000000000    0.000000000
+     41       16           0.000000000    0.000000000    0.000000000
+     42       16           0.000000000    0.000000000    0.000000000
+     43       16           0.000000000    0.000000000    0.000000000
+     44       16           0.000000000    0.000000000    0.000000000
+     45       16           0.000000000    0.000000000    0.000000000
+     46       16           0.000000000    0.000000000    0.000000000
+     47       16           0.000000000    0.000000000    0.000000000
+     48       78           0.000000000    0.000000000    0.000000000
+     49        7           0.007864162    0.018993900    0.040099647
+     50        1           0.018305724   -0.017452552    0.040549732
+     51        1           0.024383770    0.000141267    0.012070428
+     52        1          -0.009430408    0.015047517    0.020263753
+ -------------------------------------------------------------------
+ Cartesian Forces:  Max     0.040549732 RMS     0.006087414
+
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+ Berny optimization.
+ Search for a local minimum.
+ Step number   1 out of a maximum of    2
+ All quantities printed in internal units (Hartrees-Bohrs-Radians)
+ Second derivative matrix not updated -- analytic derivatives used.
+ ITU=  0
+     Eigenvalues ---   -0.03686  -0.01520  -0.00265   0.01151   0.02066
+     Eigenvalues ---    0.03291   0.05886   0.11057   0.12396   0.35470
+     Eigenvalues ---    0.60851   0.63628
+ Eigenvalue     1 is  -3.69D-02 should be greater than     0.000000 Eigenvector:
+                          Z49       Y50       Y49       Z50       Y51
+   1                    0.47096   0.45500   0.44843  -0.33052   0.30603
+                          X49       Z51       X50       X52       Y52
+   1                    0.21621   0.21477   0.18957   0.15277   0.10233
+ Eigenvalue     2 is  -1.52D-02 should be greater than     0.000000 Eigenvector:
+                          X50       Y52       Y51       Z50       Y50
+   1                    0.65934  -0.40374   0.34941  -0.30596  -0.28620
+                          Y49       X52       Z52       Z49       X51
+   1                   -0.22312  -0.15378   0.12223  -0.10343  -0.06620
+ Eigenvalue     3 is  -2.65D-03 should be greater than     0.000000 Eigenvector:
+                          X52       X49       X51       Y51       Z51
+   1                    0.53446   0.50039   0.41565  -0.34262  -0.28154
+                          X50       Y49       Z50       Y50       Z52
+   1                    0.19912  -0.12810  -0.11974  -0.09375   0.08755
+ Quadratic step=2.615D+00 exceeds max=3.000D-01 adjusted using Lamda=-1.717D-01.
+ Angle between NR and scaled steps=  36.86 degrees.
+ Angle between quadratic step and forces=  20.88 degrees.
+ Linear search not attempted -- first point.
+ Variable       Old X    -DE/DX   Delta X   Delta X   Delta X     New X
+                                 (Linear)    (Quad)   (Total)
+    X1       -1.68905   0.00000   0.00000   0.00000   0.00000  -1.68905
+    Y1        0.74802   0.00000   0.00000   0.00000   0.00000   0.74802
+    Z1        2.86376   0.00000   0.00000   0.00000   0.00000   2.86376
+    X2       -4.20341   0.00000   0.00000   0.00000   0.00000  -4.20341
+    Y2        2.73140   0.00000   0.00000   0.00000   0.00000   2.73140
+    Z2        6.12027   0.00000   0.00000   0.00000   0.00000   6.12027
+    X3       -5.44153   0.00000   0.00000   0.00000   0.00000  -5.44153
+    Y3        1.68133   0.00000   0.00000   0.00000   0.00000   1.68133
+    Z3        0.43303   0.00000   0.00000   0.00000   0.00000   0.43303
+    X4        4.16205   0.00000   0.00000   0.00000   0.00000   4.16205
+    Y4        1.24476   0.00000   0.00000   0.00000   0.00000   1.24476
+    Z4        1.49825   0.00000   0.00000   0.00000   0.00000   1.49825
+    X5       10.01314   0.00000   0.00000   0.00000   0.00000  10.01314
+    Y5        1.74150   0.00000   0.00000   0.00000   0.00000   1.74150
+    Z5        0.13273   0.00000   0.00000   0.00000   0.00000   0.13273
+    X6       15.86424   0.00000   0.00000   0.00000   0.00000  15.86424
+    Y6        2.23823   0.00000   0.00000   0.00000   0.00000   2.23823
+    Z6       -1.23278   0.00000   0.00000   0.00000   0.00000  -1.23278
+    X7        1.64769   0.00000   0.00000   0.00000   0.00000   1.64769
+    Y7        3.22813   0.00000   0.00000   0.00000   0.00000   3.22813
+    Z7        4.75475   0.00000   0.00000   0.00000   0.00000   4.75475
+    X8        7.49878   0.00000   0.00000   0.00000   0.00000   7.49878
+    Y8        3.72487   0.00000   0.00000   0.00000   0.00000   3.72487
+    Z8        3.38924   0.00000   0.00000   0.00000   0.00000   3.38924
+    X9       13.34988   0.00000   0.00000   0.00000   0.00000  13.34988
+    Y9        4.22161   0.00000   0.00000   0.00000   0.00000   4.22161
+    Z9        2.02373   0.00000   0.00000   0.00000   0.00000   2.02373
+   X10        0.40956   0.00000   0.00000   0.00000   0.00000   0.40956
+   Y10        2.17807   0.00000   0.00000   0.00000   0.00000   2.17807
+   Z10       -0.93248   0.00000   0.00000   0.00000   0.00000  -0.93248
+   X11        6.26066   0.00000   0.00000   0.00000   0.00000   6.26066
+   Y11        2.67480   0.00000   0.00000   0.00000   0.00000   2.67480
+   Z11       -2.29799   0.00000   0.00000   0.00000   0.00000  -2.29799
+   X12       12.11176   0.00000   0.00000   0.00000   0.00000  12.11176
+   Y12        3.17154   0.00000   0.00000   0.00000   0.00000   3.17154
+   Z12       -3.66350   0.00000   0.00000   0.00000   0.00000  -3.66350
+   X13       -5.23822   0.00000   0.00000   0.00000   0.00000  -5.23822
+   Y13        5.61978   0.00000   0.00000   0.00000   0.00000   5.61978
+   Z13        2.73692   0.00000   0.00000   0.00000   0.00000   2.73692
+   X14       -8.78739   0.00000   0.00000   0.00000   0.00000  -8.78739
+   Y14       10.49154   0.00000   0.00000   0.00000   0.00000  10.49154
+   Z14        2.61008   0.00000   0.00000   0.00000   0.00000   2.61008
+   X15      -12.33656   0.00000   0.00000   0.00000   0.00000 -12.33656
+   Y15       15.36329   0.00000   0.00000   0.00000   0.00000  15.36329
+   Z15        2.48324   0.00000   0.00000   0.00000   0.00000   2.48324
+   X16       -7.75258   0.00000   0.00000   0.00000   0.00000  -7.75258
+   Y16        7.60315   0.00000   0.00000   0.00000   0.00000   7.60315
+   Z16        5.99343   0.00000   0.00000   0.00000   0.00000   5.99343
+   X17      -11.30175   0.00000   0.00000   0.00000   0.00000 -11.30175
+   Y17       12.47491   0.00000   0.00000   0.00000   0.00000  12.47491
+   Z17        5.86659   0.00000   0.00000   0.00000   0.00000   5.86659
+   X18      -14.85092   0.00000   0.00000   0.00000   0.00000 -14.85092
+   Y18       17.34667   0.00000   0.00000   0.00000   0.00000  17.34667
+   Z18        5.73975   0.00000   0.00000   0.00000   0.00000   5.73975
+   X19       -8.99070   0.00000   0.00000   0.00000   0.00000  -8.99070
+   Y19        6.55309   0.00000   0.00000   0.00000   0.00000   6.55309
+   Z19        0.30620   0.00000   0.00000   0.00000   0.00000   0.30620
+   X20      -12.53987   0.00000   0.00000   0.00000   0.00000 -12.53987
+   Y20       11.42484   0.00000   0.00000   0.00000   0.00000  11.42484
+   Z20        0.17936   0.00000   0.00000   0.00000   0.00000   0.17936
+   X21      -16.08904   0.00000   0.00000   0.00000   0.00000 -16.08904
+   Y21       16.29660   0.00000   0.00000   0.00000   0.00000  16.29660
+   Z21        0.05252   0.00000   0.00000   0.00000   0.00000   0.05252
+   X22        0.61288   0.00000   0.00000   0.00000   0.00000   0.61288
+   Y22        6.11652   0.00000   0.00000   0.00000   0.00000   6.11652
+   Z22        1.37141   0.00000   0.00000   0.00000   0.00000   1.37141
+   X23       -2.93629   0.00000   0.00000   0.00000   0.00000  -2.93629
+   Y23       10.98827   0.00000   0.00000   0.00000   0.00000  10.98827
+   Z23        1.24457   0.00000   0.00000   0.00000   0.00000   1.24457
+   X24       -6.48546   0.00000   0.00000   0.00000   0.00000  -6.48546
+   Y24       15.86003   0.00000   0.00000   0.00000   0.00000  15.86003
+   Z24        1.11773   0.00000   0.00000   0.00000   0.00000   1.11773
+   X25        6.46398   0.00000   0.00000   0.00000   0.00000   6.46398
+   Y25        6.61325   0.00000   0.00000   0.00000   0.00000   6.61325
+   Z25        0.00590   0.00000   0.00000   0.00000   0.00000   0.00590
+   X26       -0.63436   0.00000   0.00000   0.00000   0.00000  -0.63436
+   Y26       16.35677   0.00000   0.00000   0.00000   0.00000  16.35677
+   Z26       -0.24778   0.00000   0.00000   0.00000   0.00000  -0.24778
+   X27       12.31507   0.00000   0.00000   0.00000   0.00000  12.31507
+   Y27        7.10999   0.00000   0.00000   0.00000   0.00000   7.10999
+   Z27       -1.35962   0.00000   0.00000   0.00000   0.00000  -1.35962
+   X28        8.76590   0.00000   0.00000   0.00000   0.00000   8.76590
+   Y28       11.98175   0.00000   0.00000   0.00000   0.00000  11.98175
+   Z28       -1.48646   0.00000   0.00000   0.00000   0.00000  -1.48646
+   X29        5.21673   0.00000   0.00000   0.00000   0.00000   5.21673
+   Y29       16.85350   0.00000   0.00000   0.00000   0.00000  16.85350
+   Z29       -1.61330   0.00000   0.00000   0.00000   0.00000  -1.61330
+   X30       -1.90148   0.00000   0.00000   0.00000   0.00000  -1.90148
+   Y30        8.09989   0.00000   0.00000   0.00000   0.00000   8.09989
+   Z30        4.62791   0.00000   0.00000   0.00000   0.00000   4.62791
+   X31       -5.45065   0.00000   0.00000   0.00000   0.00000  -5.45065
+   Y31       12.97165   0.00000   0.00000   0.00000   0.00000  12.97165
+   Z31        4.50108   0.00000   0.00000   0.00000   0.00000   4.50108
+   X32       -8.99982   0.00000   0.00000   0.00000   0.00000  -8.99982
+   Y32       17.84340   0.00000   0.00000   0.00000   0.00000  17.84340
+   Z32        4.37424   0.00000   0.00000   0.00000   0.00000   4.37424
+   X33        3.94961   0.00000   0.00000   0.00000   0.00000   3.94961
+   Y33        8.59663   0.00000   0.00000   0.00000   0.00000   8.59663
+   Z33        3.26240   0.00000   0.00000   0.00000   0.00000   3.26240
+   X34        0.40044   0.00000   0.00000   0.00000   0.00000   0.40044
+   Y34       13.46838   0.00000   0.00000   0.00000   0.00000  13.46838
+   Z34        3.13556   0.00000   0.00000   0.00000   0.00000   3.13556
+   X35       -3.14872   0.00000   0.00000   0.00000   0.00000  -3.14872
+   Y35       18.34014   0.00000   0.00000   0.00000   0.00000  18.34014
+   Z35        3.00872   0.00000   0.00000   0.00000   0.00000   3.00872
+   X36        9.80071   0.00000   0.00000   0.00000   0.00000   9.80071
+   Y36        9.09336   0.00000   0.00000   0.00000   0.00000   9.09336
+   Z36        1.89689   0.00000   0.00000   0.00000   0.00000   1.89689
+   X37        6.25154   0.00000   0.00000   0.00000   0.00000   6.25154
+   Y37       13.96512   0.00000   0.00000   0.00000   0.00000  13.96512
+   Z37        1.77005   0.00000   0.00000   0.00000   0.00000   1.77005
+   X38        2.70237   0.00000   0.00000   0.00000   0.00000   2.70237
+   Y38       18.83688   0.00000   0.00000   0.00000   0.00000  18.83688
+   Z38        1.64321   0.00000   0.00000   0.00000   0.00000   1.64321
+   X39       -3.13961   0.00000   0.00000   0.00000   0.00000  -3.13961
+   Y39        7.04982   0.00000   0.00000   0.00000   0.00000   7.04982
+   Z39       -1.05932   0.00000   0.00000   0.00000   0.00000  -1.05932
+   X40       -6.68878   0.00000   0.00000   0.00000   0.00000  -6.68878
+   Y40       11.92158   0.00000   0.00000   0.00000   0.00000  11.92158
+   Z40       -1.18616   0.00000   0.00000   0.00000   0.00000  -1.18616
+   X41      -10.23794   0.00000   0.00000   0.00000   0.00000 -10.23794
+   Y41       16.79334   0.00000   0.00000   0.00000   0.00000  16.79334
+   Z41       -1.31300   0.00000   0.00000   0.00000   0.00000  -1.31300
+   X42        2.71149   0.00000   0.00000   0.00000   0.00000   2.71149
+   Y42        7.54656   0.00000   0.00000   0.00000   0.00000   7.54656
+   Z42       -2.42483   0.00000   0.00000   0.00000   0.00000  -2.42483
+   X43       -0.83768   0.00000   0.00000   0.00000   0.00000  -0.83768
+   Y43       12.41832   0.00000   0.00000   0.00000   0.00000  12.41832
+   Z43       -2.55167   0.00000   0.00000   0.00000   0.00000  -2.55167
+   X44       -4.38685   0.00000   0.00000   0.00000   0.00000  -4.38685
+   Y44       17.29007   0.00000   0.00000   0.00000   0.00000  17.29007
+   Z44       -2.67851   0.00000   0.00000   0.00000   0.00000  -2.67851
+   X45        8.56259   0.00000   0.00000   0.00000   0.00000   8.56259
+   Y45        8.04330   0.00000   0.00000   0.00000   0.00000   8.04330
+   Z45       -3.79034   0.00000   0.00000   0.00000   0.00000  -3.79034
+   X46        5.01342   0.00000   0.00000   0.00000   0.00000   5.01342
+   Y46       12.91505   0.00000   0.00000   0.00000   0.00000  12.91505
+   Z46       -3.91718   0.00000   0.00000   0.00000   0.00000  -3.91718
+   X47        1.46425   0.00000   0.00000   0.00000   0.00000   1.46425
+   Y47       17.78681   0.00000   0.00000   0.00000   0.00000  17.78681
+   Z47       -4.04402   0.00000   0.00000   0.00000   0.00000  -4.04402
+   X48        2.91481   0.00000   0.00000   0.00000   0.00000   2.91481
+   Y48       11.48501   0.00000   0.00000   0.00000   0.00000  11.48501
+   Z48       -0.12094   0.00000   0.00000   0.00000   0.00000  -0.12094
+   X49       -0.08958   0.00786   0.00000   0.04392   0.04392  -0.04566
+   Y49       11.05892   0.01899   0.00000   0.04527   0.04527  11.10419
+   Z49        7.15225   0.04010   0.00000   0.15448   0.15448   7.30672
+   X50       -0.32238   0.01831   0.00000   0.06878   0.06878  -0.25361
+   Y50        9.18635  -0.01745   0.00000  -0.01040  -0.01040   9.17595
+   Z50        7.05049   0.04055   0.00000   0.18024   0.18024   7.23073
+   X51        1.34561   0.02438   0.00000   0.06248   0.06248   1.40808
+   Y51       11.57676   0.00014   0.00000  -0.01431  -0.01431  11.56245
+   Z51        6.03728   0.01207   0.00000   0.08875   0.08875   6.12603
+   X52       -1.67174  -0.00943   0.00000   0.00625   0.00625  -1.66549
+   Y52       11.92216   0.01505   0.00000   0.02695   0.02695  11.94911
+   Z52        6.58423   0.02026   0.00000   0.11057   0.11057   6.69481
+         Item               Value     Threshold  Converged?
+ Maximum Force            0.040550     0.000450     NO 
+ RMS     Force            0.006087     0.000300     NO 
+ Maximum Displacement     0.180239     0.001800     NO 
+ RMS     Displacement     0.024038     0.001200     NO 
+ Predicted change in Energy=-1.864422D-02
+ GradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGradGrad
+
+ 1|1|UNPC-YASH|Freq|RPM6|ZDO|H3Mo15N1Pt1S32|YASH SHAW|05-Jan-2025|0||# 
+ freq pm6 guess=huckel scf=qc geom=connectivity||Title Card Required||0
+ ,1|Mo,-0.89380614,0.39583643,1.51543622|S,-2.22434844,1.44539259,3.238
+ 70546|S,-2.87953502,0.88972074,0.22915206|Mo,2.20246095,0.65869831,0.7
+ 9283811|Mo,5.29872804,0.92156018,0.07024001|Mo,8.39499513,1.18442206,-
+ 0.65235809|S,0.87191865,1.70825447,2.51610736|S,3.96818573,1.97111634,
+ 1.79350926|S,7.06445282,2.23397822,1.07091115|S,0.21673207,1.15258261,
+ -0.49344604|S,3.31299916,1.41544449,-1.21604414|S,6.40926625,1.6783063
+ 6,-1.93864224|Mo,-2.77194582,2.97385901,1.44831573|Mo,-4.65008552,5.55
+ 188159,1.38119526|Mo,-6.52822521,8.12990416,1.31407477|S,-4.10248814,4
+ .02341517,3.17158497|S,-5.98062783,6.60143775,3.10446449|S,-7.85876752
+ ,9.17946033,3.03734401|S,-4.75767471,3.46774332,0.16203158|S,-6.635814
+ 4,6.04576588,0.09491109|S,-8.51395409,8.62378846,0.02779061|Mo,0.32432
+ 126,3.23672088,0.72571763|Mo,-1.55381844,5.81474346,0.65859715|Mo,-3.4
+ 3195813,8.39276604,0.59147667|Mo,3.42058835,3.49958276,0.00311953|Mo,-
+ 0.33569104,8.65562791,-0.13112143|Mo,6.51685543,3.76244463,-0.71947857
+ |Mo,4.63871574,6.34046721,-0.78659905|Mo,2.76057605,8.91848979,-0.8537
+ 1953|S,-1.00622104,4.28627705,2.44898687|S,-2.88436074,6.86429962,2.38
+ 186639|S,-4.76250043,9.4423222,2.3147459|S,2.09004604,4.54913892,1.726
+ 38877|S,0.21190634,7.1271615,1.65926829|S,-1.66623334,9.70518408,1.592
+ 1478|S,5.18631313,4.8120008,1.00379067|S,3.30817344,7.39002337,0.93667
+ 018|S,1.43003374,9.96804595,0.8695497|S,-1.66140762,3.73060519,-0.5605
+ 6652|S,-3.53954732,6.30862777,-0.62768701|S,-5.41768701,8.88665034,-0.
+ 69480749|S,1.43485947,3.99346707,-1.28316462|S,-0.44328022,6.57148964,
+ -1.35028511|S,-2.32141992,9.14951222,-1.41740559|S,4.53112655,4.256328
+ 94,-2.00576273|S,2.65298686,6.83435152,-2.07288321|S,0.77484717,9.4123
+ 741,-2.1400037|Pt,1.54244866,6.07760533,-0.06400095|N,-0.04740307,5.85
+ 212795,3.78480617|H,-0.17059724,4.86120729,3.73095971|H,0.71206446,6.1
+ 2615721,3.19479173|H,-0.88464677,6.30893723,3.48422628||Version=IA32W-
+ G09RevD.01|State=1-A|HF=-1.2381828|RMSD=0.000e+000|RMSF=6.087e-003|Zer
+ oPoint=0.0319977|Thermal=0.0355538|Dipole=14.9203839,-7.6648523,-2.434
+ 0211|DipoleDeriv=0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.4548237,-0.377
+ 5161,-0.4917251,-0.5384327,-1.1965656,-0.5215095,-0.5717383,-0.851883,
+ -1.288426,-0.009914,-0.106649,0.0699171,-0.2530255,-0.3014931,-0.06261
+ 38,0.0365671,0.0861957,0.3436912,0.2240276,0.1571903,0.0388149,0.08361
+ 67,0.1696046,-0.0016431,-0.1018485,-0.0841936,0.2552375,-0.033033,-0.1
+ 979353,0.0592196,0.0687627,0.2348524,0.0824184,-0.0254049,0.0909251,0.
+ 2834352|Polar=3750.4581168,-96.6917199,3592.5424048,-554.863606,-435.2
+ 792535,1282.1553284|HyperPolar=-28923.8302982,-43692.7363532,-41635.74
+ 95738,-23470.8483754,13402.2049122,17332.7143179,11905.9690257,-7367.7
+ 214307,-4145.4520881,1512.386674|PG=C01 [X(H3Mo15N1Pt1S32)]|NImag=3||0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.37855702,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.030
+ 38609,0.35208768,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.07030038,-0.10722218,0.13961723,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,-0.03920336,-0.00996017,0.00595443,0.03794511,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.031
+ 45978,-0.24218292,-0.01775114,0.01600288,0.23392592,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.0154
+ 1802,0.01056124,0.01274627,0.02049610,-0.00782901,0.03402142,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,-0.15145286,-0.03092911,0.10285177,-0.00154195,-0.00374339,0.003463
+ 74,0.19266000,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,-0.02032944,-0.04560631,0.03498121,-0.028082
+ 14,-0.00932100,0.02280030,0.04208872,0.06250315,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.10759195
+ ,0.03828982,-0.09781431,-0.00201933,-0.00178884,0.00203825,-0.09529013
+ ,-0.04535537,0.09504853,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.19658708,0.07549334,-0.05062849
+ ,0.00603864,0.00034554,0.00087993,-0.02869868,0.01333508,-0.00865060,0
+ .21858472,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.07698702,-0.07471146,0.04451822,0.03517212,-0.
+ 01610421,0.01256188,-0.00766360,0.00734765,-0.00395601,-0.09343081,0.1
+ 1176228,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,-0.06283747,0.05496745,-0.03486883,0.00137124,-0.0
+ 0042185,-0.00015163,0.02012101,-0.01286783,0.00990690,0.04316342,-0.03
+ 475839,0.04655580||0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,
+ 0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0
+ .,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.
+ ,0.,0.,0.,0.,0.,0.,0.,0.,0.,0.,-0.00786416,-0.01899390,-0.04009965,-0.
+ 01830572,0.01745255,-0.04054973,-0.02438377,-0.00014127,-0.01207043,0.
+ 00943041,-0.01504752,-0.02026375|||@
+
+
+ The number of Unix installations has grown to 10,
+  with more expected.
+                  -- The Unix Programmer's Manual,
+                     2nd Edition, June, 1972.
+ Job cpu time:       0 days  0 hours  4 minutes  5.0 seconds.
+ File lengths (MBytes):  RWF=   1712 Int=      0 D2E=      0 Chk=     11 Scr=      1
+ Normal termination of Gaussian 09 at Sun Jan 05 17:00:26 2025.
