@@ -1,10 +1,14 @@
 """
-STEP 5 — predict.py
-====================
-Load trained model + a .log file -> predict real FTIR spectrum -> plot it.
+STEP 5 — predict.py  (improved)
+==================================
+Changes vs original:
+  - Passes `u` (global features) to the model.
+  - parse_log_for_prediction extracts HOMO/LUMO/dipole/ZPE for blind prediction.
+  - Node/edge feature dims updated to 15/8.
+  - Pd and other metals supported in atom tables.
 
 Usage:
-    # Predict all structures in dataset:
+    # Predict all structures in dataset (with real FTIR comparison):
     python predict.py --checkpoint checkpoints/fold1_best.pt \
                       --dataset    data/dataset.json \
                       --output_dir results/
@@ -26,6 +30,44 @@ from scipy.signal import find_peaks
 
 from model import FTIRNet
 
+# ── Shared atom tables (keep in sync with parse_data.py) ─────────────────────
+ATOMIC_NUM = {
+    'H':1,'C':6,'N':7,'O':8,'F':9,'Si':14,'S':16,'Cl':17,
+    'Br':35,'I':53,'P':15,'B':5,
+    'Pd':46,'Pt':78,'Ni':28,'Cu':29,'Zn':30,'Co':27,'Fe':26,
+    'Mn':25,'Cr':24,'Ti':22,'Ru':44,'Rh':45,'Ag':47,'Au':79,
+}
+NUM_ATOMIC = {v: k for k, v in ATOMIC_NUM.items()}
+
+ELECTRO = {
+    'H':2.20,'C':2.55,'N':3.04,'O':3.44,'F':3.98,'P':2.19,'B':2.04,
+    'Si':1.90,'S':2.58,'Cl':3.16,'Br':2.96,'I':2.66,
+    'Pd':2.20,'Pt':2.28,'Ni':1.91,'Cu':1.90,'Zn':1.65,'Co':1.88,
+    'Fe':1.83,'Mn':1.55,'Cr':1.66,'Ti':1.54,'Ru':2.20,'Rh':2.28,
+    'Ag':1.93,'Au':2.54,
+}
+COV_RAD = {
+    'H':0.31,'C':0.76,'N':0.71,'O':0.66,'F':0.57,'P':1.07,'B':0.84,
+    'Si':1.11,'S':1.05,'Cl':1.02,'Br':1.20,'I':1.39,
+    'Pd':1.39,'Pt':1.36,'Ni':1.24,'Cu':1.32,'Zn':1.22,'Co':1.26,
+    'Fe':1.32,'Mn':1.61,'Cr':1.39,'Ti':1.60,'Ru':1.46,'Rh':1.42,
+    'Ag':1.45,'Au':1.36,
+}
+PERIOD = {
+    'H':1,'B':2,'C':2,'N':2,'O':2,'F':2,
+    'Si':3,'P':3,'S':3,'Cl':3,
+    'Br':4,'Fe':4,'Co':4,'Ni':4,'Cu':4,'Zn':4,'Ti':4,'Cr':4,'Mn':4,
+    'I':5,'Pd':5,'Rh':5,'Ru':5,'Ag':5,
+    'Pt':6,'Au':6,
+}
+GROUP = {
+    'H':1,'C':14,'N':15,'O':16,'F':17,'B':13,
+    'Si':14,'P':15,'S':16,'Cl':17,'Br':17,'I':17,
+    'Ti':4,'Cr':6,'Mn':7,'Fe':8,'Co':9,'Ni':10,'Cu':11,'Zn':12,
+    'Ru':8,'Rh':9,'Pd':10,'Ag':11,'Pt':10,'Au':11,
+}
+METALS = {'Pd','Pt','Ni','Cu','Zn','Co','Fe','Mn','Cr','Ti','Ru','Rh','Ag','Au'}
+
 
 def load_model(ckpt_path, device):
     ckpt  = torch.load(ckpt_path, map_location=device, weights_only=False)
@@ -33,8 +75,9 @@ def load_model(ckpt_path, device):
     model = FTIRNet(
         node_dim   = cfg['node_feat_dim'],
         edge_dim   = cfg['edge_feat_dim'],
-        hidden_dim = 64,
-        num_layers = 2,
+        global_dim = cfg.get('global_feat_dim', 0),
+        hidden_dim = 128,
+        num_layers = 3,
         out_dim    = cfg['spectrum_bins'],
         dropout    = 0.0,
     ).to(device)
@@ -45,53 +88,42 @@ def load_model(ckpt_path, device):
 
 
 def entry_to_graph(entry):
-    """Convert a dataset entry dict to a PyG graph."""
-    import torch
     from torch_geometric.data import Data
-    x          = torch.tensor(entry['node_features'], dtype=torch.float)
+    x          = torch.tensor(entry['node_features'],  dtype=torch.float)
     if not entry['edge_index']:
+        n_ef = len(entry['edge_features'][0]) if entry.get('edge_features') else 8
         edge_index = torch.empty((2, 0), dtype=torch.long)
-        edge_attr  = torch.empty((0, 6), dtype=torch.float)
+        edge_attr  = torch.empty((0, n_ef), dtype=torch.float)
     else:
         edge_index = torch.tensor(entry['edge_index'],    dtype=torch.long).t().contiguous()
         edge_attr  = torch.tensor(entry['edge_features'], dtype=torch.float)
-    y          = torch.tensor(entry['ftir_spectrum'], dtype=torch.float).unsqueeze(0)
-    return Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y,
+    y = torch.tensor(entry['ftir_spectrum'], dtype=torch.float).unsqueeze(0)
+    u = torch.tensor(entry.get('global_features', [0.0]*9), dtype=torch.float)
+    return Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y, u=u,
                 name=entry['name'])
 
 
 @torch.no_grad()
 def predict_entry(model, entry, device):
-    """Predict FTIR spectrum for one dataset entry."""
     from torch_geometric.data import Batch
     graph = entry_to_graph(entry)
     batch = Batch.from_data_list([graph]).to(device)
-    out   = model(batch.x, batch.edge_index, batch.edge_attr, batch.batch)
+    u     = batch.u if hasattr(batch, 'u') else None
+    out   = model(batch.x, batch.edge_index, batch.edge_attr, batch.batch, u=u)
     return out.squeeze().cpu().numpy()
 
 
 def parse_log_for_prediction(log_path):
-    """
-    Parse a NEW .log file that has no matching Excel.
-    Uses molecular graph only (no FTIR target needed for prediction).
-    """
+    """Parse a new .log file (no Excel required) for blind prediction."""
     import re
     import numpy as np
 
-    ATOMIC_NUM = {'H':1,'C':6,'N':7,'O':8,'F':9,'Si':14,'S':16,'Cl':17,'Br':35,'I':53,'Zn':30,'Pt':78,'Co':27}
-    ELECTRO    = {'H':2.20,'C':2.55,'N':3.04,'O':3.44,'F':3.98,
-                  'Si':1.90,'S':2.58,'Cl':3.16,'Br':2.96,'I':2.66,
-                  'Zn':1.65,'Pt':2.28,'Co':1.88}
-    COV_RAD    = {'H':0.31,'C':0.76,'N':0.71,'O':0.66,'F':0.57,
-                  'Si':1.11,'S':1.05,'Cl':1.02,'Br':1.20,'I':1.39,
-                  'Zn':1.22,'Pt':1.36,'Co':1.26}
-
     text = Path(log_path).read_text(errors='ignore')
-
-    # Coordinates
     atoms = None
-    for pat in [r"Standard orientation:.*?[-]{10,}\n.*?[-]{10,}\n(.*?)\n\s*[-]{10,}",
-                r"Input orientation:.*?[-]{10,}\n.*?[-]{10,}\n(.*?)\n\s*[-]{10,}"]:
+    for pat in [
+        r"Standard orientation:.*?[-]{10,}\n.*?[-]{10,}\n(.*?)\n\s*[-]{10,}",
+        r"Input orientation:.*?[-]{10,}\n.*?[-]{10,}\n(.*?)\n\s*[-]{10,}",
+    ]:
         blocks = re.findall(pat, text, re.DOTALL)
         if blocks:
             atoms = []
@@ -100,7 +132,7 @@ def parse_log_for_prediction(log_path):
                 if len(p) >= 6:
                     try:
                         anum = int(p[1])
-                        sym  = next((k for k,v in ATOMIC_NUM.items() if v==anum), f'X{anum}')
+                        sym  = NUM_ATOMIC.get(anum, f'X{anum}')
                         atoms.append({'symbol':sym,'x':float(p[3]),'y':float(p[4]),'z':float(p[5])})
                     except ValueError:
                         continue
@@ -111,91 +143,127 @@ def parse_log_for_prediction(log_path):
         print(f"Cannot parse coordinates from {log_path}")
         return None
 
-    # Mulliken charges
-    blocks = re.findall(r"Mulliken charges.*?:\n\s+1\n(.*?)\nSum of Mulliken", text, re.DOTALL)
-    charges = [0.0]*len(atoms)
-    if blocks:
-        ch = []
-        for line in blocks[-1].strip().split('\n'):
-            p = line.split()
-            if len(p)>=3:
-                try: ch.append(float(p[2]))
-                except: pass
-        if len(ch)==len(atoms):
-            charges = ch
+    # APT charges (fallback to Mulliken)
+    charges = [0.0] * len(atoms)
+    for pat, key in [
+        (r"APT charges:(.*?)Sum of APT", 2),
+        (r"Mulliken charges.*?:\n\s+1\n(.*?)\nSum of Mulliken", 2),
+    ]:
+        blocks = re.findall(pat, text, re.DOTALL)
+        if blocks:
+            ch = []
+            for line in blocks[-1].strip().split('\n'):
+                p = line.split()
+                if len(p) >= 3:
+                    try: ch.append(float(p[key]))
+                    except: pass
+            if len(ch) == len(atoms):
+                charges = ch
+                break
+
+    # Global features (HOMO/LUMO/dipole/ZPE)
+    global_feats = []
+    alpha_occ  = re.findall(r'Alpha  occ\. eigenvalues --\s+([\-\d\.\s]+)', text)
+    alpha_virt = re.findall(r'Alpha virt\. eigenvalues --\s+([\-\d\.\s]+)', text)
+    if alpha_occ and alpha_virt:
+        homo = max(float(x) for line in alpha_occ  for x in line.split())
+        lumo = min(float(x) for line in alpha_virt for x in line.split())
+        global_feats += [homo*27.211, lumo*27.211, (lumo-homo)*27.211]
+    else:
+        global_feats += [0.0, 0.0, 0.0]
+
+    dip = re.findall(r'X=\s*([-\d\.]+)\s+Y=\s*([-\d\.]+)\s+Z=\s*([-\d\.]+)\s+Tot=\s*([-\d\.]+)', text)
+    if dip:
+        global_feats += [float(x) for x in dip[-1]]
+    else:
+        global_feats += [0.0, 0.0, 0.0, 0.0]
+
+    scf = re.findall(r'SCF Done.*?=\s*([-\d\.]+)', text)
+    global_feats.append(float(scf[-1]) if scf else 0.0)
+    zpe = re.findall(r'Zero-point correction=\s*([-\d\.]+)', text)
+    global_feats.append(float(zpe[-1]) if zpe else 0.0)
 
     # Bonds
     coords = np.array([[a['x'],a['y'],a['z']] for a in atoms])
-    bonds  = []
+    metal_idx = [i for i,a in enumerate(atoms) if a['symbol'] in METALS]
+    if metal_idx:
+        metal_pos = coords[metal_idx]
+        min_dists = np.min(np.linalg.norm(coords[:,None,:]-metal_pos[None,:,:],axis=2),axis=1)
+    else:
+        min_dists = np.zeros(len(atoms))
+
+    bonds = []
     for i in range(len(atoms)):
-        for j in range(i+1,len(atoms)):
-            ri=COV_RAD.get(atoms[i]['symbol'],0.77)
-            rj=COV_RAD.get(atoms[j]['symbol'],0.77)
-            d=float(np.linalg.norm(coords[i]-coords[j]))
-            if d<1.2*(ri+rj):
+        for j in range(i+1, len(atoms)):
+            si, sj = atoms[i]['symbol'], atoms[j]['symbol']
+            ri, rj = COV_RAD.get(si,0.77), COV_RAD.get(sj,0.77)
+            d = float(np.linalg.norm(coords[i]-coords[j]))
+            scale = 1.35 if (si in METALS or sj in METALS) else 1.20
+            if d < scale*(ri+rj):
                 bonds.append((i,j,d))
 
-    degrees=[0]*len(atoms)
+    degrees = [0]*len(atoms)
+    bond_map = {i:[] for i in range(len(atoms))}
     for i,j,_ in bonds:
         degrees[i]+=1; degrees[j]+=1
+        bond_map[i].append(j); bond_map[j].append(i)
 
-    node_feats=[]
-    for k,a in enumerate(atoms):
-        s=a['symbol']
+    node_feats = []
+    for k, a in enumerate(atoms):
+        s = a['symbol']
+        h_count  = sum(1 for nb in bond_map[k] if atoms[nb]['symbol']=='H')
+        nb_syms  = [atoms[nb]['symbol'] for nb in bond_map[k]]
+        aromatic = float(s=='C' and nb_syms.count('C')>=2 and degrees[k]==3)
         node_feats.append([
             ATOMIC_NUM.get(s,0)/10.0, ELECTRO.get(s,0.0)/4.0,
             COV_RAD.get(s,0.77)/1.5,
-            float(s=='C'),float(s=='H'),float(s=='O'),float(s=='N'),
-            float(s in ('Zn','Pt','Co','Si','S','F','Cl','Br')),
+            PERIOD.get(s,4)/6.0, GROUP.get(s,10)/18.0,
+            float(s=='C'), float(s=='H'), float(s=='O'), float(s=='N'),
+            float(s in METALS),
             charges[k], degrees[k]/6.0,
+            float(min_dists[k])/5.0, h_count/4.0, aromatic,
         ])
 
-    edge_index,edge_feats=[],[]
+    edge_index, edge_feats = [], []
     for i,j,d in bonds:
-        ri=COV_RAD.get(atoms[i]['symbol'],0.77)
-        rj=COV_RAD.get(atoms[j]['symbol'],0.77)
-        ratio=d/(ri+rj)
-        si,sj=atoms[i]['symbol'],atoms[j]['symbol']
-        ef=[d/3.0,ratio,float(ratio<0.87),
-            float(si=='C' and sj=='C'),
-            float({si,sj}=={'C','O'}),float({si,sj}=={'C','H'})]
+        si,sj = atoms[i]['symbol'],atoms[j]['symbol']
+        ri,rj = COV_RAD.get(si,0.77),COV_RAD.get(sj,0.77)
+        ratio = d/(ri+rj)
+        ei,ej = ELECTRO.get(si,2.0),ELECTRO.get(sj,2.0)
+        ef = [d/3.0, ratio, float(ratio<0.87),
+              float(si=='C' and sj=='C'),
+              float({si,sj}=={'C','O'}), float({si,sj}=={'C','H'}),
+              float(si in METALS or sj in METALS), abs(ei-ej)/4.0]
         edge_index+=[[i,j],[j,i]]
         edge_feats+=[ef,ef]
 
     return {
-        'name':          Path(log_path).stem,
-        'n_atoms':       len(atoms),
-        'node_features': node_feats,
-        'edge_index':    edge_index,
-        'edge_features': edge_feats,
-        'ftir_spectrum': [0.0]*500,
-        'freq_min':      400,
-        'freq_max':      4000,
-        'n_bins':        500,
+        'name':            Path(log_path).stem,
+        'n_atoms':         len(atoms),
+        'node_features':   node_feats,
+        'edge_index':      edge_index,
+        'edge_features':   edge_feats,
+        'global_features': global_feats,
+        'ftir_spectrum':   [0.0]*500,
+        'freq_min':        400,
+        'freq_max':        3000,
+        'n_bins':          500,
     }
 
 
-def plot_spectrum(pred, target=None, name='', freq_min=1000, freq_max=3000, save_path=None):
-    """
-    Plot predicted FTIR spectrum.
-    If target is provided (real Excel data), overlay both for comparison.
-    """
-    x = np.linspace(freq_min, freq_max, len(pred))
-
+def plot_spectrum(pred, target=None, name='', freq_min=400, freq_max=3000, save_path=None):
+    x   = np.linspace(freq_min, freq_max, len(pred))
     fig, ax = plt.subplots(figsize=(13, 5))
 
-    # Plot real spectrum if available
     if target is not None:
         ax.plot(x, target, color='steelblue', lw=2.0, alpha=0.85,
-                label='Real FTIR (experimental)', zorder=2)
+                label='Computed FTIR (PM6)', zorder=2)
 
-    # Plot prediction
     ax.plot(x, pred, color='crimson', lw=1.8, ls='--', alpha=0.9,
             label='GNN Prediction', zorder=3)
 
-    # Find and annotate peaks
     peaks_idx, _ = find_peaks(pred, height=0.05, distance=5)
-    freqs_at_peaks = x[peaks_idx]
+    freqs_at_peaks  = x[peaks_idx]
     intens_at_peaks = pred[peaks_idx]
     top_peaks = sorted(zip(freqs_at_peaks, intens_at_peaks), key=lambda p:-p[1])[:10]
     for freq, intens in top_peaks:
@@ -203,19 +271,17 @@ def plot_spectrum(pred, target=None, name='', freq_min=1000, freq_max=3000, save
                     xytext=(0, 8), textcoords='offset points',
                     ha='center', fontsize=7, color='#c0392b')
 
-    # Metrics if we have ground truth
     if target is not None:
-        r = np.corrcoef(pred, target)[0,1]
+        r    = np.corrcoef(pred, target)[0,1]
         rmse = np.sqrt(np.mean((pred-target)**2))
         ax.text(0.02, 0.95, f"Pearson r = {r:.3f}   RMSE = {rmse:.4f}",
-                transform=ax.transAxes, fontsize=10,
-                verticalalignment='top',
+                transform=ax.transAxes, fontsize=10, verticalalignment='top',
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
 
     ax.set_xlabel('Wavenumber (cm⁻¹)', fontsize=12)
     ax.set_ylabel('Absorbance (normalised)', fontsize=12)
     ax.set_title(f'FTIR Spectrum — {name}', fontsize=13)
-    ax.set_xlim(freq_max, freq_min)   # FTIR convention: high to low
+    ax.set_xlim(freq_max, freq_min)
     ax.set_ylim(-0.03, 1.15)
     ax.legend(fontsize=10)
     ax.grid(True, alpha=0.25)
@@ -229,12 +295,9 @@ def plot_spectrum(pred, target=None, name='', freq_min=1000, freq_max=3000, save
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--checkpoint', required=True,
-                    help='e.g. checkpoints/fold1_best.pt')
-    ap.add_argument('--dataset',    default=None,
-                    help='data/dataset.json — predict all + compare to real FTIR')
-    ap.add_argument('--log_file',   default=None,
-                    help='A single new .log file with no Excel (blind prediction)')
+    ap.add_argument('--checkpoint', required=True)
+    ap.add_argument('--dataset',    default=None)
+    ap.add_argument('--log_file',   default=None)
     ap.add_argument('--output_dir', default='results')
     args = ap.parse_args()
 
@@ -242,61 +305,47 @@ def main():
     device     = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model, cfg = load_model(args.checkpoint, device)
 
-    freq_min = cfg.get('freq_min', 1000)
+    freq_min = cfg.get('freq_min', 400)
     freq_max = cfg.get('freq_max', 3000)
 
-    # ── Predict all structures in dataset (with real FTIR comparison) ─────────
     if args.dataset:
         raw = json.load(open(args.dataset))
         print(f"\nPredicting {len(raw)} structures ...\n")
-
         import csv
         all_metrics = []
 
         for entry in raw:
             pred   = predict_entry(model, entry, device)
             target = np.array(entry['ftir_spectrum'], dtype=np.float32)
-
             r    = float(np.corrcoef(pred, target)[0,1])
             rmse = float(np.sqrt(np.mean((pred-target)**2)))
             all_metrics.append({'name':entry['name'],'pearson_r':r,'rmse':rmse})
-
-            plot_spectrum(pred, target=target,
-                          name=entry['name'],
+            plot_spectrum(pred, target=target, name=entry['name'],
                           freq_min=freq_min, freq_max=freq_max,
                           save_path=os.path.join(args.output_dir,
                                                   f"{entry['name']}_ftir.png"))
             print(f"  {entry['name']:30s}  r={r:.3f}  RMSE={rmse:.4f}")
 
-        # Save metrics CSV
         csv_path = os.path.join(args.output_dir, 'metrics.csv')
         with open(csv_path,'w',newline='') as f:
             w = csv.DictWriter(f, fieldnames=['name','pearson_r','rmse'])
-            w.writeheader()
-            w.writerows(all_metrics)
+            w.writeheader(); w.writerows(all_metrics)
 
         print(f"\nMean Pearson r : {np.mean([m['pearson_r'] for m in all_metrics]):.3f}")
-        print(f"Mean RMSE      : {np.mean([m['rmse']      for m in all_metrics]):.4f}")
-        print(f"\nPlots   -> {args.output_dir}/")
-        print(f"Metrics -> {csv_path}")
+        print(f"Mean RMSE      : {np.mean([m['rmse'] for m in all_metrics]):.4f}")
 
-    # ── Predict a single new .log file (no Excel needed) ─────────────────────
     elif args.log_file:
         entry = parse_log_for_prediction(args.log_file)
         if entry is None:
             return
         pred = predict_entry(model, entry, device)
-        plot_spectrum(pred, target=None,
-                      name=entry['name'],
+        plot_spectrum(pred, name=entry['name'],
                       freq_min=freq_min, freq_max=freq_max,
                       save_path=os.path.join(args.output_dir,
                                              f"{entry['name']}_ftir.png"))
-        print(f"\nDone! Spectrum saved -> {args.output_dir}/{entry['name']}_ftir.png")
-
+        print(f"\nDone! Spectrum -> {args.output_dir}/{entry['name']}_ftir.png")
     else:
         print("Provide --dataset or --log_file")
-        print("Example:")
-        print("  python predict.py --checkpoint checkpoints/fold1_best.pt --dataset data/dataset.json --output_dir results/")
 
 
 if __name__ == '__main__':

@@ -1,7 +1,8 @@
 {
   "n_samples": 50,
-  "node_feat_dim": 10,
-  "edge_feat_dim": 6,
+  "node_feat_dim": 15,
+  "edge_feat_dim": 8,
+  "global_feat_dim": 9,
   "spectrum_bins": 500,
   "freq_min": 0.0,
   "freq_max": 3000.0,
