@@ -103,11 +103,11 @@ def train_fold(fold, train_data, val_data, cfg, args, device):
         hidden_dim = args.hidden_dim,
         num_layers = args.num_layers,
         out_dim    = cfg['spectrum_bins'],
-        dropout    = 0.25,
+        dropout    = args.dropout,
     ).to(device)
 
     loss_fn   = FTIRLoss(cosine_w=0.4, grad_w=0.2).to(device)
-    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
+    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-3)
 
     # OneCycleLR: ramps up then decays — great for small datasets
     steps_per_epoch = max(1, len(train_loader))
@@ -200,8 +200,9 @@ def main():
     ap.add_argument('--lr',          type=float, default=3e-4)
     ap.add_argument('--patience',    type=int,   default=80)
     ap.add_argument('--aug_copies',  type=int,   default=4)
-    ap.add_argument('--hidden_dim',  type=int,   default=128)
+    ap.add_argument('--hidden_dim',  type=int,   default=256)
     ap.add_argument('--num_layers',  type=int,   default=3)
+    ap.add_argument('--dropout',     type=float, default=0.5)
     args = ap.parse_args()
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

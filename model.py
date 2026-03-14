@@ -17,7 +17,8 @@ No new dependencies — pure torch_geometric.
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch_geometric.nn import GATConv, global_mean_pool, global_max_pool
+from torch_geometric.nn import TransformerConv, global_mean_pool, global_max_pool
+from torch.nn import BatchNorm1d
 
 
 class GlobalConditioner(nn.Module):
@@ -58,10 +59,10 @@ class FTIRNet(nn.Module):
                  node_dim    = 15,
                  edge_dim    = 8,
                  global_dim  = 9,
-                 hidden_dim  = 128,
+                 hidden_dim  = 256,
                  num_layers  = 3,
                  out_dim     = 500,
-                 dropout     = 0.2):
+                 dropout     = 0.5):
         super().__init__()
 
         self.input_proj = nn.Sequential(
@@ -75,11 +76,11 @@ class FTIRNet(nn.Module):
         self.norms = nn.ModuleList()
         for _ in range(num_layers):
             self.convs.append(
-                GATConv(hidden_dim, hidden_dim // heads,
-                        heads=heads, edge_dim=edge_dim,
-                        dropout=dropout, add_self_loops=True, concat=True)
+                TransformerConv(hidden_dim, hidden_dim // heads,
+                                heads=heads, edge_dim=edge_dim,
+                                dropout=dropout, concat=True)
             )
-            self.norms.append(nn.LayerNorm(hidden_dim))
+            self.norms.append(BatchNorm1d(hidden_dim))
 
         # Global descriptor conditioning
         mol_dim = hidden_dim * 2          # after mean+max pool
@@ -163,7 +164,7 @@ class FTIRLoss(nn.Module):
 # ── Sanity check ──────────────────────────────────────────────────────────────
 if __name__ == '__main__':
     model = FTIRNet(node_dim=15, edge_dim=8, global_dim=9,
-                    hidden_dim=128, num_layers=3, out_dim=500)
+                    hidden_dim=256, num_layers=3, out_dim=500)
     n_p   = sum(p.numel() for p in model.parameters() if p.requires_grad)
 
     x          = torch.randn(20, 15)

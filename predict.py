@@ -76,8 +76,8 @@ def load_model(ckpt_path, device):
         node_dim   = cfg['node_feat_dim'],
         edge_dim   = cfg['edge_feat_dim'],
         global_dim = cfg.get('global_feat_dim', 0),
-        hidden_dim = 128,
-        num_layers = 3,
+        hidden_dim = cfg.get('hidden_dim', 256),  # Use checkpoint config
+        num_layers = cfg.get('num_layers', 3),    # Use checkpoint config
         out_dim    = cfg['spectrum_bins'],
         dropout    = 0.0,
     ).to(device)
