@@ -241,7 +241,7 @@ def main():
 
     best_fold = int(np.argmin([r['rmse'] for r in results]))
     print(f"\n  Best fold : {best_fold+1}")
-    print(f"  Checkpoint: checkpoints/fold{best_fold+1}_best.pt\n")
+    print(f"  Checkpoint: {os.path.join(args.out_dir, f'fold{best_fold+1}_best.pt')}\n")
 
     summary = {
         'per_fold':  results,
