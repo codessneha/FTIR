@@ -1,0 +1,2 @@
+epoch,train_loss,val_loss,val_mae,dft_w
+1,0.49440,0.06475,0.23820,0.050

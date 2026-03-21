@@ -8,4 +8,6 @@ python train.py --graph_dir data/graphs --out_dir checkpoints --epochs 500
 python predict.py --checkpoint checkpoints/fold1_best.pt --dataset data/dataset.json --output_dir results/
 
 
-python train.py --graph_dir data/graphs --out_dir checkpoints_reg_test --epochs 50 --folds 3 --dropout 0.4
+python train.py --graph_dir data/graphs --out_dir checkpoints_reg_test --epochs 50 --folds 3 --dropout 0.4python predict.py --checkpoint checkpoints_test/fold1_best.pt --dataset data/dataset.json --output_dir results/
+
+python train.py --graph_dir data/graphs --out_dir checkpoints_final --epochs 300 --folds 5 --dropout 0.4 --lr 3e-4

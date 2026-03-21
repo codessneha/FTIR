@@ -19,7 +19,7 @@ Usage:
                       --output_dir results/
 """
 
-import os, json, argparse
+import os, json, argparse, time
 import numpy as np
 import torch
 import matplotlib
@@ -327,9 +327,20 @@ def main():
             print(f"  {entry['name']:30s}  r={r:.3f}  RMSE={rmse:.4f}")
 
         csv_path = os.path.join(args.output_dir, 'metrics.csv')
-        with open(csv_path,'w',newline='') as f:
-            w = csv.DictWriter(f, fieldnames=['name','pearson_r','rmse'])
-            w.writeheader(); w.writerows(all_metrics)
+        try:
+            with open(csv_path, 'w', newline='') as f:
+                w = csv.DictWriter(f, fieldnames=['name', 'pearson_r', 'rmse'])
+                w.writeheader()
+                w.writerows(all_metrics)
+            print(f"\nMetrics CSV    : {csv_path}")
+        except PermissionError:
+            timestamp_csv = os.path.join(args.output_dir, f'metrics_{int(time.time())}.csv')
+            print(f"\n[WARN] Could not write to {csv_path} (file likely open in Excel).")
+            print(f"       Saving to alternate path instead: {timestamp_csv}")
+            with open(timestamp_csv, 'w', newline='') as f:
+                w = csv.DictWriter(f, fieldnames=['name', 'pearson_r', 'rmse'])
+                w.writeheader()
+                w.writerows(all_metrics)
 
         print(f"\nMean Pearson r : {np.mean([m['pearson_r'] for m in all_metrics]):.3f}")
         print(f"Mean RMSE      : {np.mean([m['rmse'] for m in all_metrics]):.4f}")
