@@ -23,6 +23,7 @@ import os, json, argparse, time
 import numpy as np
 import torch
 import matplotlib
+# Use 'Agg' backend for non-interactive plotting (no window will pop up)
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from pathlib import Path
@@ -30,12 +31,17 @@ from scipy.signal import find_peaks
 
 from model import FTIRNet
 
-# ── Shared atom tables (keep in sync with parse_data.py) ─────────────────────
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Shared Atomic and Chemical Properties ─────────────────────────────────────
+# This dictionary maps atom symbols to their atomic numbers.
+# Must be kept in sync with parse_data.py for consistent feature extraction.
+# ─────────────────────────────────────────────────────────────────────────────
 ATOMIC_NUM = {
     'H':1,'C':6,'N':7,'O':8,'F':9,'Si':14,'S':16,'Cl':17,
     'Br':35,'I':53,'P':15,'B':5,
     'Pd':46,'Pt':78,'Ni':28,'Cu':29,'Zn':30,'Co':27,'Fe':26,
     'Mn':25,'Cr':24,'Ti':22,'Ru':44,'Rh':45,'Ag':47,'Au':79,
+    'Mo':42,'Se':34,'V':23,'Hf':72,'Ir':77,'Os':76,'Re':75,'Sc':21,'Ta':73,'Zr':40
 }
 NUM_ATOMIC = {v: k for k, v in ATOMIC_NUM.items()}
 
@@ -45,6 +51,7 @@ ELECTRO = {
     'Pd':2.20,'Pt':2.28,'Ni':1.91,'Cu':1.90,'Zn':1.65,'Co':1.88,
     'Fe':1.83,'Mn':1.55,'Cr':1.66,'Ti':1.54,'Ru':2.20,'Rh':2.28,
     'Ag':1.93,'Au':2.54,
+    'Mo':2.16,'Se':2.55,'V':1.63,'Hf':1.30,'Ir':2.20,'Os':2.20,'Re':1.90,'Sc':1.36,'Ta':1.50,'Zr':1.33
 }
 COV_RAD = {
     'H':0.31,'C':0.76,'N':0.71,'O':0.66,'F':0.57,'P':1.07,'B':0.84,
@@ -52,6 +59,7 @@ COV_RAD = {
     'Pd':1.39,'Pt':1.36,'Ni':1.24,'Cu':1.32,'Zn':1.22,'Co':1.26,
     'Fe':1.32,'Mn':1.61,'Cr':1.39,'Ti':1.60,'Ru':1.46,'Rh':1.42,
     'Ag':1.45,'Au':1.36,
+    'Mo':1.45,'Se':1.16,'V':1.34,'Hf':1.50,'Ir':1.37,'Os':1.28,'Re':1.59,'Sc':1.44,'Ta':1.38,'Zr':1.48
 }
 PERIOD = {
     'H':1,'B':2,'C':2,'N':2,'O':2,'F':2,
@@ -59,25 +67,35 @@ PERIOD = {
     'Br':4,'Fe':4,'Co':4,'Ni':4,'Cu':4,'Zn':4,'Ti':4,'Cr':4,'Mn':4,
     'I':5,'Pd':5,'Rh':5,'Ru':5,'Ag':5,
     'Pt':6,'Au':6,
+    'Mo':5,'Se':4,'V':4,'Hf':6,'Ir':6,'Os':6,'Re':6,'Sc':4,'Ta':6,'Zr':5
 }
 GROUP = {
     'H':1,'C':14,'N':15,'O':16,'F':17,'B':13,
     'Si':14,'P':15,'S':16,'Cl':17,'Br':17,'I':17,
     'Ti':4,'Cr':6,'Mn':7,'Fe':8,'Co':9,'Ni':10,'Cu':11,'Zn':12,
     'Ru':8,'Rh':9,'Pd':10,'Ag':11,'Pt':10,'Au':11,
+    'Mo':6,'Se':16,'V':5,'Hf':4,'Ir':9,'Os':8,'Re':7,'Sc':3,'Ta':5,'Zr':4
 }
-METALS = {'Pd','Pt','Ni','Cu','Zn','Co','Fe','Mn','Cr','Ti','Ru','Rh','Ag','Au'}
+METALS = {'Pd','Pt','Ni','Cu','Zn','Co','Fe','Mn','Cr','Ti','Ru','Rh','Ag','Au','Mo','V','Hf','Ir','Os','Re','Sc','Ta','Zr'}
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Model Initialization Function ─────────────────────────────────────────────
+# Loads a trained model from a checkpoint (.pt file).
+# ─────────────────────────────────────────────────────────────────────────────
 def load_model(ckpt_path, device):
     ckpt  = torch.load(ckpt_path, map_location=device, weights_only=False)
     cfg   = ckpt['cfg']
+    state = ckpt['state']
+    
+    inferred_hidden = state['input_proj.0.weight'].shape[0] if 'input_proj.0.weight' in state else cfg.get('hidden_dim', 128)
+    inferred_layers = max([int(k.split('.')[1]) for k in state.keys() if k.startswith('convs.')]) + 1 if any(k.startswith('convs.') for k in state.keys()) else cfg.get('num_layers', 3)
+    
     model = FTIRNet(
         node_dim   = cfg['node_feat_dim'],
         edge_dim   = cfg['edge_feat_dim'],
         global_dim = cfg.get('global_feat_dim', 0),
-        hidden_dim = cfg.get('hidden_dim', 256),  # Use checkpoint config
-        num_layers = cfg.get('num_layers', 3),    # Use checkpoint config
+        hidden_dim = inferred_hidden,
+        num_layers = inferred_layers,
         out_dim    = cfg['spectrum_bins'],
         dropout    = 0.0,
     ).to(device)
@@ -86,7 +104,11 @@ def load_model(ckpt_path, device):
     print(f"Loaded model (epoch={ckpt['epoch']}, val_loss={ckpt['val_loss']:.4f})")
     return model, cfg
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Data Transformation Function ──────────────────────────────────────────────
+# Converts a dictionary-based data entry (from JSON) into a
+# PyTorch Geometric 'Data' object suitable for GNN input.
+# ─────────────────────────────────────────────────────────────────────────────
 def entry_to_graph(entry):
     from torch_geometric.data import Data
     x          = torch.tensor(entry['node_features'],  dtype=torch.float)
@@ -98,11 +120,14 @@ def entry_to_graph(entry):
         edge_index = torch.tensor(entry['edge_index'],    dtype=torch.long).t().contiguous()
         edge_attr  = torch.tensor(entry['edge_features'], dtype=torch.float)
     y = torch.tensor(entry['ftir_spectrum'], dtype=torch.float).unsqueeze(0)
-    u = torch.tensor(entry.get('global_features', [0.0]*9), dtype=torch.float)
+    u = torch.tensor(entry.get('global_features', [0.0]*9), dtype=torch.float).unsqueeze(0)
     return Data(x=x, edge_index=edge_index, edge_attr=edge_attr, y=y, u=u,
                 name=entry['name'])
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Prediction Function ───────────────────────────────────────────────────────
+# Takes a single data entry, converts it to a graph, and runs inference.
+# ─────────────────────────────────────────────────────────────────────────────
 @torch.no_grad()
 def predict_entry(model, entry, device):
     from torch_geometric.data import Batch
@@ -112,7 +137,11 @@ def predict_entry(model, entry, device):
     out   = model(batch.x, batch.edge_index, batch.edge_attr, batch.batch, u=u)
     return out.squeeze().cpu().numpy()
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Log File Parser (for Blind Prediction) ────────────────────────────────────
+# Extracts required features from a Gaussian .log file directly.
+# This allows making predictions for new structures not in the training set.
+# ─────────────────────────────────────────────────────────────────────────────
 def parse_log_for_prediction(log_path):
     """Parse a new .log file (no Excel required) for blind prediction."""
     import re
@@ -120,6 +149,7 @@ def parse_log_for_prediction(log_path):
 
     text = Path(log_path).read_text(errors='ignore')
     atoms = None
+    # 1. Parse Coordinates: extracts atom symbols and XYZ positions from Gaussian output.
     for pat in [
         r"Standard orientation:.*?[-]{10,}\n.*?[-]{10,}\n(.*?)\n\s*[-]{10,}",
         r"Input orientation:.*?[-]{10,}\n.*?[-]{10,}\n(.*?)\n\s*[-]{10,}",
@@ -143,7 +173,7 @@ def parse_log_for_prediction(log_path):
         print(f"Cannot parse coordinates from {log_path}")
         return None
 
-    # APT charges (fallback to Mulliken)
+    # 2. Parse APT/Mulliken Charges: used as a node feature to represent distribution.
     charges = [0.0] * len(atoms)
     for pat, key in [
         (r"APT charges:(.*?)Sum of APT", 2),
@@ -161,13 +191,15 @@ def parse_log_for_prediction(log_path):
                 charges = ch
                 break
 
-    # Global features (HOMO/LUMO/dipole/ZPE)
+    # 3. Parse Global Features: HOMO, LUMO, Dipole Moment, SCF Energy, and ZPE.
+    # These provide molecular-level context to the graph.
     global_feats = []
     alpha_occ  = re.findall(r'Alpha  occ\. eigenvalues --\s+([\-\d\.\s]+)', text)
     alpha_virt = re.findall(r'Alpha virt\. eigenvalues --\s+([\-\d\.\s]+)', text)
     if alpha_occ and alpha_virt:
         homo = max(float(x) for line in alpha_occ  for x in line.split())
         lumo = min(float(x) for line in alpha_virt for x in line.split())
+        # Convert Hartree to eV (approx x 27.211)
         global_feats += [homo*27.211, lumo*27.211, (lumo-homo)*27.211]
     else:
         global_feats += [0.0, 0.0, 0.0]
@@ -183,7 +215,7 @@ def parse_log_for_prediction(log_path):
     zpe = re.findall(r'Zero-point correction=\s*([-\d\.]+)', text)
     global_feats.append(float(zpe[-1]) if zpe else 0.0)
 
-    # Bonds
+    # 4. Infer Bonds: Based on covalent radii. Supports Metal-Ligand distance scaling.
     coords = np.array([[a['x'],a['y'],a['z']] for a in atoms])
     metal_idx = [i for i,a in enumerate(atoms) if a['symbol'] in METALS]
     if metal_idx:
@@ -198,6 +230,7 @@ def parse_log_for_prediction(log_path):
             si, sj = atoms[i]['symbol'], atoms[j]['symbol']
             ri, rj = COV_RAD.get(si,0.77), COV_RAD.get(sj,0.77)
             d = float(np.linalg.norm(coords[i]-coords[j]))
+            # Use larger scale for metals to capture coordination bonds
             scale = 1.35 if (si in METALS or sj in METALS) else 1.20
             if d < scale*(ri+rj):
                 bonds.append((i,j,d))
@@ -208,6 +241,7 @@ def parse_log_for_prediction(log_path):
         degrees[i]+=1; degrees[j]+=1
         bond_map[i].append(j); bond_map[j].append(i)
 
+    # 5. Build Node Features: Atomic number, electronegativity, radii, etc.
     node_feats = []
     for k, a in enumerate(atoms):
         s = a['symbol']
@@ -224,6 +258,7 @@ def parse_log_for_prediction(log_path):
             float(min_dists[k])/5.0, h_count/4.0, aromatic,
         ])
 
+    # 6. Build Edge Features: Bond length, element pairs, etc.
     edge_index, edge_feats = [], []
     for i,j,d in bonds:
         si,sj = atoms[i]['symbol'],atoms[j]['symbol']
@@ -250,7 +285,11 @@ def parse_log_for_prediction(log_path):
         'n_bins':          500,
     }
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Visualization Function ────────────────────────────────────────────────────
+# Plots the predicted spectrum (and the target if available) and
+# annotates peaks for easier interpretation.
+# ─────────────────────────────────────────────────────────────────────────────
 def plot_spectrum(pred, target=None, name='', freq_min=400, freq_max=3000, save_path=None):
     x   = np.linspace(freq_min, freq_max, len(pred))
     fig, ax = plt.subplots(figsize=(13, 5))
@@ -292,7 +331,10 @@ def plot_spectrum(pred, target=None, name='', freq_min=400, freq_max=3000, save_
         print(f"  Saved -> {save_path}")
     plt.close()
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Main Entry Point ──────────────────────────────────────────────────────────
+# Handles CLI arguments and orchestrates the prediction process.
+# ─────────────────────────────────────────────────────────────────────────────
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--checkpoint', required=True)
@@ -357,7 +399,6 @@ def main():
         print(f"\nDone! Spectrum -> {args.output_dir}/{entry['name']}_ftir.png")
     else:
         print("Provide --dataset or --log_file")
-
 
 if __name__ == '__main__':
     main()

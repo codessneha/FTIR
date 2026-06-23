@@ -73,7 +73,6 @@ N_BINS = 500
 NODE_DIM = 15
 EDGE_DIM = 8
 
-
 # ── Excel / FTIR readers ──────────────────────────────────────────────────────
 
 def read_ftir_excel_raw(xlsx_path):
@@ -179,7 +178,6 @@ def interpolate_spectrum(data, freq_min, freq_max, n_bins=N_BINS):
         )
 
     return target_freqs, absorbances
-
 
 # ── Log file parsers ──────────────────────────────────────────────────────────
 
@@ -429,7 +427,6 @@ def build_graph_features(atoms, bonds, charges, metal_indices):
 
     return node_feats, edge_index, edge_feats
 
-
 # ── Main pair processor ───────────────────────────────────────────────────────
 
 def process_pair(log_path, xlsx_path, freq_min, freq_max):
@@ -482,7 +479,6 @@ def process_pair(log_path, xlsx_path, freq_min, freq_max):
         'n_bins':           N_BINS,
         'composition':      sym_counts,
     }
-
 
 # ── CLI ───────────────────────────────────────────────────────────────────────
 
@@ -541,7 +537,6 @@ def main():
 
     json.dump(dataset, open(args.output, 'w'), indent=2)
     print(f"\nSaved -> {args.output}")
-
 
 if __name__ == '__main__':
     main()

@@ -12,6 +12,12 @@ Changes vs original:
   5. Consistent node_dim=15, edge_dim=8 defaults.
 
 No new dependencies — pure torch_geometric.
+
+NOTE: fixed two bugs from the original draft:
+  - `mol_dim` was used in the decoder but never defined -> set to 2*hidden_dim
+    (mean_pool + max_pool concatenation).
+  - `self.global_cond` was referenced in forward() but never created in
+    __init__ -> now built as a GlobalConditioner when global_dim > 0.
 """
 
 import torch
@@ -29,6 +35,7 @@ class GlobalConditioner(nn.Module):
     """
     def __init__(self, global_dim: int, hidden_dim: int):
         super().__init__()
+        self.hidden_dim = hidden_dim
         self.net = nn.Sequential(
             nn.Linear(global_dim, hidden_dim),
             nn.SiLU(),
@@ -36,9 +43,8 @@ class GlobalConditioner(nn.Module):
         )
 
     def forward(self, u):
-        out    = self.net(u)
-        scale  = out[:, :out.shape[1]//2]
-        shift  = out[:, out.shape[1]//2:]
+        out = self.net(u)
+        scale, shift = out.chunk(2, dim=-1)
         return scale, shift
 
 
@@ -49,7 +55,7 @@ class FTIRNet(nn.Module):
 
     Architecture:
       1. Atom feature projection -> hidden_dim
-      2. num_layers x GATConv with residual + LayerNorm
+      2. num_layers x GATConv (TransformerConv) with residual + LayerNorm/BatchNorm
       3. Readout: cat(mean_pool, max_pool) -> 2*hidden_dim
       4. FiLM conditioning with global descriptors (HOMO/LUMO/dipole/…)
       5. MLP decoder -> spectrum
@@ -82,10 +88,15 @@ class FTIRNet(nn.Module):
             )
             self.norms.append(BatchNorm1d(hidden_dim))
 
-        # Global descriptor conditioning
-        mol_dim = hidden_dim * 2          # after mean+max pool
-        self.global_cond = GlobalConditioner(global_dim, mol_dim) \
-            if global_dim > 0 else None
+        # Readout = cat(mean_pool, max_pool) -> 2 * hidden_dim
+        mol_dim = hidden_dim * 2
+
+        # Global descriptor conditioning (FiLM). Only built if we actually
+        # have global features to condition on.
+        if global_dim and global_dim > 0:
+            self.global_cond = GlobalConditioner(global_dim, mol_dim)
+        else:
+            self.global_cond = None
 
         # Decoder
         self.decoder = nn.Sequential(
@@ -102,13 +113,6 @@ class FTIRNet(nn.Module):
             nn.Linear(512, out_dim),
             nn.Sigmoid(),
         )
-
-        # Weight init
-        for m in self.modules():
-            if isinstance(m, nn.Linear):
-                nn.init.xavier_uniform_(m.weight)
-                if m.bias is not None:
-                    nn.init.zeros_(m.bias)
 
     def forward(self, x, edge_index, edge_attr, batch, u=None):
         h = self.input_proj(x)

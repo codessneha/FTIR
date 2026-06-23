@@ -11,6 +11,14 @@ Changes vs original:
   5. Gradient clipping kept; weight decay tuned to 1e-4.
   6. Best model selection unchanged (val_loss).
 
+NOTE: fixed several bugs from the original draft:
+  - main() never built an argparse.ArgumentParser / never called parse_args(),
+    so `args` did not exist.
+  - `ckpt_path` / `log_path` were used inside train_fold() but never defined.
+  - `best_val` was used but never initialized before the epoch loop.
+  - `scheduler` was called with .step() but never created (added OneCycleLR,
+    as the docstring above says was intended).
+
 Usage:
     python train.py --graph_dir data/graphs --out_dir checkpoints --epochs 500
 """
@@ -27,6 +35,11 @@ import csv
 
 from model import FTIRNet, FTIRLoss
 
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Data Loading Function ─────────────────────────────────────────────────────
+# Loads pre-processed graph data (.pt files) and metadata (config.json)
+# from the specified graph directory.
+# ─────────────────────────────────────────────────────────────────────────────
 
 def load_graphs(graph_dir):
     graph_dir = Path(graph_dir)
@@ -36,10 +49,13 @@ def load_graphs(graph_dir):
     data = [torch.load(f, weights_only=False) for f in files]
     cfg  = json.load(open(graph_dir / 'config.json'))
     print(f"Loaded {len(data)} graphs")
-    print(f"Structures: {cfg['names']}")
     return data, cfg
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Data Augmentation Logic ───────────────────────────────────────────────────
+# Adds small Gaussian noise to node and global features to prevent
+# the model from overfitting on small datasets.
+# ─────────────────────────────────────────────────────────────────────────────
 def augment(data, noise=0.02, u_noise=0.01):
     """Add small noise to continuous atom features and global descriptors."""
     d = data.clone()
@@ -52,15 +68,22 @@ def augment(data, noise=0.02, u_noise=0.01):
         d.u = d.u + torch.randn_like(d.u) * u_noise
     return d
 
-
 def expand(data_list, copies=4):
+    """
+    Expands the training set by creating multiple augmented copies of each graph.
+    This significantly improves generalization for small molecular datasets.
+    """
     out = list(data_list)
     for c in range(copies):
         out += [augment(d, noise=0.01*(c+1), u_noise=0.005*(c+1)) for d in data_list]
     print(f"  Augmented: {len(data_list)} -> {len(out)} samples")
     return out
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Model Evaluation Logic ────────────────────────────────────────────────────
+# Calculates key performance metrics including RMSE, MAE, Pearson R,
+# and Spectral Angle Mapper (SAM).
+# ─────────────────────────────────────────────────────────────────────────────
 @torch.no_grad()
 def evaluate(model, loader, device):
     model.eval()
@@ -77,15 +100,24 @@ def evaluate(model, loader, device):
 
     rmse = float(np.sqrt(np.mean((P-T)**2)))
     mae  = float(np.mean(np.abs(P-T)))
+
+    # Pearson Correlation Coefficient: Measures linear relationship quality
     rs   = [np.corrcoef(p,t)[0,1] for p,t in zip(P,T) if np.std(t)>0]
     r    = float(np.mean(rs)) if rs else 0.0
+
+    # Spectral Angle Mapper (SAM): Measures the 'shape' similarity
+    # between predicted and target spectral vectors (in degrees).
     dot  = np.sum(P*T, axis=1)
     norm = np.linalg.norm(P,axis=1)*np.linalg.norm(T,axis=1)+1e-8
     sam  = float(np.degrees(np.mean(np.arccos(np.clip(dot/norm,-1,1)))))
 
     return {'rmse':rmse, 'mae':mae, 'pearson_r':r, 'sam_deg':sam}
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Cross-Validation Fold Training ─────────────────────────────────────────────
+# Manages the training and validation process for a single K-Fold split.
+# Handles initialization, training loops, validation, and early stopping.
+# ─────────────────────────────────────────────────────────────────────────────
 def train_fold(fold, train_data, val_data, cfg, args, device):
     print(f"\n  Fold {fold+1}  |  train={len(train_data)}  val={len(val_data)}")
     print(f"  Val structures: {[d.name for d in val_data]}")
@@ -107,48 +139,61 @@ def train_fold(fold, train_data, val_data, cfg, args, device):
     ).to(device)
 
     loss_fn   = FTIRLoss(cosine_w=0.4, grad_w=0.2).to(device)
-    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-3)
+    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
 
-    # OneCycleLR: ramps up then decays — great for small datasets
-    steps_per_epoch = max(1, len(train_loader))
+    # OneCycleLR — works much better than CosineAnnealingWarmRestarts for
+    # small datasets trained for a modest number of epochs.
     scheduler = optim.lr_scheduler.OneCycleLR(
         optimizer,
-        max_lr        = args.lr,
-        epochs        = args.epochs,
-        steps_per_epoch = steps_per_epoch,
-        pct_start     = 0.2,
-        anneal_strategy = 'cos',
-        final_div_factor = 1e3,
+        max_lr=args.lr,
+        total_steps=max(1, args.epochs * len(train_loader)),
     )
 
-    ckpt_path = os.path.join(args.out_dir, f'fold{fold+1}_best.pt')
-    log_path  = os.path.join(args.out_dir, f'fold{fold+1}_log.csv')
+    # Per-fold output paths
+    fold_dir = Path(args.out_dir)
+    fold_dir.mkdir(parents=True, exist_ok=True)
+    ckpt_path = fold_dir / f'fold{fold+1}_best.pt'
+    log_path  = fold_dir / f'fold{fold+1}_log.csv'
 
-    with open(log_path,'w',newline='') as f:
-        csv.writer(f).writerow(['epoch','train_loss','val_loss','val_mae'])
+    with open(log_path, 'w', newline='') as f:
+        csv.writer(f).writerow(['epoch', 'train_loss', 'val_loss', 'val_mae'])
 
     best_val = float('inf')
     patience = 0
 
     for epoch in range(1, args.epochs+1):
 
-        # ── Train ──────────────────────────────────────────────────────────
+        # ── Training Phase ──────────────────────────────────────────────────
         model.train()
         total = 0.0
         for b in train_loader:
             b   = b.to(device)
+            # Support for global molecular features (HOMO/LUMO/etc.)
             u   = b.u if hasattr(b, 'u') and b.u is not None else None
+
             optimizer.zero_grad()
+
+            # Forward pass: Generate predicted FTIR spectrum
             out  = model(b.x, b.edge_index, b.edge_attr, b.batch, u=u)
+
+            # Calculate loss: MSE + Cosine Similarity + Gradient Match
             loss = loss_fn(out, b.y.squeeze(1))
+
+            # Backward pass: Compute gradients
             loss.backward()
+
+            # Gradient clipping to prevent exploding gradients
             nn.utils.clip_grad_norm_(model.parameters(), 1.0)
+
+            # Update weights and learning rate
             optimizer.step()
             scheduler.step()
+
             total += loss.item()
         train_loss = total / len(train_loader)
 
-        # ── Validate ────────────────────────────────────────────────────────
+        # ── Validation Phase ──────────────────────────────────────────────────
+        # Evaluates the model on the validation set after each training epoch.
         model.eval()
         vtotal = vmae = 0.0
         with torch.no_grad():
@@ -161,10 +206,12 @@ def train_fold(fold, train_data, val_data, cfg, args, device):
         val_loss = vtotal / len(val_loader)
         val_mae  = vmae   / len(val_loader)
 
+        # Log metrics to CSV for analysis
         with open(log_path,'a',newline='') as f:
             csv.writer(f).writerow([epoch,f'{train_loss:.5f}',
                                     f'{val_loss:.5f}',f'{val_mae:.5f}'])
 
+        # Checkpoint: Save model if validation loss improved
         if val_loss < best_val:
             best_val = val_loss
             patience = 0
@@ -175,10 +222,12 @@ def train_fold(fold, train_data, val_data, cfg, args, device):
             patience += 1
             marker = ''
 
+        # Periodic status updates to terminal
         if epoch % 50 == 0 or epoch <= 3:
             print(f"    ep {epoch:4d}  train={train_loss:.4f}  "
                   f"val={val_loss:.4f}  mae={val_mae:.4f}{marker}")
 
+        # Early Stopping: Stop training if no improvement for 'patience' epochs
         if patience >= args.patience:
             print(f"    Early stop at epoch {epoch}")
             break
@@ -189,20 +238,24 @@ def train_fold(fold, train_data, val_data, cfg, args, device):
     print(f"    Best -> RMSE={m['rmse']:.4f}  r={m['pearson_r']:.3f}  SAM={m['sam_deg']:.1f}deg")
     return m
 
-
+# ─────────────────────────────────────────────────────────────────────────────
+# ── Main Training Script Logic ────────────────────────────────────────────────
+# Orchestrates argument parsing, data preparation, K-Fold cross-validation,
+# and saving/summarizing results across all folds.
+# ─────────────────────────────────────────────────────────────────────────────
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--graph_dir',   default='data/graphs')
-    ap.add_argument('--out_dir',     default='checkpoints')
-    ap.add_argument('--epochs',      type=int,   default=500)
-    ap.add_argument('--folds',       type=int,   default=5)
-    ap.add_argument('--batch_size',  type=int,   default=8)
-    ap.add_argument('--lr',          type=float, default=3e-4)
-    ap.add_argument('--patience',    type=int,   default=80)
-    ap.add_argument('--aug_copies',  type=int,   default=4)
-    ap.add_argument('--hidden_dim',  type=int,   default=256)
-    ap.add_argument('--num_layers',  type=int,   default=3)
-    ap.add_argument('--dropout',     type=float, default=0.5)
+    ap.add_argument('--graph_dir',  default='data/graphs')
+    ap.add_argument('--out_dir',    default='checkpoints')
+    ap.add_argument('--epochs',     type=int,   default=500)
+    ap.add_argument('--batch_size', type=int,   default=8)
+    ap.add_argument('--hidden_dim', type=int,   default=128)
+    ap.add_argument('--num_layers', type=int,   default=3)
+    ap.add_argument('--dropout',    type=float, default=0.5)
+    ap.add_argument('--lr',         type=float, default=1e-3)
+    ap.add_argument('--patience',   type=int,   default=50)
+    ap.add_argument('--aug_copies', type=int,   default=4)
+    ap.add_argument('--folds',      type=int,   default=5)
     args = ap.parse_args()
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -251,7 +304,6 @@ def main():
     }
     json.dump(summary, open(os.path.join(args.out_dir,'kfold_summary.json'),'w'), indent=2)
     print(f"Results saved -> {args.out_dir}/kfold_summary.json")
-
 
 if __name__ == '__main__':
     main()

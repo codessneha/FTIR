@@ -19,7 +19,6 @@ import torch
 from torch_geometric.data import Data
 from pathlib import Path
 
-
 def build_graph(entry):
     x = torch.tensor(entry['node_features'], dtype=torch.float)
 
@@ -49,7 +48,6 @@ def build_graph(entry):
         name      = entry['name'],
         n_atoms   = entry['n_atoms'],
     )
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -88,7 +86,6 @@ def main():
     print(f"  Global features: {config['global_feat_dim']}")
     print(f"  Spectrum bins  : {config['spectrum_bins']}")
     print(f"  Freq range     : {config['freq_min']} - {config['freq_max']} cm-1\n")
-
 
 if __name__ == '__main__':
     main()
