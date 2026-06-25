@@ -1,13 +1,6 @@
-mkdir logs
-# copy your .log files into logs\
-
-python parse_data.py --log_dir data/logs --output data/dataset.json --log_ext .txt
-python build_graphs.py --input data/dataset.json --output_dir data/graphs
-python model.py
-python train.py --graph_dir data/graphs --out_dir checkpoints --epochs 500
-python predict.py --checkpoint checkpoints/fold1_best.pt --dataset data/dataset.json --output_dir results/
-
-
-python train.py --graph_dir data/graphs --out_dir checkpoints_final --epochs 300 --folds 5 --dropout 0.4 --lr 3e-4
-
-python predict.py --checkpoint checkpoints_final/fold5_best.pt --dataset data/dataset.json --output_dir results/
+python parse_data.py --log_dir data/logs --ftir_dir data/ftir --output data/dataset.json --log_ext .txt
+python train.py --graph_dir data/graphs --out_dir checkpoints --epochs 500 --aug_copies 8 --hidden_dim 192 --dropout 0.5 --patience 60
+python train.py --graph_dir data/graphs --out_dir checkpoints --epochs 500 --aug_copies 8 --hidden_dim 128 --dropout 0.6 --patience 40
+python predict.py --checkpoint checkpoints/fold5_best.pt --dataset data/dataset.json --output_dir results/
+python model.py  
+ python build_graphs.py --input data/dataset.json --output_dir data/graphs 

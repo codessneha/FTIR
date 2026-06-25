@@ -148,7 +148,7 @@ class FTIRLoss(nn.Module):
                       with narrow carbonyl / aromatic peaks)
     """
 
-    def __init__(self, cosine_w=0.4, grad_w=0.2):
+    def __init__(self, cosine_w=0.4, grad_w=0.35):
         super().__init__()
         self.cosine_w = cosine_w
         self.grad_w   = grad_w
